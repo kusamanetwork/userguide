@@ -1,7 +1,7 @@
 [![Documentation Status](https://readthedocs.org/projects/polkadot-wiki/badge/?version=latest)](https://polkadot-wiki.readthedocs.io/en/latest/?badge=latest)
 [![CircleCI](https://circleci.com/gh/w3f/polkadot-wiki.svg?style=svg)](https://circleci.com/gh/w3f/polkadot-wiki)
 
-# Polkadot Wiki
+# Kusama User Manual
 
 This repository contains the source files for the [Polkadot wiki](https://wiki.polkadot.network).
 
