@@ -1,9 +1,9 @@
-[![Documentation Status](https://readthedocs.org/projects/polkadot-wiki/badge/?version=latest)](https://polkadot-wiki.readthedocs.io/en/latest/?badge=latest)
-[![CircleCI](https://circleci.com/gh/w3f/polkadot-wiki.svg?style=svg)](https://circleci.com/gh/w3f/polkadot-wiki)
+<!-- [![Documentation Status](https://readthedocs.org/projects/polkadot-wiki/badge/?version=latest)](https://polkadot-wiki.readthedocs.io/en/latest/?badge=latest)
+[![CircleCI](https://circleci.com/gh/w3f/polkadot-wiki.svg?style=svg)](https://circleci.com/gh/w3f/polkadot-wiki) -->
 
 # Kusama User Manual
 
-This repository contains the source files for the [Polkadot wiki](https://wiki.polkadot.network).
+This repository contains the source files for the [Kusama User Guide](https://guide.kusama.network).
 
 ## Running locally
 
@@ -12,7 +12,7 @@ Note that you will need the `pip` package manager, which is generally installed 
 Clone the repository to your local file system.
 
 ```bash
-git clone https://github.com/w3f/Polkadot-wiki.git
+git clone https://github.com/kusamanetwork/userguide.git
 ```
 
 Install `mkdocs` by using the `pip` package manager.
