@@ -1,7 +1,7 @@
 {
-  "name": "polkadot-wiki",
+  "name": "kusama-user-guide",
   "version": "1.0.0",
-  "description": "The Polkadot wiki.",
+  "description": "Kusama Network User Guide.",
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -13,10 +13,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/w3f/Polkadot-wiki.git"
+    "url": "git+https://github.com/kusamanetwork/userguide.git"
   },
   "keywords": [
-    "polkadot",
+    "kusama",
     "wiki"
   ],
   "author": "Web3 Foundation",

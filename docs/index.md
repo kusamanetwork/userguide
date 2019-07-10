@@ -1,10 +1,6 @@
-![Polkadot Logo](./img/Polkadot_logotype_color.svg)
+# Kusama User Manual
 
-# Polkadot Wiki
-
-Welcome to the Polkadot wiki, the hub for those interested in learning, building, or running a node on the Polkadot protocol.
-
-If you're looking for an introduction on Polkadot please [see here](./polkadot/learn/introduction.md).
+Text here
 
 ## Want to learn more?
 
