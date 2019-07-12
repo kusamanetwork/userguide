@@ -1,6 +1,6 @@
 [Kusama Forum](https://forum.kusama.network/)  
-[General Kusama chat](https://riot.im/app/#/room/!NggWniYLnYGlBIRIGa:matrix.org)  
-For help claiming KSMA: [KSMA Claims Support chat](https://riot.im/app/#/room/!CjJYPbhtFfZANoquus:matrix.org)  
+[General Kusama chat](https://riot.im/app/#/room/#kusamawatercooler:polkadot.builders)  
+Get help claiming KSMA: [KSMA Claims Support chat](https://riot.im/app/#/room/#KSMAClaims:polkadot.builders)  
 General inquiries: [wut@kusama.network](mailto:wut@kusama.network)  
 To report something or to submit bugs: [sos@kusama.network](mailto:sos@kusama.network)  
 [Twitter: @kusamanetwork](https://twitter.com/kusamanetwork)  
