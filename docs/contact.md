@@ -1,7 +1,7 @@
 # Contact
 
 ## General
-[Kusama Forum](https://forum.kusama.network/)  
+[Kusama forum](https://forum.kusama.network/)  
 [Kusama chat](https://riot.im/app/#/room/#kusamawatercooler:polkadot.builders)  
 [wut@kusama.network](mailto:wut@kusama.network)  
 
