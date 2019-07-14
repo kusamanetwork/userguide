@@ -1,8 +1,28 @@
-# KSMA claims
+# How to get KSMA
 
-The Kusama network is Polkadot's R&D network. This guide will walk you through how to proceed with claiming KSMA.
+The Kusama network is Polkadot's R&D network. This guide will walk you through how to proceed with claiming KSMA (Kusama tokens).
 
 In order to align Kusama with the existing DOT holders and community, if you are a DOT allocation holder you can claim the equivalent amount of Kusama tokens (ticker: KSMA). There are two ways to claim either before genesis by sending a transaction on Ethereum or after genesis by signing a message using your allocation key and making a transaction on Kusama.
+
+## There are three ways to get KSMA
+
+### Method 1
+Those who participated in the Polkadot sales can claim a proportional amount of KSMA prior to the launch of the network. 
+
+You can do this through [this claims process](https://claims.kusama.network/).
+
+You can refer to [this detailed guide](./method1.md) for a step by step walk through for how to do so.
+
+Having trouble? Get support in the KSMA [Claims chat](https://riot.im/app/#/room/#KSMAClaims:polkadot.builders).
+
+### Method 2
+For those who didn’t participate in the Polkadot sale, KSMA are publicly available upon genesis through a faucet. Find out more here.
+
+### Method 3
+Public projects that need more KSMA can request them by emailing projects@kusama.network.
+
+### Method 2
+
 
 ## Create a Kusama account
 

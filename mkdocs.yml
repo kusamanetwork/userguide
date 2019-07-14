@@ -5,8 +5,15 @@ site_url: https://guide.kusama.network
 
 nav:
  - Home: index.md
- - Claims: claims.md
+ - Get Started: 
+    - Claim KSMAs: claims.md
+    - Before genesis: method1.md
+    - After genesis: method2.md
+    - General claims: method3.md
+ - Kusama Features: features.md
+ - Bug Bounty: bug.md
  - Community: community.md
+ - Code of Conduct: codeofconduct.md
 
 # Configuration for the Material theme
 theme:
