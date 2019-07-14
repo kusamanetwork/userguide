@@ -9,7 +9,6 @@ Kusama is owned by the folks who hold Kusama tokens (KSMA). There’s no central
 
 Security caveat: Kusama is experimental! There are no guarantees. 
 
-
 ## Who can participate in Kusama?
 
 Everyone!
@@ -21,3 +20,6 @@ For those who didn’t participate in the Polkadot sale, KSMA are publicly avail
 Public projects that need more KSMA can request them by emailing projects@kusama.network.
 
 As a KSMA holder, you will be able to interact with all the features of Kusama network such as staking (validating and nominating), participating in governance, voting for council members, parachain auctions and all other interactions.
+
+## Launch date
+Kusama will likely be launched by the community this summer 2019. Stay tuned!

@@ -4,27 +4,7 @@ The Kusama network is Polkadot's R&D network. This guide will walk you through h
 
 In order to align Kusama with the existing DOT holders and community, if you are a DOT allocation holder you can claim the equivalent amount of Kusama tokens (ticker: KSMA). There are two ways to claim either before genesis by sending a transaction on Ethereum or after genesis by signing a message using your allocation key and making a transaction on Kusama.
 
-## There are three ways to get KSMA
-
-### Method 1
-Those who participated in the Polkadot sales can claim a proportional amount of KSMA prior to the launch of the network. 
-
-You can do this through [this claims process](https://claims.kusama.network/).
-
-You can refer to [this detailed guide](./method1.md) for a step by step walk through for how to do so.
-
-Having trouble? Get support in the KSMA [Claims chat](https://riot.im/app/#/room/#KSMAClaims:polkadot.builders).
-
-### Method 2
-For those who didn’t participate in the Polkadot sale, KSMA are publicly available upon genesis through a faucet. Find out more here.
-
-### Method 3
-Public projects that need more KSMA can request them by emailing projects@kusama.network.
-
-### Method 2
-
-
-## Create a Kusama account
+## Step 1. Create a Kusama account
 
 You will need a Kusama account to claim the KSMA. There are a few ways you can create one. For most users, we recommend using the [Polkadot UI](https://polkadot.js.org/apps/#/explorer) since it will allow you to store your encrypted keyfile locally.
 
@@ -62,28 +42,21 @@ Another option you may consider using are `subkey` commandline utility which wil
 
 TODO
 
-## Claiming before Kusama genesis
 
-Claiming before the Kusama genesis block means that you will start the network with the balance already in your account. It is really easy to do this using the KSMA claims DApp.
+## Step 2. Get KSMA tokens
 
-### Claim your KSMA with MyCrypto
+There are two methods to claim KSMA.
 
-MyCrypto is the option you will use if you have stored the keys to your DOT allocation on a hardware device like a Ledger Nano S or a Trezor.
+**1. Dot Holders:**
+Those who participated in the Polkadot sales can claim a proportional amount of KSMA prior to the launch of the network. 
 
-> NOTICE: It is much more secure to download and use the MyCrypto app locally, You can always find the most up-to-date releases of the desktop app on their [releases page](https://github.com/MyCryptoHQ/MyCrypto/releases).
+You can do this through [this claims process](https://claims.kusama.network/).
 
-Once you've downloaded the MyCrypto app and run it locally (run it on an airgapped computer for maximum security), head over to the [claiming DApp](https://claims.kusama.network) and enter your Kusama address and select if you are claiming for an amendment (if this sounds strange to you, it means you should NOT click the checkbox). The DApp will generate some transaction data.
+You can refer to [this detailed guide](./method1.md) for a step by step walk through for how to do so.
 
-Head back to the MyCrypto application and click on the Contract tab. Choose the Custom selection for the contract and copy the ABI and address of the Claims contract. The mainnet Claims contract address is 0xXXXXXXXXXXX. Click `Access`.
+Having trouble? Get support in the KSMA [Claims chat](https://riot.im/app/#/room/#KSMAClaims:polkadot.builders).
 
-Select the `claim` function and enter the address of the Ethereum account that holds the balance of DOT allocation for which you would like to claim KSMA.
+**2. Faucet:**
+For those who didn’t participate in the Polkadot sale, KSMA are publicly available upon genesis through a faucet. Find out more [here](./method2.md).
 
-Next enter in the information that the claims DApp outputted for you. For the curious ones, this is the hex representation of your Kusama public key which is how your chosen address is derived.
-
-Unlock your wallet using your preferred method and click "Sign and Send."
-
-You can click on the link to view your transaction on Etherscan, when the transaction is mined to the network then you are finished! When the Kusama network starts you will already have the balance of KSMA in your Kusama address.
-
-## Claiming after genesis
-
-This section of the guide will go live after Kusama's genesis block.
+Public projects that need more KSMA can request them by emailing projects@kusama.network.
