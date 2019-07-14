@@ -1,4 +1,4 @@
-# Kusama User Manual
+# Kusama Network: User Guide
 ![Expect Chaos](./img/Kusama-expect-chaos.png)
 
 ## What is Kusama?
