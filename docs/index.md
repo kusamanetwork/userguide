@@ -1,24 +1,23 @@
 # Kusama User Manual
 
-Text here
+## What is Kusama?
+Kusama is a canary network for developers to run experiments in a Polkadot-like environment. Think of Kusama as an early proving ground for things like upgradeable runtimes, on-chain governance, and parachains. 
 
-## Want to learn more?
+Have fun on Kusama! Explore the politics, hone your validator setup, campaign for the council, or vie for a parachain spot. And most of all... expect chaos.
 
-- [Explore the Wiki](./polkadot/learn/index.md) - Read the informational section of the wiki.
-- [Relevant Links](./polkadot/learn/relevant-links.md) - **Comprehensive links about Polkadot.**
+Kusama is owned by the folks who hold Kusama tokens (KSMA). There’s no central kill switch. The community rules the network through on-chain governance. 
 
-## Want to build on Polkadot?
+Security caveat: Kusama is experimental! There are no guarantees. 
 
-- [Builders Portal](./polkadot/build) - Tools, libraries, and resources to help you build.
-- [Starters Guide](./polkadot/build/build-with-polkadot.md) - **Overview on how to get started building your project on Polkadot.**
 
-## Want to run a node?
+## Who can participate in Kusama?
 
-- [Run a Node](./polkadot/node/) - Information covering running a node on the Polkadot network.
+Everyone!
 
-## Resources
+Those who participated in the Polkadot sales can claim a proportional amount of KSMA through this claims process.
 
-- [Community / Ecosystem](./community.md) - List of community rooms and channels to talk to others about Polkadot.
-- [News](./news.md) - Links to the hottest news about Polkadot, aggregated every week.
-- [Sample Applications](./polkadot/build/examples/) - Sample applications that are built on or currently being built for Polkadot.
-- [Contributing Guide](./contributing.md) - Rules for contributing to the wiki.
+For those who didn’t participate in the Polkadot sale, KSMA are publicly available upon genesis through a faucet.
+
+Public projects that need more KSMA can request them by emailing projects@kusama.network.
+
+As a KSMA holder, you will be able to interact with all the features of Kusama network such as staking (validating and nominating), participating in governance, voting for council members, parachain auctions and all other interactions.
