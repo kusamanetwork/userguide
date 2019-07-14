@@ -1,4 +1,5 @@
 # Kusama User Manual
+![Expect Chaos](./img/Kusama-expect-chaos.png)
 
 ## What is Kusama?
 Kusama is a canary network for developers to run experiments in a Polkadot-like environment. Think of Kusama as an early proving ground for things like upgradeable runtimes, on-chain governance, and parachains. 
