@@ -9,12 +9,14 @@ nav:
     - Claim KSMAs: getstarted/claims.md
     - Dot Holders: getstarted/method1.md
     - Faucet: getstarted/method2.md
- - Kusama Features:
+ - What to Try:
     - Governance: features/governance.md
     - Staking: features/staking.md
     - Validate: features/validate.md
     - Parachain: features/parachain.md
- - Bug Bounty: bug.md
+ - What to Break:
+    - Bug Bounty: bug.md
+    - Adversarial Cheatsheet: adversary.md
  - Community: community.md
  - Code of Conduct: codeofconduct.md
 
