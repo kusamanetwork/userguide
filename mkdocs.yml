@@ -19,6 +19,7 @@ nav:
     - Adversarial Cheatsheet: adversary.md
  - Community: community.md
  - Code of Conduct: codeofconduct.md
+ - FAQ: faq.md
 
 # Configuration for the Material theme
 theme:
@@ -63,7 +64,7 @@ extra:
       link: 'https://medium.com/@polkadotnetwork'
 
 footer:
-  logo: 'img/Polkadot_Logotype_white.png'
+  logo: 'img/Kusama-white-logo.png'
 
 markdown_extensions:
     - admonition
