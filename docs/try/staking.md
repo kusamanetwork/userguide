@@ -5,8 +5,9 @@ Kusama uses NPoS (Nominated Proof-of-Stake), comprising the roles of validators 
 Both validators and nominators will earn rewards— and may be penalized—proportional to the amount that they stake, with validators having the ability to set some payment preferences.
 
 ## Stake and validate
-Requirements: Account, KSMA, well-connected and fast computer
-Create a “stash” account. This account should ideally be set up offline for maximum security.
+Requirements: an account, KSMA, and a well-connected, fast computer
+
+Create a “stash” account; this account should ideally be set up offline for maximum security.
 
 ## Staking and nominating FAQs
 ### What is staking?
@@ -20,8 +21,9 @@ To become a validator, you need a computer with recently up-to-date specificatio
 
 ### What is nominating?
 A nominator publishes a list of validator candidates that they trust, and puts down an amount of KSMA at stake to support them with. If some of these candidates are elected as validators, they share with them the payments, or the sanctions, on a per-staked-KSMA basis. Unlike validators, an unlimited number of parties can participate as nominators. As long as a nominator is diligent in their choice and only supports validator candidates with good security practices, their role carries low risk and provides a continuous source of revenue.
-What is the maximum annual interest possible when nominating?
-The returns for nominating will vary due to several factors including, how many KSMA are staked for a given validator, how much your proportion is in that stake, and how many validators are in the set at a given time. NPoS uses 
+
+### What is the maximum annual interest possible when nominating?
+The returns for nominating will vary due to several factors including, how many KSMA are staked for a given validator, how much your proportion is in that stake, and how many validators are in the set at a given time. NPoS uses @TODO
 
 ### What do I need to nominate?
 All you need are some KSMA and decide which validator to nominate.
