@@ -6,19 +6,19 @@ site_url: https://guide.kusama.network
 nav:
  - Home: index.md
  - Get Started:
-    - Claim KSMAs: getstarted/claims.md
-    - Dot Holders: getstarted/method1.md
-    - Faucet: getstarted/method2.md
+    - Claim KSMAs: start/claims.md
+    - Dot Holders: start/dot-holders.md
+    - Faucet: start/faucet.md
  - What to Try:
-    - Governance: features/governance.md
-    - Staking: features/staking.md
-    - Validate: features/validate.md
-    - Parachain: features/parachain.md
+    - Governance: try/governance.md
+    - Staking: try/staking.md
+    - Validate: try/validate.md
+    - Parachain: try/parachain.md
  - What to Break:
-    - Bug Bounty: bug.md
-    - Adversarial Cheatsheet: adversary.md
+    - Bug Bounty: break/bug-bounty.md
+    - Adversarial Cheatsheet: break/adversary.md
  - Community: community.md
- - Code of Conduct: codeofconduct.md
+ - Code of Conduct: code-of-conduct.md
  - FAQ: faq.md
 
 # Configuration for the Material theme
