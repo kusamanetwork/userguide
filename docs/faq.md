@@ -10,7 +10,7 @@ Kusama is explicitly not a “test net.” It is an early, highly experimental v
 ## What rewards do I get for using Kusama?
 One percent of DOT tokens at Polkadot genesis time (100,000 of the W3F’s DOTs) have been reserved as an eventual incentivisation to Kusama’s stakeholders and community. The precise mechanics of this have not yet been finalised, but will be firmed up closer to genesis time.
 
-There is also a standard bounty program for critical issues. You can find out more here: ...
+There is also a standard bounty program for critical issues. You can find out more [here](./bug.md).
 
 ## What can I do with KSMAs?
 With KSMA, you can validate, nominate validators, bond parachains, pay for interop message passing, and vote on governance referenda. Check out more in the KSMA user guide. 
