@@ -18,4 +18,4 @@
 
 [@kusamanetwork](https://twitter.com/kusamanetwork)
 
-[r/kusama](https://reddit.com/kusama)
+[r/kusama](https://reddit.com/r/kusama)
