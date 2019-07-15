@@ -33,7 +33,7 @@ theme:
     text: 'PT Sans'
     code: 'Ubuntu Mono'
   favicon: 'img/favicon.ico'
-  logo: 'img/Polkadot_symbol_color.png'
+  logo: 'img/Kusama_symbol_color.png'
   feature:
     tabs: false
 
