@@ -12,6 +12,23 @@ You will need a Kusama account to claim the KSMA. There are a few ways you can c
 
 Another option you may consider using are `subkey` commandline utility which will allow you to be extra secure and generate your key on an air-gapped device. A couple other options include using Enzyme in-browser wallet (like MetaMask) or the Polkawallet mobile wallet.
 
+
+### Using polkadot{.js} extension (Chrome or Firefox)
+
+1. Install the polkadot{.js} extension from the [Chrome store](//TODO) or [Firefox store](https://addons.mozilla.org/en-US/firefox/addon/polkadot-js-extension/).
+1. Create a new account by clicking on `I want to create a new account with a new seed`.
+1. Copy the seed phrase and store it somewhere safe. Don't share the seed phrase with anyone, you can use it to access your account if you forget your password or want to import your account again.
+1. Enter a name for the account and type a strong password (at least 6 characters).
+1. Click on `Add the account with the generated seed`.
+1. You can copy the account's address to the clipboard by clicking on its identicon.
+
+### Using `subkey`
+
+1. Follow the build instructions for [Substrate](https://github.com/paritytech/substrate#6-building).
+2. When building, instead of building all of the binaries only build `subkey` by typing `cargo build subkey`.
+3. You can build / use the subkey on a computer that is not connected to the internet for added security.
+4. The command `subkey generate` will generate a new keypair.
+
 ### Using Polkadot UI
 
 1. Navigate to the [Polkadot UI Account's Tab](https://polkadot.js.org/apps/#/accounts) and click on the `Add account` button.
@@ -21,13 +38,6 @@ Another option you may consider using are `subkey` commandline utility which wil
 5. Save your encrypted keystore locally.
 6. The account now appears in your Accounts tab and is backed up to the keystore you just saved.
 7. Click on the DOT identicon to copy the address to the clipboard.
-
-### Using `subkey`
-
-1. Follow the build instructions for [Substrate](https://github.com/paritytech/substrate#6-building).
-2. When building, instead of building all of the binaries only build `subkey` by typing `cargo build subkey`.
-3. You can build / use the subkey on a computer that is not connected to the internet for added security.
-4. The command `subkey generate` will generate a new keypair.
 
 ### Using Enzyme browser wallet (Chrome only)
 
