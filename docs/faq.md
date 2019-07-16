@@ -27,3 +27,6 @@ Long-term, we envision the Kusama network evolving into an experimental testbed 
 
 ## Can I trade or sell my KSM?
 KSMs do not have fiat value. We do not condone the trading or selling of KSM, only using them to experiment on the canary network.
+
+## Is Kusama live yet?  
+Kusama will likely be launched by the community this summer 2019. [Subscribe to the newsletter](https://kusama.network/newsletter) to stay informed of updates! 
