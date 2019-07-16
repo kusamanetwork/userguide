@@ -2,7 +2,7 @@
 
 There are many things you can do on Kusama network. 
 
-You can participate in Kusama governance by making proposals, voting on referenda, and voting for council members. Kusama currently has a basic governance UI, found at [polkadot.js.org/apps/#/democracy](https://polkadot.js.org/apps/#/democracy). You will need KSMA to participate in Kusama governance. 
+You can participate in Kusama governance by making proposals, voting on referenda, and voting for council members. Kusama currently has a basic governance UI, found at [polkadot.js.org/apps/#/democracy](https://polkadot.js.org/apps/#/democracy). You will need KSM to participate in Kusama governance. 
 
 Learn more about [Polkadot’s governance](https://polkadot.network/a-walkthrough-of-polkadots-governance/), which Kusama will model.
 
@@ -13,7 +13,7 @@ You can see active proposals you can vote on the [Polkadot UI](https://polkadot.
 
 ## Participating in Kusama Governance
 
-This guide will help you participate in Kusama governance by  voting on referenda, and voting for council members. Before being able to participate, you will need to create a KSMA account and acquire KSMA tokens. 
+This guide will help you participate in Kusama governance by  voting on referenda, and voting for council members. Before being able to participate, you will need to create a KSM account and acquire KSM tokens. 
 
 ### Viewing active referenda
 
@@ -25,9 +25,9 @@ Proposals currently last 28,800 blocks which equates to approximately 48 hours. 
 ### Voting on active referenda
 
 Prerequisites:
-- Have a KSMA account
-- Have KSMA tokens
-- Note that KSMA tokens will be **locked** during the duration of the referendum
+- Have a KSM account
+- Have KSM tokens
+- Note that KSM tokens will be **locked** during the duration of the referendum
 - If you vote `aye` for a proposal and it passes, your tokens will be **locked** until the proposal has been enacted
 
 1. Using the [Polkadot UI](https://polkadot.js.org/apps/), make sure you have an account and selected the Kusama network under the [settings tab](https://polkadot.js.org/apps/#/settings)
@@ -35,7 +35,7 @@ Prerequisites:
 3. Note the proposal index number, and find out more details about the proposal in the [Kusama forum](https://forum.kusama.network/). 
 4. Head over to the (Extrinsics tab)[https://polkadot.js.org/apps/#/extrinsics], select the account you wish to vote with, and select `democracy` under "submit the following extrinsic." Choose `vote(ref_index,vote)` in the second column, enter the proposal index you noted down in step 3 and vote `aye` to support the proposal, and `nay` to vote against it.
 
-All the tokens in the account you selected will be **locked** until the referendum ends. If you voted `aye` and the proposal has passed, your tokens will be locked until the proposal has been enacted. It is recommended that you do **not** vote with the entirety of your KSMA, as your tokens will be locked up for some time, so you should create a voting account and transfer the amount of KSMA you want to vote with before voting. 
+All the tokens in the account you selected will be **locked** until the referendum ends. If you voted `aye` and the proposal has passed, your tokens will be locked until the proposal has been enacted. It is recommended that you do **not** vote with the entirety of your KSM, as your tokens will be locked up for some time, so you should create a voting account and transfer the amount of KSM you want to vote with before voting. 
 
 ### Voting for council members
 
