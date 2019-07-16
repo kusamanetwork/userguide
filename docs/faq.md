@@ -26,7 +26,7 @@ No, Kusama is a completely different network than Polkadot, but has many of the 
 Long-term, we envision the Kusama network evolving into an experimental testbed for projects and progressive concepts. There’s no central kill switch for Kusama. Kusama will likely continue on as a community project that will operate alongside and complement the Polkadot mainnet.
 
 ## Can I trade or sell my KSM?
-KSMs do not have fiat value. We do not condone the trading or selling of KSM, only using them to experiment on the canary network.
+KSM are utilitarian, we do not condone trading or selling of KSM, only using them to experiment on the network.
 
 ## Is Kusama live yet?  
 Kusama will likely be launched by the community this summer 2019. [Subscribe to the newsletter](https://kusama.network/newsletter) to stay informed of updates! 
