@@ -46,21 +46,21 @@ Another option you may consider using are `subkey` commandline utility which wil
 
 2. Accept the Terms of Use.
 
-<img src="../img/elixir-open-the-extension.png" width=50% />
+<img src="../img/enzyme-open-the-extension.png" width=50% />
 
 3. Make a strong password and make sure to write it down in another place, then click `Create`.
 
-<img src="../img/elixir-choose-a-password.png" width=50% />
+<img src="../img/enzyme-choose-a-password.png" width=50% />
 
 4. Copy the seed phrase and store it somewhere safe. Don't share the seed phrase with anyone, you can use it to access your account if you forget your password or otherwise lose your keystore.
 
-<img src="../img/elixir-generate-seed-phrase.png" width=50% />
+<img src="../img/enzyme-generate-seed-phrase.png" width=50% />
 
 5. Click `Dashboard`.
 
 6. Click the DOT identicon to copy your address to clipboard.
 
-<img src="../img/elixir-copy-your-address.png" width=50% />
+<img src="../img/enzyme-copy-your-address.png" width=50% />
 
 ### Polkawallet
 
