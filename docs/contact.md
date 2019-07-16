@@ -6,7 +6,7 @@
 [wut@kusama.network](mailto:wut@kusama.network)
 
 ## Get help claiming KSM
-[KSM Claims Support chat](https://riot.im/app/#/room/#KSMClaims:polkadot.builders)
+[KSM Claims Support chat](https://riot.im/app/#/room/#KSMAClaims:polkadot.builders)
 
 ## Validator chat
 [Validator chat (English)](https://riot.im/app/#/room/%23KusamaValidatorLounge:web3.foundation)
