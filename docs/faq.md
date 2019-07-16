@@ -16,7 +16,7 @@ There is also a standard bounty program for critical issues. You can find out mo
 With KSMs, you can validate, nominate validators, bond parachains, pay for interop message passing, and vote on governance referenda. 
 
 ## How can I get KSMs?
-The genesis distribution of KSM will be exactly as for DOT: if you purchased DOTs in the sale then you own an equal share of the Kusama network. The Web3 Foundation will use some of its holdings to fund a frictional faucet for those that do not currently hold DOTs. [Here’s how to claim KSM](./getstarted/claims.md).
+The genesis distribution of KSM will be exactly as for DOT: if you purchased DOTs in the sale then you own an equal share of the Kusama network. The Web3 Foundation will use some of its holdings to fund a frictional faucet for those that do not currently hold DOTs. [Here’s how to claim KSM](./start/claims.md).
 
 Alternatively, a public faucet and a KSM grants process will also be made available after genesis. 
 
