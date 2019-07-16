@@ -1,12 +1,12 @@
-# How to get KSMA
+# How to get KSM
 
-The Kusama network is Polkadot's R&D network. This guide will walk you through how to proceed with claiming KSMA (Kusama tokens).
+The Kusama network is Polkadot's R&D network. This guide will walk you through how to proceed with claiming KSM (Kusama tokens).
 
-In order to align Kusama with the existing DOT holders and community, if you are a DOT allocation holder you can claim the equivalent amount of Kusama tokens (ticker: KSMA). There are two ways to claim either before genesis by sending a transaction on Ethereum or after genesis by signing a message using your allocation key and making a transaction on Kusama.
+In order to align Kusama with the existing DOT holders and community, if you are a DOT allocation holder you can claim the equivalent amount of Kusama tokens (ticker: KSM). There are two ways to claim either before genesis by sending a transaction on Ethereum or after genesis by signing a message using your allocation key and making a transaction on Kusama.
 
 ## Step 1. Create a Kusama account
 
-You will need a Kusama account to claim the KSMA. There are a few ways you can create one. For most users, we recommend using the [Polkadot UI](https://polkadot.js.org/apps/#/explorer) since it will allow you to store your encrypted keyfile locally.
+You will need a Kusama account to claim the KSM. There are a few ways you can create one. For most users, we recommend using the [Polkadot UI](https://polkadot.js.org/apps/#/explorer) since it will allow you to store your encrypted keyfile locally.
 
 > NOTICE: Unfortunately at this time Kusama and Substrate chains do not have hardware wallet support using the Ledger or Trezor products. Hopefully soon this will change!
 
@@ -62,7 +62,7 @@ Another option you may consider using are `subkey` commandline utility which wil
 
 <img src="../img/enzyme-copy-your-address.png" width=50% />
 
-### Polkawallet
+### Using Polkawallet
 
 1. Install [Polkawallet](https://polkawallet.io). Click Download and select the link corresponding to the platform you are using. On android you may need to allow installing apps from external sources. On iOS, you may need to "trust" Polkawallet in the General>Profiles & Device Management > Enterprise App Section before running the app.
 
@@ -80,20 +80,20 @@ Another option you may consider using are `subkey` commandline utility which wil
 <img src="../img/polkawallet-copy-address.jpg" width=50% />
 
 
-## Step 2. Get KSMA tokens
+## Step 2. Get KSM tokens
 
-There are two methods to claim KSMA.
+There are two methods to claim KSM.
 
 **1. Dot Holders:**
-Those who participated in the Polkadot sales can claim a proportional amount of KSMA prior to the launch of the network. 
+Those who participated in the Polkadot sales can claim a proportional amount of KSM prior to the launch of the network. 
 
-You can do this through [this claims process](https://claims.kusama.network/).
+You can do this through [this claims process](https://claim.kusama.network/).
 
 You can refer to [this detailed guide](./method1.md) for a step by step walk through for how to do so.
 
-Having trouble? Get support in the KSMA [Claims chat](https://riot.im/app/#/room/#KSMAClaims:polkadot.builders).
+Having trouble? Get support in the KSM [Claims chat](https://riot.im/app/#/room/#KSMAClaims:polkadot.builders).
 
 **2. Faucet:**
-For those who didn’t participate in the Polkadot sale, KSMA are publicly available upon genesis through a faucet. Find out more [here](./method2.md).
+For those who didn’t participate in the Polkadot sale, KSM are publicly available upon genesis through a faucet. Find out more [here](./method2.md).
 
-Public projects that need more KSMA can request them by emailing projects@kusama.network.
+Public projects that need more KSM can request them by emailing projects@kusama.network.
