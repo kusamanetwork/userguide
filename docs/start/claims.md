@@ -38,11 +38,6 @@ Another option you may consider using are `subkey` commandline utility which wil
 5. Click `Dashboard`.
 6. Click the DOT identicon to copy your address to clipboard.
 
-### Polkawallet
-
-TODO
-
-
 ## Step 2. Get KSM tokens
 
 There are two methods to claim KSM.
@@ -50,7 +45,7 @@ There are two methods to claim KSM.
 **1. Dot Holders:**
 Those who participated in the Polkadot sales can claim a proportional amount of KSM prior to the launch of the network. 
 
-You can do this through [this claims process](https://claims.kusama.network/).
+You can do this through [this claims process](https://claim.kusama.network/).
 
 You can refer to [this detailed guide](./method1.md) for a step by step walk through for how to do so.
 
