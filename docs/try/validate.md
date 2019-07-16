@@ -25,7 +25,7 @@ rustup update
   Finally, run this command to install the necessary dependencies for compiling and running the Kusama node software.
 
 ```
-sudo apt install make clang pkg-config libssl-dev
+sudo apt install make clang pkg-config libssl-dev build-essential
 ```
 
 Note - if you are using OS X, if you have Homebrew ( https://brew.sh ) installed, you can issue the following equivalent command INSTEAD of the previous one:
@@ -38,14 +38,13 @@ brew install cmake pkg-config openssl git llvm
 
 You will need to build your `kusama` from the `polkadot` source code.
 
+WARNING: The instructions below will currently build from the `master` branch of the repository.  The official Kusama build will be tagged, and this guide updated, before genesis.  You are welcome to try building now, but you will not get the official version of the validator software.  This means you may not be able to connect to the `Kusama` network or experience other (more serious and harder to debug) issues!
 
 ```bash
 git clone https://github.com/paritytech/polkadot.git
 # To update your node, run from this step.
 cd polkadot
 cargo clean
-git checkout v0.5
-git pull origin v0.5
 ./scripts/init.sh
 cargo install --path ./ --force
 ```
