@@ -17,5 +17,5 @@ To join the Chinese Validator chat, message [Anson](https://raw.githubuserconten
 
 ## Get updates
 [@kusamanetwork](https://twitter.com/kusamanetwork)  
-[Kusama newsletter](https://parity.us3.list-manage.com/subscribe?u=5a2f42d973542fc80fa925cec&id=582fff042a)  
+[Kusama newsletter](https://kusama.network/newsletter)  
 [r/kusama](https://reddit.com/r/kusama)  
