@@ -16,11 +16,11 @@ Another option you may consider using are `subkey` commandline utility which wil
 
 1. Navigate to the [Polkadot UI Account's Tab](https://polkadot.js.org/apps/#/accounts) and click on the `Add account` button.
 
-<img src="../img/polkadotui-find-the-accounts-page.png" width=50% />
+<img src="../../img/polkadotui-find-the-accounts-page.png" width=50% />
 
 2. Enter a name for your account and create a secure password. This password will be used to decrypt your account.
 
-<img src="../img/polkadotui-create-your-account.png" width=50% />
+<img src="../../img/polkadotui-create-your-account.png" width=50% />
 
 3. Ignore the advanced options unless you want to change the type of cryptography used for your keys (either sr25519 or ed25519 works).
 
@@ -31,7 +31,7 @@ Another option you may consider using are `subkey` commandline utility which wil
 6. The account now appears in your Accounts tab and is backed up to the keystore you just saved.
 
 7. Click on the DOT identicon to copy the address to the clipboard.
-<img src="../img/polkadotui-copy-account-address.png" width=50% />
+<img src="../../img/polkadotui-copy-account-address.png" width=50% />
 
 ### Using `subkey`
 
@@ -46,21 +46,21 @@ Another option you may consider using are `subkey` commandline utility which wil
 
 2. Accept the Terms of Use.
 
-<img src="../img/enzyme-open-the-extension.png" width=50% />
+<img src="../../img/enzyme-open-the-extension.png" width=50% />
 
 3. Make a strong password and make sure to write it down in another place, then click `Create`.
 
-<img src="../img/enzyme-choose-a-password.png" width=50% />
+<img src="../../img/enzyme-choose-a-password.png" width=50% />
 
 4. Copy the seed phrase and store it somewhere safe. Don't share the seed phrase with anyone, you can use it to access your account if you forget your password or otherwise lose your keystore.
 
-<img src="../img/enzyme-generate-seed-phrase.png" width=50% />
+<img src="../../img/enzyme-generate-seed-phrase.png" width=50% />
 
 5. Click `Dashboard`.
 
 6. Click the DOT identicon to copy your address to clipboard.
 
-<img src="../img/enzyme-copy-your-address.png" width=50% />
+<img src="../../img/enzyme-copy-your-address.png" width=50% />
 
 ### Using Polkawallet
 
@@ -68,7 +68,7 @@ Another option you may consider using are `subkey` commandline utility which wil
 
 2. Once opening the app, copy the seed phrase and store it in a safe place, don't share the seed phrase with anyone, you can use it to access your account if you forget your password or otherwise lose your keystore.
 
-<img src="../img/polkawallet-create-account.jpg" width=50% />
+<img src="../../img/polkawallet-create-account.jpg" width=50% />
 
 3. Name your account and make a strong password, make sure to write it down in another place, then click Save.
 
@@ -76,8 +76,8 @@ Another option you may consider using are `subkey` commandline utility which wil
 
 5. Click on the pink QR Code symbol, and select Copy address to copy your address to clipboard.
 
-<img src="../img/polkawallet-accounts-page.jpg" width=50% />
-<img src="../img/polkawallet-copy-address.jpg" width=50% />
+<img src="../../img/polkawallet-accounts-page.jpg" width=50% />
+<img src="../../img/polkawallet-copy-address.jpg" width=50% />
 
 
 ## Step 2. Get KSM tokens
