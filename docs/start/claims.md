@@ -85,13 +85,13 @@ Another option you may consider using are `subkey` commandline utility which wil
 There are two methods to claim KSM.
 
 **1. Dot Holders:**
-Those who participated in the Polkadot sales can claim a proportional amount of KSM prior to the launch of the network. 
+Those who participated in the Polkadot sales can claim a proportional amount of KSM prior to the launch of the network.
 
 You can do this through [this claims process](https://claim.kusama.network/).
 
 You can refer to [this detailed guide](./dot-holders.md) for a step by step walk through for how to do so.
 
-Having trouble? Get support in the KSM [Claims chat](https://riot.im/app/#/room/#KSMAClaims:polkadot.builders).
+Having trouble? Get support in the KSM [Claims chat](https://riot.im/app/#/room/#KSMClaims:polkadot.builders).
 
 **2. Faucet:**
 For those who didn’t participate in the Polkadot sale, KSM are publicly available after genesis through a faucet. Find out more [here](./faucet.md).

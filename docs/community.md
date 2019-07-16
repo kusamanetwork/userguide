@@ -8,7 +8,7 @@
 
 ## Get help claiming KSM
 
-[KSM Claims Support chat](https://riot.im/app/#/room/#KSMAClaims:polkadot.builders)
+[KSM Claims Support chat](https://riot.im/app/#/room/#KSMClaims:polkadot.builders)
 
 ## Report an issue or submit bugs
 

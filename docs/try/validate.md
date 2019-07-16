@@ -99,7 +99,7 @@ The `stash` and `controller` accounts should have at least 150 milliKSM to cover
 
 The `session` account doesn't need any KSM in order to function.
 
-You can take a look at the [claiming KSM user guide](https://kusamanetwork.github.io/KSMA-dapp/) if you  participated in the DOT token sale in 2017.  You may also use the [Kusama Faucet](https://faucet.kusama.network) to obtain more KSM later.
+You can take a look at the [claiming KSM user guide](https://kusamanetwork.github.io/KSM-dapp/) if you  participated in the DOT token sale in 2017.  You may also use the [Kusama Faucet](https://faucet.kusama.network) to obtain more KSM later.
 
 ## Bond KSM
 
