@@ -1,37 +1,38 @@
 # 常见问题
 
-## What is Kusama?
+## 什么是Kusama
 
-Kusama is an early, unaudited and unrefined release of Polkadot. Kusama will serve as a proving ground, allowing teams and developers to build and deploy a parachain or try out Polkadot’s governance, staking, nomination and validation functionality in a real environment.
+Kusama是一个早期的，未经审计和优化的波卡发行版本。Kusama作为一个试验场，项目方和开发者可以在这里开发部署平行链，或者在真实环境中尝试波卡的治理，质押，提名和验证功能。
 
-## What is a canary network?
+## 什么是预警网络？
 
-Kusama is meant to be Polkadot’s canary network, warning us of issues to keep things safe for the developers downchain. Without a network like Kusama, there is no reasonable way to fully understand the potential dangers that lie ahead. We are building bleeding-edge, experimental technology, which means there are no promises about what Kusama will do or how it will work  – expect a lot of chaos (and a little fun).
+Kusama作为波卡的预警网络，通过提供对一些事务的预警从而保障开发者的安全。如果没有像Kusama这样的网络，就没有合理的方法充分理解今后潜在的危险。我们在构建最尖端的试验性技术。也就是说，没有办法保证Kusama会做什么，或者它将如何运作——敬请期待许多混乱（和一些乐趣）
 
-Kusama is explicitly not a “test net.” It is an early, highly experimental version of Polkadot presenting real economic conditions. The community will own the network – there will be no central kill switch. Kusama will exist as long as its community maintains it and we envision it will cater to new, early functionality and projects preparing to develop and deploy on Polkadot.
+很明显Kusama不是一个测试网。它是一个早期的，高度试验性的波卡版本，且具有实际的经济场景。这个网络属于社区，不会因为中心化的主网切换而消失。只要有社区的维护，它就会继续存在下去。我们设想它会适合那些新颖的，早期的功能，也适合那些准备在波卡上开发和部署的项目。
 
-## What rewards do I get for using Kusama?
+## 使用Kusama能得到什么奖励？
 
-One percent of DOT tokens at Polkadot genesis time (100,000 of the W3F’s DOTs) have been reserved as an eventual incentivisation to Kusama’s stakeholders and community. The precise mechanics of this have not yet been finalised, but will be firmed up closer to genesis time.
+波卡创世时1%的DOT（Web3基金会的100000个DOT）将被留作可能的激励，发放给Kusama的持币人和社区。具体的机制还没有被决定，不过会在接近创世的时候确定。
 
-There is also a standard bounty program for critical issues. You can find out more [here](./break/bug-bounty.md).
+此外也会有为重大问题准备的奖励计划。你可以在[这里](./break/bug-bounty.md)得到更多消息。
 
-## What can I do with KSMs?
+## 我可以用KSM做什么？
 
-With KSMs, you can validate, nominate validators, bond parachains, pay for interop message passing, and vote on governance referenda.
+持有KSM，你可以验证、提名验证人、绑定平行链、支付交互消息费用，以及参与治理投票。
 
-## How can I get KSMs?
+## 我如何获取KSM？
 
-The genesis distribution of KSM will be exactly as for DOT: if you purchased DOTs in the sale then you own an equal share of the Kusama network. The Web3 Foundation will use some of its holdings to fund a frictional faucet for those that do not currently hold DOTs. [Here’s how to claim KSM](./start/claims.md).
+KSM在创世区块中的分配将和DOT完全相同：如果你之前购买过DOT，你会在Kusama网络中获得相同的份额。Web3基金会会使用它的一部分KSM为那些现在没有DOT的人提供一个水龙头。[点击这里查看如何获取KSM](./start/claims.md)。
 
-Alternatively, a public faucet and a KSM grants process will also be made available after genesis.
+此外，创世后将会有一个公共水龙头和KSM拨款发放流程。
 
-## Will Kusama eventually turn into Polkadot mainnet?
+## Kusama最后会变成波卡的主网吗？
 
-No, Kusama is a completely different network than Polkadot, but has many of the same features of Polkadot (like parachains) and uses an early version of the code that will be used for Polkadot.
+不，Kusama是一个完全不同于波卡的网络。不过它具有很多和波卡相同的特性（比如平行链）。它使用了为波卡网络准备的代码的早期版本。
 
-Long-term, we envision the Kusama network evolving into an experimental testbed for projects and progressive concepts. There’s no central kill switch for Kusama. Kusama will likely continue on as a community project that will operate alongside and complement the Polkadot mainnet.
+长期来看，我们设想Kusama会演变成一个为项目和进步理念准备的试验台。Kusama不会有中心化的主网切换。
+Kusama很有可能会以一个社区项目的形式存续。它将不同于波卡主网，同时也将成为波卡主网的一个补充。
 
-## Can I trade or sell my KSM?
+## 我可以交易或者出售我的KSM吗?
 
-KSMs do not have fiat value. We do not condone the trading or selling of KSM, only using them to experiment on the canary network.
+KSM并没有法币价值。我们不接受交易或者出售KSM的行为。应该仅仅把它们用在预警网络上的试验行为。
