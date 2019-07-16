@@ -89,11 +89,11 @@ Those who participated in the Polkadot sales can claim a proportional amount of 
 
 You can do this through [this claims process](https://claim.kusama.network/).
 
-You can refer to [this detailed guide](./method1.md) for a step by step walk through for how to do so.
+You can refer to [this detailed guide](./dot-holders.md) for a step by step walk through for how to do so.
 
 Having trouble? Get support in the KSM [Claims chat](https://riot.im/app/#/room/#KSMAClaims:polkadot.builders).
 
 **2. Faucet:**
-For those who didn’t participate in the Polkadot sale, KSM are publicly available upon genesis through a faucet. Find out more [here](./method2.md).
+For those who didn’t participate in the Polkadot sale, KSM are publicly available upon genesis through a faucet. Find out more [here](./faucet.md).
 
 Public projects that need more KSM can request them by emailing projects@kusama.network.
