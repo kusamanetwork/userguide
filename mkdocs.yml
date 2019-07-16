@@ -6,7 +6,7 @@ site_url: https://guide.kusama.network
 nav:
  - Home: index.md
  - Get Started:
-    - Claim KSMAs: start/claims.md
+    - Claim KSM: start/claims.md
     - Dot Holders: start/dot-holders.md
     - Faucet: start/faucet.md
  - What to Try:
