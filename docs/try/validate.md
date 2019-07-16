@@ -40,7 +40,7 @@ You will need to build your `kusama` from the `polkadot` source code.
 
 
 ```bash
-git clone git@github.com:paritytech/polkadot.git
+git clone https://github.com/paritytech/polkadot.git
 # To update your node, run from this step.
 cd polkadot
 cargo clean
@@ -49,6 +49,8 @@ git pull origin v0.5
 ./scripts/init.sh
 cargo install --path ./ --force
 ```
+
+Note: If you prefer to use SSH rather than HTTPS, you can replace the first line of the above with `git clone git@github.com:paritytech/polkadot.git`.
 
 This step will take a while (generally 15 - 30 minutes, depending on your hardware).
 
@@ -67,9 +69,9 @@ After installing all related dependencies, you can start your Kusama node. Start
 polkadot --chain kusama
 ```
 
-Depending on the size of the chain when you do this, this step may take anywhere from a few minutes to a few hours.  
+Depending on the size of the chain when you do this, this step may take anywhere from a few minutes to a few hours.
 
-If you are interested in determining how much longer you have to go, your server logs (printed to STDOUT from the `polkadot` process) will tell you the latest block your node has processed and verified.  You can then compare that to the current highest block via [Telemetry](https://telemetry.polkadot.io/#/Alexander) or [PolkadotJS Block Explorer](https://polkadot.js.org/apps/#/explorer) 
+If you are interested in determining how much longer you have to go, your server logs (printed to STDOUT from the `polkadot` process) will tell you the latest block your node has processed and verified.  You can then compare that to the current highest block via [Telemetry](https://telemetry.polkadot.io/#/Alexander) or [PolkadotJS Block Explorer](https://polkadot.js.org/apps/#/explorer)
 
 ## Create accounts
 
@@ -91,13 +93,13 @@ Once all accounts have been created, the overview should show you something like
 
 ## Get token
 
-To continue the following steps, you are required to get some KSM tokens for the `stash` and `controller` accounts in order to submit transactions and use these KSM as stake.  
+To continue the following steps, you are required to get some KSM tokens for the `stash` and `controller` accounts in order to submit transactions and use these KSM as stake.
 
 The `stash` and `controller` accounts should have at least 150 milliKSM to cover the existential deposit and transaction fees.  You can use the "send" functionality from the Accounts tab ( https://polkadot.js.org/apps/#/accounts ) of the Explorer to move the appropriate number of KSM to each account.  It is recommended to keep the majority of your KSM in the `stash` account, and only a small amount of KSM in the `controller` account for necessary actions.
 
 The `session` account doesn't need any KSM in order to function.
 
-You can take a look at the [claiming KSM user guide](https://kusamanetwork.github.io/KSMA-dapp/) if you  participated in the DOT token sale in 2017.  You may also use the [Kusama Faucet](https://faucet.kusama.network) to obtain more KSM later.
+You can take a look at the [claiming KSM user guide](https://kusamanetwork.github.io/KSM-dapp/) if you  participated in the DOT token sale in 2017.  You may also use the [Kusama Faucet](https://faucet.kusama.network) to obtain more KSM later.
 
 ## Bond KSM
 
@@ -124,7 +126,7 @@ After a few seconds, you should see an "ExtrinsicSuccess" message.  You should n
 
 ![dashboard validate](../img/guides/how-to-validate/polkadot-dashboard-set-session-key.jpg)
 
-Click on `Set Session Key`.  
+Click on `Set Session Key`.
 Select the `session` account created previously and click on `Set Session Key`.
 
 ## Validate
@@ -142,9 +144,9 @@ polkadot --chain kusama --validator --key="SESSION_ACCOUNT_SEED_MNEMONIC" --name
 
 Be sure to put the mnemonic phrase in double quotes ( `"`), otherwise the shell will not be able to parse it.
 
-You can give your validator any name that you like, but note that others will be able to see it, and it will be included in the list of all servers using the same telemetry server.  Since numerous people are using telemetry, it is recommended that you choose something likely to be unique. 
+You can give your validator any name that you like, but note that others will be able to see it, and it will be included in the list of all servers using the same telemetry server.  Since numerous people are using telemetry, it is recommended that you choose something likely to be unique.
 
-Make sure that the address generated from the seed corresponds to your `session` account's address. 
+Make sure that the address generated from the seed corresponds to your `session` account's address.
 
 ![terminal session key verification](../img/guides/how-to-validate/polkadot-node-seed.jpg)
 
