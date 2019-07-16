@@ -1,10 +1,10 @@
 # Contributing
 
-## This [wiki](https://github.com/w3f/Polkadot-wiki) is an **OPEN-ish Open Source Project**
+## This [wiki](https://guide.kusama.network) is an **OPEN-ish Open Source Project**
 
-This is an informational resource on Polkadot and the Polkadot ecosystem.
+This is an informational resource on Kusama and the Kusama ecosystem.
 
-Pull requests or other contributions from the community are encouraged!  However, the final decision to add content will be made by the Web3 Foundation.
+Pull requests or other contributions from the community are encouraged!  
 
 ## Rules
 
