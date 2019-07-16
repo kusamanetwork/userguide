@@ -6,9 +6,9 @@
 
 [Kusama chat](https://riot.im/app/#/room/#kusamawatercooler:polkadot.builders)
 
-## Get help claiming KSMA
+## Get help claiming KSM
 
-[KSMA Claims Support chat](https://riot.im/app/#/room/#KSMAClaims:polkadot.builders)
+[KSM Claims Support chat](https://riot.im/app/#/room/#KSMAClaims:polkadot.builders)
 
 ## Report an issue or submit bugs
 
