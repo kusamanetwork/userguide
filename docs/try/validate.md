@@ -4,7 +4,7 @@
 
 Before setting up the validator, you will most likely want to take a look at the [Secure Validator Setup Page](./secure-validator-setup.md) to make sure you know what factors you should consider when designing your validator architecture.
 
-You should **NOT** run a validator if you have KSMA, but you do not have enough technical knowledge to set up a validator. Any KSMA that you stake for your validator is liable to be slashed, meaning that an insecure or improper setup may result in loss of KSMA tokens!  If you are not confident in your ability to run a validator node, it is recommended to nominate your KSMA to a trusted validator node, instead.
+You should **NOT** run a validator if you have KSM, but you do not have enough technical knowledge to set up a validator. Any KSM that you stake for your validator is liable to be slashed, meaning that an insecure or improper setup may result in loss of KSM tokens!  If you are not confident in your ability to run a validator node, it is recommended to nominate your KSM to a trusted validator node, instead.
 
 For this tutorial, we will use Ubuntu 18.04. No matter which operating system you are using, setup should be very similar. There are many [VPS](#vps-list) choices out there; feel free to pick the one you like.
 
@@ -91,18 +91,18 @@ Once all accounts have been created, the overview should show you something like
 
 ## Get token
 
-To continue the following steps, you are required to get some KSMA tokens for the `stash` and `controller` accounts in order to submit transactions and use these KSMA as stake.  
+To continue the following steps, you are required to get some KSM tokens for the `stash` and `controller` accounts in order to submit transactions and use these KSM as stake.  
 
-The `stash` and `controller` accounts should have at least 150 milliKSMA to cover the existential deposit and transaction fees.  You can use the "send" functionality from the Accounts tab ( https://polkadot.js.org/apps/#/accounts ) of the Explorer to move the appropriate number of KSMA to each account.  It is recommended to keep the majority of your KSMA in the `stash` account, and only a small amount of KSMA in the `controller` account for necessary actions.
+The `stash` and `controller` accounts should have at least 150 milliKSM to cover the existential deposit and transaction fees.  You can use the "send" functionality from the Accounts tab ( https://polkadot.js.org/apps/#/accounts ) of the Explorer to move the appropriate number of KSM to each account.  It is recommended to keep the majority of your KSM in the `stash` account, and only a small amount of KSM in the `controller` account for necessary actions.
 
-The `session` account doesn't need any KSMA in order to function.
+The `session` account doesn't need any KSM in order to function.
 
-You can take a look at the [claiming KSMA user guide](https://kusamanetwork.github.io/KSMA-dapp/) if you  participated in the DOT token sale in 2017.  You may also use the [Kusama Faucet](https://faucet.kusama.network) to obtain more KSMA later.
+You can take a look at the [claiming KSM user guide](https://kusamanetwork.github.io/KSMA-dapp/) if you  participated in the DOT token sale in 2017.  You may also use the [Kusama Faucet](https://faucet.kusama.network) to obtain more KSM later.
 
-## Bond KSMA
+## Bond KSM
 
 It is now time to setup our validator. We will do the following:
-- Bond the KSMA of the `stash` account. These KSMA will be put at stake for the security of the network and can be slashed.
+- Bond the KSM of the `stash` account. These KSM will be put at stake for the security of the network and can be slashed.
 - Select the `controller`. This is the account that will decide when to start or stop validating.
 - Select the `session` account. This is the account whose seed will be used to run the node.
 
@@ -111,9 +111,9 @@ First, go to [Staking](https://polkadot.js.org/apps/#/staking/actions) section. 
 ![dashboard bonding](../img/guides/how-to-validate/polkadot-dashboard-bonding.jpg)
 
 
-- **Stash account** - Select your `stash` account.  In this example, we will bond 100 milliKSMAs - make sure that your stash account contains _at least_ this much.  You can, of course, stake more than this.
-- **Controller account** - Select the `controller` account created earlier.  This account will also need a small amount of KSMA in order to start and stop validating.
-- **Value bonded** - How much KSMA from the `stash` account you want to bond/stake. Note that you do not need to bond all of the KSMA in that account.  Also note that tou can always bond _more_ KSMA later.  However, _withdrawing_ any bonded amount requires the bonding duration period to be over (several months at the time of writing).
+- **Stash account** - Select your `stash` account.  In this example, we will bond 100 milliKSMs - make sure that your stash account contains _at least_ this much.  You can, of course, stake more than this.
+- **Controller account** - Select the `controller` account created earlier.  This account will also need a small amount of KSM in order to start and stop validating.
+- **Value bonded** - How much KSM from the `stash` account you want to bond/stake. Note that you do not need to bond all of the KSM in that account.  Also note that tou can always bond _more_ KSM later.  However, _withdrawing_ any bonded amount requires the bonding duration period to be over (several months at the time of writing).
 - **Payment destination** - The account where the rewards from validating are sent. More info [here](https://wiki.polkadot.network/en/latest/polkadot/learn/staking/#reward-distribution).
 
 Once everything is filled in properly, click `Bond` and sign the transaction (with your `stash` account).
