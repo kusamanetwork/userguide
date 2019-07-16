@@ -12,18 +12,18 @@ One percent of DOT tokens at Polkadot genesis time (100,000 of the W3F’s DOTs)
 
 There is also a standard bounty program for critical issues. You can find out more [here](./bug.md).
 
-## What can I do with KSMAs?
-With KSMA, you can validate, nominate validators, bond parachains, pay for interop message passing, and vote on governance referenda. Check out more in the KSMA user guide. 
+## What can I do with KSMs?
+With KSMs, you can validate, nominate validators, bond parachains, pay for interop message passing, and vote on governance referenda. 
 
-## How can I get KSMAs?
-The genesis distribution of KSMA will be exactly as for DOT: if you purchased DOTs in the sale then you own an equal share of the Kusama network. The Web3 Foundation will use some of its holdings to fund a frictional faucet for those that do not currently hold DOTs. [Here’s how to claim KSMA](./getstarted/claims.md).
+## How can I get KSMs?
+The genesis distribution of KSM will be exactly as for DOT: if you purchased DOTs in the sale then you own an equal share of the Kusama network. The Web3 Foundation will use some of its holdings to fund a frictional faucet for those that do not currently hold DOTs. [Here’s how to claim KSM](./getstarted/claims.md).
 
-Alternatively, a public faucet and a KSMA grants process will also be made available upon genesis. 
+Alternatively, a public faucet and a KSM grants process will also be made available after genesis. 
 
 ## Will Kusama eventually turn into Polkadot mainnet?
 No, Kusama is a completely different network than Polkadot, but has many of the same features of Polkadot (like parachains) and uses an early version of the code that will be used for Polkadot. 
 
 Long-term, we envision the Kusama network evolving into an experimental testbed for projects and progressive concepts. There’s no central kill switch for Kusama. Kusama will likely continue on as a community project that will operate alongside and complement the Polkadot mainnet.
 
-## Can I trade or sell my KSMA?
-KSMAs do not have fiat value. We do not condone the trading or selling of KSMA, only using them to experiment on the canary network.
+## Can I trade or sell my KSM?
+KSMs do not have fiat value. We do not condone the trading or selling of KSM, only using them to experiment on the canary network.
