@@ -18,7 +18,7 @@ MyCrypto is the option you will use if you have stored the keys to your DOT allo
 
 Once you've downloaded the MyCrypto app and run it locally (run it on an airgapped computer for maximum security), head over to the [claiming DApp](https://claim.kusama.network) and enter your Kusama address and select if you are claiming for an amendment (if this sounds strange to you, it means you should NOT click the checkbox). The DApp will generate some transaction data.
 
-Head back to the MyCrypto application and click on the Contract tab. Choose the Custom selection for the contract and copy the ABI and address of the Claims contract. The mainnet Claims contract address is 0xXXXXXXXXXXX. Click `Access`.
+Head back to the MyCrypto application and click on the Contract tab. Choose the Custom selection for the contract and copy the ABI and address of the Claims contract. The mainnet Claims contract address is `0x9a1B58399EdEBd0606420045fEa0347c24fB86c2`. Click `Access`.
 
 Select the `claim` function and enter the address of the Ethereum account that holds the balance of DOT allocation for which you would like to claim KSM.
 
