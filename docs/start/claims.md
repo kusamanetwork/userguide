@@ -12,7 +12,7 @@ For most users, we recommend using the [Polkadot UI](https://polkadot.js.org/app
 
 > NOTICE: Unfortunately at this time Kusama does not have hardware wallet support using the Ledger or Trezor products. Hopefully soon this will change!
 
-Another option you may consider using are `subkey` commandline utility which will allow you to be extra secure and generate your key on an air-gapped device. Two other options include using Enzyme in-browser wallet (like MetaMask) or the Polkawallet mobile wallet. But these require an extra step.
+Another option you may consider using is the `subkey` commandline utility which will allow you to be extra secure and generate your key on an air-gapped device. Additional two other options include the Enzyme browser extension wallet or the Polkawallet mobile wallet. But these require an extra step to make into Kusama addresses.
 
 ### Using Polkadot UI
 
@@ -64,7 +64,7 @@ Secret phrase `robust mass coconut rocket mean runway wall check tennis update m
   Address (SS58): 5HhALDcW6EabKJoXMPV6RdhDzSXiMiUrh1qnjQbVufqAHg3z
 ```
 
-The `Address (SS58)` field is what you should use to claim your KSM tokens. Never share your `Secret phrase` or `Secret seed`, as these can both control your funds.
+The `Public key (hex)` field is what you should use to claim your KSM tokens. Never share your `Secret phrase` or `Secret seed`, as these can both control your funds. (NOTE: Your Kusama address will be different than the one display by `subkey`. To see your Kusama address see the section [Getting Kusama address from Substrate or Polkadot address](#kusama-from-substrate-address)).
 
 See the [`subkey` documentation](https://substrate.dev/docs/en/ecosystem/subkey) for more usage examples.
 
