@@ -35,10 +35,36 @@ Another option you may consider using are `subkey` commandline utility which wil
 
 ### Using `subkey`
 
+#### Installation
+
+You can install `subkey` with this one-line command:
+
+```
+cargo install --force --git https://github.com/paritytech/substrate subkey
+```
+
+Alternatively, you can build `subkey` from the source code.
+
 1. Follow the build instructions for [Substrate](https://github.com/paritytech/substrate#6-building).
-2. When building, instead of building all of the binaries only build `subkey` by typing `cargo build subkey`.
-3. You can build / use the subkey on a computer that is not connected to the internet for added security.
-4. The command `subkey generate` will generate a new keypair.
+2. When building, instead of building all of the binaries, only build `subkey` by typing `cargo build -p subkey`.
+
+#### Usage
+
+You can use subkey on a computer that is not connected to the internet for added security.
+
+The command `subkey generate` will generate a new keypair. If you want to be more secure, use 24 words, `subkey generate --words 24`.
+
+```
+$ subkey generate
+Secret phrase `robust mass coconut rocket mean runway wall check tennis update mixed raise` is account:
+  Secret seed: 0x8152195386e1add616700e1d55e1ac1e63f68bd4bbcd6228ffca3da284db3f40
+  Public key (hex): 0xf8fb1fe5040e3ee3d8ab4b444e2124498cf932d6b5c9544b2e86bec19507532f
+  Address (SS58): 5HhALDcW6EabKJoXMPV6RdhDzSXiMiUrh1qnjQbVufqAHg3z
+```
+
+The `Address (SS58)` field is what you should use to claim your KSM tokens. Never share your `Secret phrase` or `Secret seed`, as these can both control your funds.
+
+See the [`subkey` documentation](https://substrate.dev/docs/en/ecosystem/subkey) for more usage examples.
 
 ### Using Enzyme browser wallet (Chrome only)
 
