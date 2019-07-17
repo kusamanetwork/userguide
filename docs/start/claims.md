@@ -1,16 +1,18 @@
 # How to get KSM
 
-The Kusama network is Polkadot's R&D network. This guide will walk you through how to proceed with claiming KSM (Kusama tokens).
+The Kusama network is Polkadot's experimental community-focused R&D network. If you hold the DOT indicator token you are entitled to claim an equivalent amount of KSM on the Kusama network. This is so that the Kusama network is aligned with the existing DOT holders and community.
 
-In order to align Kusama with the existing DOT holders and community, if you are a DOT allocation holder you can claim the equivalent amount of Kusama tokens (ticker: KSM). There are two ways to claim either before genesis by sending a transaction on Ethereum or after genesis by signing a message using your allocation key and making a transaction on Kusama.
+The two ways to claim the KSM depends on whether you are claiming before or after the Kusama genesis. Since Kusama has not launched at the time of writing this guide, it will only cover the first case: claiming by sending a transaction on Ethereum with the key holding  DOT indicator tokens. After Kusama genesis, it will be updated to cover the second case: claiming by signing a message with the key holding DOT indicator tokens.
 
 ## Step 1. Create a Kusama account
 
-You will need a Kusama account to claim the KSM. There are a few ways you can create one. For most users, we recommend using the [Polkadot UI](https://polkadot.js.org/apps/#/explorer) since it will allow you to store your encrypted keyfile locally.
+You will need to generate a Kusama account to claim KSM. There are a few ways you can create one. 
 
-> NOTICE: Unfortunately at this time Kusama and Substrate chains do not have hardware wallet support using the Ledger or Trezor products. Hopefully soon this will change!
+For most users, we recommend using the [Polkadot UI](https://polkadot.js.org/apps/#/explorer) since it will allow you to store your encrypted keystore locally.
 
-Another option you may consider using are `subkey` commandline utility which will allow you to be extra secure and generate your key on an air-gapped device. A couple other options include using Enzyme in-browser wallet (like MetaMask) or the Polkawallet mobile wallet.
+> NOTICE: Unfortunately at this time Kusama does not have hardware wallet support using the Ledger or Trezor products. Hopefully soon this will change!
+
+Another option you may consider using are `subkey` commandline utility which will allow you to be extra secure and generate your key on an air-gapped device. Two other options include using Enzyme in-browser wallet (like MetaMask) or the Polkawallet mobile wallet. But these require an extra step.
 
 ### Using Polkadot UI
 
