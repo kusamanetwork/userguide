@@ -6,11 +6,13 @@ In order to align Kusama with the existing DOT holders and community, if you are
 
 ## Step 1. Create a Kusama account
 
-You will need a Kusama account to claim the KSM. There are a few ways you can create one. For most users, we recommend using the [Polkadot UI](https://polkadot.js.org/apps/#/explorer) since it will allow you to store your encrypted keyfile locally.
+You will need a Kusama account to claim the KSM. There are a few ways you can create one. For most users, we recommend using the [Polkadot UI](https://polkadot.js.org/apps/#/explorer) since it will allow you to store your encrypted keyfile locally. 
 
 > NOTICE: Unfortunately at this time Kusama and Substrate chains do not have hardware wallet support using the Ledger or Trezor products. Hopefully soon this will change!
 
 Another option you may consider using are `subkey` commandline utility which will allow you to be extra secure and generate your key on an air-gapped device. A couple other options include using Enzyme in-browser wallet (like MetaMask) or the Polkawallet mobile wallet.
+
+Please also note that the addresses currently displayed by these options will not match your address once the Kusama Network is live - the important part is the pubkey and secret that are created. 
 
 ### Using Polkadot UI
 
