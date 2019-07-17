@@ -41,7 +41,7 @@ All the tokens in the account you selected will be **locked** until the referend
 
 1. Using the [Polkadot UI](https://polkadot.js.org/apps/), make sure you have an account and selected the Kusama network under the [settings tab](https://polkadot.js.org/apps/#/settings)
 2. Navigate to the [Council tab](https://polkadot.js.org/apps/#/council) to see current council candidates.
-3. In the [Kusama forum](https://forum.kusama.network/), you will find a tThis thursdayhread dedicated to council members proposing their candidacy and find out more information.
+3. In the [Kusama forum](https://forum.kusama.network/), you will find a thread dedicated to council members proposing their candidacy and find out more information.
 4. Head over to the [Extrinsics tab](https://polkadot.js.org/apps/#/extrinsics), select the account you wish to vote with, and select `council` under "submit the following extrinsic." Choose `setApprovals(votes, index)` in the second column, enter the council index of the candidate you wish to vote for, and select `yes` to support the candidate, and `nay` to vote against it.
 5. Click `Submit transaction` and sign the transaction.
 
