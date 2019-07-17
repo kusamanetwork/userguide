@@ -16,7 +16,7 @@ MyCrypto is the option you will use if you have stored the keys to your DOT allo
 
 > NOTICE: It is much more secure to download and use the MyCrypto app locally, You can always find the most up-to-date releases of the desktop app on their [releases page](https://github.com/MyCryptoHQ/MyCrypto/releases).
 
-Once you've downloaded the MyCrypto app and run it locally (run it on an airgapped computer for maximum security), head over to the [claiming DApp](https://claim.kusama.network) and enter your Kusama address and select if you are claiming for an amendment (if this sounds strange to you, it means you should NOT click the checkbox). The DApp will generate some transaction data.
+Once you've downloaded the MyCrypto app and run it locally (run it on an airgapped computer for maximum security), head over to the [claiming DApp](https://claim.kusama.network) and enter your SS58 (Kusama, Substrate, or Polkadot) formatted address and select if you are claiming for an amendment (if this sounds strange to you, it means you should NOT click the checkbox). The DApp will generate some transaction data.
 
 Head back to the MyCrypto application and click on the Contract tab. Choose the Custom selection for the contract and copy the ABI and address of the Claims contract. The mainnet Claims contract address is `0x9a1B58399EdEBd0606420045fEa0347c24fB86c2`. Click `Access`.
 
@@ -26,7 +26,7 @@ Next enter in the information that the claims DApp outputted for you. For the cu
 
 Unlock your wallet using your preferred method and click "Sign and Send."
 
-You can click on the link to view your transaction on Etherscan, when the transaction is mined to the network then you are finished! When the Kusama network starts you will already have the balance of KSM in your Kusama address.
+You can click on the link to view your transaction on Etherscan, when the transaction is mined to the network then you are finished! When the Kusama network starts you will already have the balance of KSM in the address associated with the public key you provided. Please note that if you provided an SS58 formatted address for Polkadot or generic Substrate chains, your address on Kusama once mainnet is launched might be different than the one you provided - you still control this address with the same secret.
 
 
 ## Claiming after Kusama genesis
