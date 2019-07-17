@@ -16,6 +16,8 @@ Another option you may consider using is the `subkey` commandline utility which 
 
 ### Using Polkadot UI
 
+1. Open up the [Polkadot UI](https://polkadot.js.org/apps) and navigate to the `Settings` tab. Find the configuration dropdown for `address network prefix` and select `Kusama (canary)`. Click `Save and reload`.
+
 1. Navigate to the [Polkadot UI Account's Tab](https://polkadot.js.org/apps/#/accounts) and click on the `Add account` button.
 
 <img src="../../img/polkadotui-find-the-accounts-page.png" width=50% />
