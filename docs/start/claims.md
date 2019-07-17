@@ -90,6 +90,8 @@ See the [`subkey` documentation](https://substrate.dev/docs/en/ecosystem/subkey)
 
 <img src="../../img/enzyme-copy-your-address.png" width=50% />
 
+7. [Get the Kusama address from the Substrate address](#kusama-from-substrate-address)
+
 ### Using Polkawallet
 
 1. Install [Polkawallet](https://polkawallet.io). Click Download and select the link corresponding to the platform you are using. On android you may need to allow installing apps from external sources. On iOS, you may need to "trust" Polkawallet in the General>Profiles & Device Management > Enterprise App Section before running the app.
@@ -107,6 +109,21 @@ See the [`subkey` documentation](https://substrate.dev/docs/en/ecosystem/subkey)
 <img src="../../img/polkawallet-accounts-page.jpg" width=50% />
 <img src="../../img/polkawallet-copy-address.jpg" width=50% />
 
+6. [Get the Kusama address from the Substrate address](#kusama-from-substrate-address)
+
+### Kusama from Substrate address
+
+If you used one of the generation methods that gave you a generic Substrate address (begins with a `5`), then you will need to take an extra step to turn this into the properly encoding Kusama address.
+
+1. Copy your Substrate generic address to clipboard
+2. Go to the [Polkadot UI](https://polkadot.js.org/apps)
+3. Go to the `Settings` tab and find the configuration for `address network prefix`
+4. Select `Substrate (development)` and click `Save and reload`
+5. Go to the `Address book` and click the `Add contact` button
+6. Enter your address and give it a name like "My Address"
+7. Go back to the `Settings` tab and select the `Kusama (canary)` option in `address network prefix` and click `Save and reload`
+8. Go back to the `Address book` and find the account you just added (it will have the same name)
+9. The address is now formatted to be a Kusama address
 
 ## Step 2. Get KSM tokens
 
