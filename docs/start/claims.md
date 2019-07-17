@@ -111,7 +111,7 @@ See the [`subkey` documentation](https://substrate.dev/docs/en/ecosystem/subkey)
 There are two methods to claim KSM.
 
 **1. Dot Holders:**
-Those who participated in the Polkadot sales can claim a proportional amount of KSM prior to the launch of the network.
+Those who participated in the Polkadot sales and have been allocated DOT indicator tokens can claim a proportional amount of KSM prior to the launch of the network.
 
 You can do this through [this claims process](https://claim.kusama.network/).
 

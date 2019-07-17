@@ -1,6 +1,6 @@
 # Dot Holders KSM Claims
 
-If you participated in the Polkadot sales, you can claim the corresponding amount of KSM. 
+If you participated in the Polkadot sales, and have received your DOT indicator tokens, you can claim the corresponding amount of KSM. 
 
 Make sure to use your original Ethereum key during this process.
 
