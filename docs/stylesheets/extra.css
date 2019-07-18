@@ -156,7 +156,7 @@ a:hover {
 /* Triangle hack to make tooltip look like a speech bubble */
 [data-tooltip]:after {
 	position: absolute;
-  	z-index: 2;  
+  	z-index: 2;
 	top: 115%;
 	left: 50%;
 	margin-left: -5px;
@@ -179,3 +179,6 @@ a:hover {
 	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 	opacity: 1;
 }
+
+/* Make the logo in line with text*/
+.md-header-nav__button md-logo{margin:0rem;}
