@@ -14,28 +14,14 @@ For most users, we recommend using the [Polkadot UI](https://polkadot.js.org/app
 
 Another option you may consider using is the `subkey` commandline utility which will allow you to be extra secure and generate your key on an air-gapped device. Additional two other options include the Enzyme browser extension wallet or the Polkawallet mobile wallet. But these require an extra step to make into Kusama addresses.
 
-### Using Polkadot UI
+### Using polkadot{.js} extension (Chrome or Firefox)
 
-1. Open up the [Polkadot UI](https://polkadot.js.org/apps) and navigate to the `Settings` tab. Find the configuration dropdown for `address network prefix` and select `Kusama (canary)`. Click `Save and reload`.
-
-1. Navigate to the [Polkadot UI Account's Tab](https://polkadot.js.org/apps/#/accounts) and click on the `Add account` button.
-
-<img src="../../img/polkadotui-find-the-accounts-page.png" width=50% />
-
-2. Enter a name for your account and create a secure password. This password will be used to decrypt your account.
-
-<img src="../../img/polkadotui-create-your-account.png" width=50% />
-
-3. Ignore the advanced options unless you want to change the type of cryptography used for your keys (either sr25519 or ed25519 works).
-
-4. Click `Save` and `Create and backup account`.
-
-5. Save your encrypted keystore locally.
-
-6. The account now appears in your Accounts tab and is backed up to the keystore you just saved.
-
-7. Click on the DOT identicon to copy the address to the clipboard.
-<img src="../../img/polkadotui-copy-account-address.png" width=50% />
+1. Install the polkadot{.js} extension from the [Chrome store](https://chrome.google.com/webstore/detail/polkadot%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd?hl=en) or [Firefox store](https://addons.mozilla.org/en-US/firefox/addon/polkadot-js-extension/).
+1. Create a new account by clicking on `I want to create a new account with a new seed`.
+1. Copy the seed phrase and store it somewhere safe. Don't share the seed phrase with anyone, you can use it to access your account if you forget your password or want to import your account again.
+1. Enter a name for the account and type a strong password (at least 6 characters).
+1. Click on `Add the account with the generated seed`.
+1. You can copy the account's address to the clipboard by clicking on its identicon.
 
 ### Using `subkey`
 
@@ -69,6 +55,29 @@ Secret phrase `robust mass coconut rocket mean runway wall check tennis update m
 The `Public key (hex)` field is what you should use to claim your KSM tokens. Never share your `Secret phrase` or `Secret seed`, as these can both control your funds. (NOTE: Your Kusama address will be different than the one display by `subkey`. To see your Kusama address see the section [Getting Kusama address from Substrate or Polkadot address](#kusama-from-substrate-address)).
 
 See the [`subkey` documentation](https://substrate.dev/docs/en/ecosystem/subkey) for more usage examples.
+
+### Using Polkadot UI
+
+1. Open up the [Polkadot UI](https://polkadot.js.org/apps) and navigate to the `Settings` tab. Find the configuration dropdown for `address network prefix` and select `Kusama (canary)`. Click `Save and reload`.
+
+1. Navigate to the [Polkadot UI Account's Tab](https://polkadot.js.org/apps/#/accounts) and click on the `Add account` button.
+
+<img src="../../img/polkadotui-find-the-accounts-page.png" width=50% />
+
+2. Enter a name for your account and create a secure password. This password will be used to decrypt your account.
+
+<img src="../../img/polkadotui-create-your-account.png" width=50% />
+
+3. Ignore the advanced options unless you want to change the type of cryptography used for your keys (either sr25519 or ed25519 works).
+
+4. Click `Save` and `Create and backup account`.
+
+5. Save your encrypted keystore locally.
+
+6. The account now appears in your Accounts tab and is backed up to the keystore you just saved.
+
+7. Click on the DOT identicon to copy the address to the clipboard.
+<img src="../../img/polkadotui-copy-account-address.png" width=50% />
 
 ### Using Enzyme browser wallet (Chrome only)
 
