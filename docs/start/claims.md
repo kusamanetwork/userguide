@@ -1,18 +1,22 @@
 # How to get KSM
 
-The Kusama network is Polkadot's R&D network. This guide will walk you through how to proceed with claiming KSM (Kusama tokens).
+The Kusama network is Polkadot's experimental community-focused R&D network. If you hold the DOT indicator token you are entitled to claim an equivalent amount of KSM on the Kusama network. This is so that the Kusama network is aligned with the existing DOT holders and community.
 
-In order to align Kusama with the existing DOT holders and community, if you are a DOT allocation holder you can claim the equivalent amount of Kusama tokens (ticker: KSM). There are two ways to claim either before genesis by sending a transaction on Ethereum or after genesis by signing a message using your allocation key and making a transaction on Kusama.
+The two ways to claim the KSM depends on whether you are claiming before or after the Kusama genesis. Since Kusama has not launched at the time of writing this guide, it will only cover the first case: claiming by sending a transaction on Ethereum with the key holding  DOT indicator tokens. After Kusama genesis, it will be updated to cover the second case: claiming by signing a message with the key holding DOT indicator tokens.
 
 ## Step 1. Create a Kusama account
 
-You will need a Kusama account to claim the KSM. There are a few ways you can create one. For most users, we recommend using the [Polkadot UI](https://polkadot.js.org/apps/#/explorer) since it will allow you to store your encrypted keyfile locally.
+You will need to generate a Kusama account to claim KSM. There are a few ways you can create one. 
 
-> NOTICE: Unfortunately at this time Kusama and Substrate chains do not have hardware wallet support using the Ledger or Trezor products. Hopefully soon this will change!
+For most users, we recommend using the [Polkadot UI](https://polkadot.js.org/apps/#/explorer) since it will allow you to store your encrypted keystore locally.
 
-Another option you may consider using are `subkey` commandline utility which will allow you to be extra secure and generate your key on an air-gapped device. A couple other options include using Enzyme in-browser wallet (like MetaMask) or the Polkawallet mobile wallet.
+> NOTICE: Unfortunately at this time Kusama does not have hardware wallet support using the Ledger or Trezor products. Hopefully soon this will change!
+
+Another option you may consider using is the `subkey` commandline utility which will allow you to be extra secure and generate your key on an air-gapped device. Additional two other options include the Enzyme browser extension wallet or the Polkawallet mobile wallet. But these require an extra step to make into Kusama addresses.
 
 ### Using Polkadot UI
+
+1. Open up the [Polkadot UI](https://polkadot.js.org/apps) and navigate to the `Settings` tab. Find the configuration dropdown for `address network prefix` and select `Kusama (canary)`. Click `Save and reload`.
 
 1. Navigate to the [Polkadot UI Account's Tab](https://polkadot.js.org/apps/#/accounts) and click on the `Add account` button.
 
@@ -62,7 +66,7 @@ Secret phrase `robust mass coconut rocket mean runway wall check tennis update m
   Address (SS58): 5HhALDcW6EabKJoXMPV6RdhDzSXiMiUrh1qnjQbVufqAHg3z
 ```
 
-The `Address (SS58)` field is what you should use to claim your KSM tokens. Never share your `Secret phrase` or `Secret seed`, as these can both control your funds.
+The `Public key (hex)` field is what you should use to claim your KSM tokens. Never share your `Secret phrase` or `Secret seed`, as these can both control your funds. (NOTE: Your Kusama address will be different than the one display by `subkey`. To see your Kusama address see the section [Getting Kusama address from Substrate or Polkadot address](#kusama-from-substrate-address)).
 
 See the [`subkey` documentation](https://substrate.dev/docs/en/ecosystem/subkey) for more usage examples.
 
@@ -88,6 +92,8 @@ See the [`subkey` documentation](https://substrate.dev/docs/en/ecosystem/subkey)
 
 <img src="../../img/enzyme-copy-your-address.png" width=50% />
 
+7. [Get the Kusama address from the Substrate address](#kusama-from-substrate-address)
+
 ### Using Polkawallet
 
 1. Install [Polkawallet](https://polkawallet.io). Click Download and select the link corresponding to the platform you are using. On android you may need to allow installing apps from external sources. On iOS, you may need to "trust" Polkawallet in the General>Profiles & Device Management > Enterprise App Section before running the app.
@@ -105,6 +111,21 @@ See the [`subkey` documentation](https://substrate.dev/docs/en/ecosystem/subkey)
 <img src="../../img/polkawallet-accounts-page.jpg" width=50% />
 <img src="../../img/polkawallet-copy-address.jpg" width=50% />
 
+6. [Get the Kusama address from the Substrate address](#kusama-from-substrate-address)
+
+### Kusama from Substrate address
+
+If you used one of the generation methods that gave you a generic Substrate address (begins with a `5`), then you will need to take an extra step to turn this into the properly encoding Kusama address.
+
+1. Copy your Substrate generic address to clipboard
+2. Go to the [Polkadot UI](https://polkadot.js.org/apps)
+3. Go to the `Settings` tab and find the configuration for `address network prefix`
+4. Select `Substrate (development)` and click `Save and reload`
+5. Go to the `Address book` and click the `Add contact` button
+6. Enter your address and give it a name like "My Address"
+7. Go back to the `Settings` tab and select the `Kusama (canary)` option in `address network prefix` and click `Save and reload`
+8. Go back to the `Address book` and find the account you just added (it will have the same name)
+9. The address is now formatted to be a Kusama address
 
 ## Step 2. Get KSM tokens
 
