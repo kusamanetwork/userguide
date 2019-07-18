@@ -181,4 +181,8 @@ a:hover {
 }
 
 /* Make the logo in line with text*/
-.md-header-nav__button md-logo{margin:0rem;}
+.md-header-nav__button.md-logo{margin-top:0;}
+
+/*fix footer logo alignment*/
+.md-footer-logo {
+  margin-left: .35%;}
