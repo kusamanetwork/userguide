@@ -30,7 +30,9 @@ Select the `claim` function from the dropdown and enter the address of the Ether
 
 Next enter in the hex encoded public key that the claims DApp outputted for you.
 
-Unlock your wallet using your preferred method and click "Sign and Send."
+Uncheck the box that says `Automatically Calculate Gas Limit` and instead use `150000` as the inputted gas limit. Feel free to change the gas price to whatever you like or keep it at the default, you can view the network average gas price [here](https://www.ethgasstation.info/).
+
+Click `Write` in MyCrypto and unlock your wallet using your preferred method. Afterward click "Sign Transaction" and finally send it to the network.
 
 You can click on the link to view your transaction on Etherscan, when the transaction is mined to the network then you are finished! When the Kusama network starts you will already have the balance of KSM in your Kusama address.
 
