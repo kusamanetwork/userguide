@@ -24,7 +24,7 @@ Once you've downloaded the MyCrypto app and run it locally (run it on an airgapp
 
 **NOTE**: If you used `subkey` to generate your address, you should already have your public key.
 
-Go to the MyCrypto application and click on the Contract tab. Choose the Custom selection for the contract and copy the address and ABI and address of the Claims contract. The mainnet Claims contract address is `0x9a1B58399EdEBd0606420045fEa0347c24fB86c2`. Click `Access`.
+Go to the MyCrypto application and click on "Interact with Contracts" under the Tools tab. Choose the Custom selection for the contract and copy the address and ABI and address of the Claims contract. The mainnet Claims contract address is `0x9a1B58399EdEBd0606420045fEa0347c24fB86c2`. Click `Access`.
 
 Select the `claim` function from the dropdown and enter the address of the Ethereum account that holds the balance of DOT allocation for which you would like to claim KSM. Usually this should be the same address that you are planning to send the transaction from, in exceptional cases it would be from a different key known as the amendment key (but don't worry about this if it sounds strange to you). 
 
