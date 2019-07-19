@@ -29,4 +29,4 @@ The returns for nominating will vary due to several factors including, how many 
 All you need are some KSM and decide which validator to nominate.
 
 Learn more [here](https://medium.com/web3foundation/how-nominated-proof-of-stake-will-work-in-polkadot-377d70c6bd43).
-Discuss on the [forum](https://forum.kusama.network/) or in the [chat](https://riot.im/app/#/room/#kusamawatercooler:polkadot.builders).
+Discuss on the [Kusama forum](https://forum.kusama.network/) or in the [Kusama Validator chat](https://riot.im/app/#/room/#KusamaValidatorLounge:polkadot.builders).
