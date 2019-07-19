@@ -3,11 +3,11 @@
 
 # Manual de usuario de Kusama
 
-This repository contains the source files for the [Kusama User Guide](https://guide.kusama.network).
+Este repositorio contiene los archivos de origen para la [Guía del usuario de Kusama](https://guide.kusama.network).
 
 ## Corriendo localmente
 
-Note that you will need the `pip` package manager, which is generally installed with Python.
+Tenga en cuenta que necesitará el administrador de paquetes `pip`, que generalmente se instala con Python.
 
 Clone el repositorio a su sistema de archivos local.
 
@@ -15,40 +15,40 @@ Clone el repositorio a su sistema de archivos local.
 git clone https://github.com/kusamanetwork/userguide.git
 ```
 
-Install `mkdocs` by using the `pip` package manager.
+Instale `mkdocs` utilizando el administrador de paquetes `pip`.
 
 ```bash
 pip install mkdocs --user
 ```
 
-Now install all necessary dependencies, once again by using `pip`.
+Ahora instale todas las dependencias necesarias, una vez más usando `pip`.
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run `mkdocs serve` from the repository root to spawn a hot reloading development server and navigate to `localhost:8000` in a web browser.
+Ejecute `mkdocs` desde la raíz del repositorio para generar un servidor de desarrollo de recarga en caliente y navegue a `localhost:8000` en un navegador web.
 
 ## Publicación
 
-The wiki is hosted on [Read the Docs](https://readthedocs.org) and is built on each published commit to the master branch on the GitHub repository.
+La wiki está alojada en [Read the Docs](https://readthedocs.org) y se basa en cada confirmación publicada en la rama maestra en el repositorio de GitHub.
 
 ## Estilo
 
-[Mkdocs-Material](https://squidfunk.github.io/mkdocs-material/) is used to give the wiki its sleek theme.
+[Mkdocs-Material](https://squidfunk.github.io/mkdocs-material/) se utiliza para dar a la wiki su tema elegante.
 
 ## Contribuyendo
 
-Please read over the rules for contribution at the [CONTRIBUTING](CONTRIBUTING.md) document.
+Lea las reglas de contribución en el documento [CONTRIBUYENDO](CONTRIBUTING.md).
 
 ### Configuración del colaborador
 
-As a contributor, you will need to run `npm i` in the local copy of your repository after you bring it down.
+Como colaborador, deberá ejecutar `npm i` en la copia local de su repositorio después de desactivarlo.
 
 ### Añadiendo una nueva página
 
-If you add a page please ensure that you give it the correct placement in the navigation by manually inputting it in the `mkdocs.yml` under the `nav` field. It is done in this way in order to have more control in how pages are displayed on the UI and give better organization to topics.
+Si agrega una página, asegúrese de darle la ubicación correcta en la navegación ingresándola manualmente en `mkdocs.yml` debajo del campo de `nav`. Se realiza de esta manera para tener un mayor control sobre cómo se muestran las páginas en la interfaz de usuario y dar mejor organización a los temas.
 
 ### Corrección ortográfica
 
-We set [`husky`](https://github.com/typicode/husky) hooks up to catch spelling errors. If you are being prevented from committing, just run `npm run spellcheck:interactive` to use the interactive debugger and fix your spelling.
+Establecimos ganchos [`husky`](https://github.com/typicode/husky) para detectar errores de ortografía. Si se le está impidiendo que se comprometa, simplemente ejecute  `npm run spellcheck:interactive` para usar el depurador interactivo y corregir su ortografía.
