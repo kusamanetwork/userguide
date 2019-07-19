@@ -6,6 +6,8 @@ Before setting up the validator, you will most likely want to take a look at the
 
 You should **NOT** run a validator if you have KSM, but you do not have enough technical knowledge to set up a validator. Any KSM that you stake for your validator is liable to be slashed, meaning that an insecure or improper setup may result in loss of KSM tokens!  If you are not confident in your ability to run a validator node, it is recommended to nominate your KSM to a trusted validator node, instead.
 
+If you need help, reach out on the [Kusama forum](https://forum.kusama.network/) or in the [Kusama Validator chat](https://riot.im/app/#/room/#KusamaValidatorLounge:polkadot.builders).
+
 For this tutorial, we will use Ubuntu 18.04. No matter which operating system you are using, setup should be very similar. There are many [VPS](#vps-list) choices out there; feel free to pick the one you like.
 
 ## Install rust
@@ -167,7 +169,7 @@ If you go to the Staking tab, you should see a list of active validators current
 
 Your node will be shown in the *next up* queue. The validator set is refreshed every era (600 blocks, or approximately one hour). In the next era, if there is a slot available, and your node is selected to join the validator set, your node will become an active validator.  Until then, it will remain the _next up_ queue.  If your validator is not selected to become part of the validator set, it will remain in the _next up_ queue until it is.  There is no need to re-start if you are not selected for the validator set in a particular era.  However, it may be necessary to increase the number of DOTs staked or seek out nominators for your validator in order to join the validator set.
 
-**Congratulations!**  If you have followed all of these steps, and been selected to be a part of the validator set, you are now running a Kusama validator.
+**Congratulations!**  If you have followed all of these steps, and been selected to be a part of the validator set, you are now running a Kusama validator! If you need help, reach out on the [Kusama forum](https://forum.kusama.network/) or in the [Kusama Validator chat](https://riot.im/app/#/room/#KusamaValidatorLounge:polkadot.builders).
 
 ## VPS List
 
