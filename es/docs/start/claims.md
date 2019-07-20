@@ -84,8 +84,7 @@ Otra opción que puede considerar usar es la utilidad de línea de comandos de `
 
 Hay dos métodos para reclamar KSM.
 
-**1. Dot Holders:**
-Those who participated in the Polkadot sales can claim a proportional amount of KSM prior to the launch of the network.
+1. **Titulares de DOT** aquellos que participaron en las ventas de Polkadot pueden reclamar una cantidad proporcional de KSM antes del lanzamiento de la red.
 
 Puede hacerlo a través de [este proceso de reclamaciones](https://claim.kusama.network/) .
 
