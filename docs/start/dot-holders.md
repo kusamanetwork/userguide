@@ -36,5 +36,15 @@ Click `Write` in MyCrypto and unlock your wallet using your preferred method. Af
 
 You can click on the link to view your transaction on Etherscan, when the transaction is mined to the network then you are finished! When the Kusama network starts you will already have the balance of KSM in your Kusama address.
 
+### Claiming your KSM with a web3 enabled wallet (ie, metamask) 
+
+If you have access to a web3 enabled wallet, you can use [this app](http://m.maiziqianbao.net/eth/mapping), created by community members, to claim your KSM. 
+
+After inputting your Kusama address under "Mapping Account", click the "Map" button. 
+
+**NOTE**: Before signing the transaction in your wallet, ensure that the destination is the mainnet claims contract, `0x9a1B58399EdEBd0606420045fEa0347c24fB86c2`, and that the transaction data includes your eth wallet address, and the hex-encoded public key (which you can verify using the claims dapp). 
+
+After signing the transaction and broadcasting it, once the transaction is mined, you are finished! When the Kusama network starts you will already have the balance of KSM in your Kusama address.
+
 ## Claiming after Kusama genesis
 This section will become available upon Kusama network launch.
