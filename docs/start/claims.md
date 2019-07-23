@@ -155,4 +155,4 @@ Having trouble? Get support in the KSM [Claims chat](https://riot.im/app/#/room/
 **2. Faucet:**
 For those who didn’t participate in the Polkadot sale, KSM are publicly available after genesis through a faucet. Find out more [here](./faucet.md).
 
-Public projects that need more KSM can request them by emailing projects@kusama.network.
+Public projects that need more KSM can request them by applying [here](https://docs.google.com/forms/d/1-JxlJqt8DA0E3K0QX0Gc20rF02-aqDn6r_rzkB4LaMk/edit).
