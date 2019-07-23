@@ -38,6 +38,8 @@ You can click on the link to view your transaction on Etherscan, when the transa
 
 ### Claiming your KSM with a web3 enabled wallet (ie, metamask) 
 
+**This section links out to an external third-party app. Please exercise caution if you choose to use a third-party app to make your claim!**
+
 If you have access to a web3 enabled wallet, you can use [this app](http://m.maiziqianbao.net/eth/mapping), created by community members, to claim your KSM. 
 
 After inputting your Kusama address under "Mapping Account", click the "Map" button. 
