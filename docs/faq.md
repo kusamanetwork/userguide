@@ -8,7 +8,7 @@ Kusama is meant to be Polkadot’s canary network, warning us of issues to keep 
 Kusama is explicitly not a “test net.” It is an early, highly experimental version of Polkadot presenting real economic conditions. The community will own the network – there will be no central kill switch. Kusama will exist as long as its community maintains it and we envision it will cater to new, early functionality and projects preparing to develop and deploy on Polkadot.
 
 ## What rewards do I get for using Kusama?
-One percent of DOT tokens at Polkadot genesis time (100,000 of the W3F’s DOTs) have been reserved as an eventual incentivisation to Kusama’s stakeholders and community. The precise mechanics of this have not yet been finalised, but will be firmed up closer to genesis time.
+One percent of DOT tokens at Polkadot genesis have been reserved as an eventual incentivisation grant to Kusama’s stakeholders and community. The precise mechanics of this have not yet been finalised, but will be firmed up closer to genesis time.
 
 There is also a standard bounty program for critical issues. You can find out more [here](./break/bug-bounty.md).
 
