@@ -58,7 +58,7 @@ This step will take a while (generally 15 - 30 minutes, depending on your hardwa
 If you are interested in generating keys locally, you can also install `subkey` from the same directory.  You may then take the generated `subkey` executable and transfer it to an air-gapped machine for extra security.
 
 ```bash
-cargo install --force --path subkey subkey
+cargo install --force --git https://github.com/paritytech/substrate subkey
 ```
 
 ## Synchronize chain data
