@@ -5,7 +5,7 @@ Kusama is an early, unaudited and unrefined release of Polkadot. Kusama will ser
 ## What is a canary network?
 Kusama is meant to be Polkadot’s canary network, warning us of issues to keep things safe for the developers downchain. Without a network like Kusama, there is no reasonable way to fully understand the potential dangers that lie ahead. We are building bleeding-edge, experimental technology, which means there are no promises about what Kusama will do or how it will work  – expect a lot of chaos (and a little fun).
 
-Kusama is explicitly not a “test net.” It is an early, highly experimental version of Polkadot presenting real economic conditions. The community will own the network – there will be no central kill switch. Kusama will exist as long as its community maintains it and we envision it will cater to new, early functionality and projects preparing to develop and deploy on Polkadot.
+Kusama is an early, highly experimental version of Polkadot presenting real economic conditions. The community will own the network – there will be no central kill switch. Kusama will exist as long as its community maintains it and we envision it will cater to new, early functionality and projects preparing to develop and deploy on Polkadot.
 
 ## What rewards do I get for using Kusama?
 One percent of DOT tokens at Polkadot genesis have been reserved as an eventual incentivisation grant to Kusama’s stakeholders and community. The precise mechanics of this have not yet been finalised.
