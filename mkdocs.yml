@@ -14,6 +14,7 @@ nav:
     - Staking: try/staking.md
     - Validate: try/validate.md
     - Parachain: try/parachain.md
+    - Secure Validator Setup: try/secure-validator-setup.md 
  - What to Break:
     - Bug Bounty: break/bug-bounty.md
     - Adversarial Cheatsheet: break/adversary.md
