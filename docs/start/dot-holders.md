@@ -36,6 +36,10 @@ Click `Write` in MyCrypto and unlock your wallet using your preferred method. Af
 
 You can click on the link to view your transaction on Etherscan, when the transaction is mined to the network then you are finished! When the Kusama network starts you will already have the balance of KSM in your Kusama address.
 
+### Verifying your Claim
+
+The KSM will not be available to you until Kusama launches. If you would like to verify your claim, the best place to do it is on the info box at the bottom of the Kusama [claim DApp](https://claim.kusama.network). At the bottom of the page, you will see an input asking for the Ethereum address holding the DOT Allocation Indicator token that you claimed. After inputting this Ethereum addres you will see the registered Kusama address, public key, index, and balance of your claim. If all of this data looks right then your claim was a success! After the Kusama genesis launches, the KSM will be available automatically in your Kusama address for you to use.  
+
 ### Third Party Claims Processes
 
 **We do not recommend using a third-party app or process to perform your claim or acquire KSM**
