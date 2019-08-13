@@ -37,7 +37,7 @@ Prerequisites:
 - Have a KSM account.
 - Have KSM tokens.
 - Note that KSM tokens will be **locked** during the duration of the referendum.
-- If you vote `aye` for a proposal and it passes, your tokens will be **locked** until the proposal has been enacted (30 days for Kusama Gensis Governance).
+- If you vote `aye` for a proposal and it passes, your tokens will be **locked** until the proposal has been enacted (30 days for Kusama Genesis Governance).
 
 1. Using the [Polkadot UI](https://polkadot.js.org/apps/), make sure you have an account and selected the Kusama network under the [settings tab](https://polkadot.js.org/apps/#/settings)
 2. Navigate to the [Democracy tab](https://polkadot.js.org/apps/#/democracy) to see currently active proposals.
