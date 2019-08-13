@@ -6,7 +6,7 @@ The two ways to claim the KSM depend on whether you are claiming before or after
 
 ## Step 1. Create a Kusama account
 
-You will need to generate a Kusama account to claim KSM. There are a few ways you can create one. 
+You will need to generate a Kusama account to claim KSM. There are a few ways you can create one.
 
 For most users, we recommend using the [Polkadot UI](https://polkadot.js.org/apps/#/explorer) since it will allow you to store your encrypted keystore locally.
 
@@ -33,6 +33,17 @@ You can install `subkey` with this one-line command:
 cargo install --force --git https://github.com/paritytech/substrate subkey
 ```
 
+Note that you will already have had to install the proper Rust version and dependencies.  If you have not done so, or experience problems installing using that command, run the following commands first, and then re-try the previous command:
+
+```
+curl https://sh.rustup.rs -sSf | sh
+
+rustup update nightly
+rustup target add wasm32-unknown-unknown --toolchain nightly
+rustup update stable
+cargo install --git https://github.com/alexcrichton/wasm-gc
+```
+
 Alternatively, you can build `subkey` from the source code.
 
 1. Follow the build instructions for [Substrate](https://github.com/paritytech/substrate#6-building).
@@ -53,7 +64,7 @@ Secret phrase `lobster flock few equip connect boost excuse glass machine find w
   Address (SS58): JL1eTcbzuZP99FjeySkDrMygNREPdbhRyV7iD5AsV4fDRcg
 ```
 
-The `Address (SS58)` field is what you should use to claim your KSM tokens. Never share your `Secret phrase` or `Secret seed`, as these can both control your funds. 
+The `Address (SS58)` field is what you should use to claim your KSM tokens. Never share your `Secret phrase` or `Secret seed`, as these can both control your funds.
 
 NOTE: Previous versions of `subkey` only generated Substrate addresses. If you do not want to generate a new seed, you can convert the Substrate address to a Kusama address by following [this section](#kusama-from-substrate-address).
 
@@ -129,8 +140,8 @@ See the [`subkey` documentation](https://substrate.dev/docs/en/ecosystem/subkey)
 
 If you used one of the generation methods that gave you a generic Substrate address (begins with a `5`), then you will need to take an extra step to turn this into the properly encoded Kusama address.
 
-1. Copy your Substrate generic address to the clipboard. 
-2. Go to the [Polkadot UI](https://polkadot.js.org/apps). 
+1. Copy your Substrate generic address to the clipboard.
+2. Go to the [Polkadot UI](https://polkadot.js.org/apps).
 3. Go to the `Settings` tab and find the configuration for `address network prefix`.
 4. Select `Substrate (development)` and click `Save and reload`.
 5. Go to the `Address book` and click the `Add contact` button.
