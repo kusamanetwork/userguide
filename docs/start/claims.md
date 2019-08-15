@@ -14,7 +14,7 @@ For most users, we recommend using the [Polkadot UI](https://polkadot.js.org/app
 
 Another option you may consider using is the `subkey` command line utility, which will allow you to take extra steps to protect the security of your key. Additionally, two other options include the Enzyme browser extension wallet and the Polkawallet mobile wallet, although these require an extra step to generate Kusama addresses.
 
-### Using polkadot{.js} extension (Chrome or Firefox)
+### Using polkadot{.js} extension (Chrome/Brave or Firefox)
 
 1. Install the polkadot{.js} extension from the [Chrome store](https://chrome.google.com/webstore/detail/polkadot%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd?hl=en) or [Firefox store](https://addons.mozilla.org/en-US/firefox/addon/polkadot-js-extension/).
 1. Create a new account by clicking on `I want to create a new account with a new seed`.
@@ -93,9 +93,9 @@ See the [`subkey` documentation](https://substrate.dev/docs/en/ecosystem/subkey)
 7. Click on the DOT identicon to copy the address to the clipboard.
 <img src="../../img/polkadotui-copy-account-address.png" width=50% />
 
-### Using Enzyme browser wallet (Chrome only)
+### Using Enzyme browser wallet (Chrome or Brave only)
 
-1. Install the Enzyme browser wallet from the [Chrome store](https://chrome.google.com/webstore/detail/enzyme/amligljifngdnodkebecdijmhnhojohh). Click `Add to Chrome` and confirm by clicking `Add extension` in the popup window.
+1. Install the Enzyme browser wallet from the [Chrome store](https://chrome.google.com/webstore/detail/enzyme/amligljifngdnodkebecdijmhnhojohh)(for Brave as well). Click `Add to Chrome` and confirm by clicking `Add extension` in the popup window.
 
 2. Accept the Terms of Use.
 
