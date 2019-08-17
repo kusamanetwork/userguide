@@ -125,6 +125,8 @@ Once your node is fully synced, stop it using Control-C. At your terminal prompt
 polkadot --chain kusama --validator --name "name on telemetry"
 ```
 
+> NOTE: At time of writing, the `kusama` chain spec doesn't exist. This won't work until Kusama actually launches.
+
 You can give your validator any name that you like, but note that others will be able to see it, and it will be included in the list of all servers using the same telemetry server. Since numerous people are using telemetry, it is recommended that you choose something likely to be unique.
 
 You will generate your [Session keys](https://wiki.polkadot.network/en/latest/polkadot/learn/keys/#session-key) in the client via RPC. You can do this through Polkadot JS connected to your local node (Toolbox > RPC Calls > Author > rotateKeys()) or via CLI:
