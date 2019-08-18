@@ -129,7 +129,11 @@ polkadot --chain kusama --validator --name "name on telemetry"
 
 You can give your validator any name that you like, but note that others will be able to see it, and it will be included in the list of all servers using the same telemetry server. Since numerous people are using telemetry, it is recommended that you choose something likely to be unique.
 
-You will generate your [Session keys](https://wiki.polkadot.network/en/latest/polkadot/learn/keys/#session-key) in the client via RPC. You can do this through Polkadot JS connected to your local node (Toolbox > RPC Calls > Author > rotateKeys()) or via CLI:
+You will generate your [Session keys](https://wiki.polkadot.network/en/latest/polkadot/learn/keys/#session-key) in the client via RPC. You can do this through Polkadot JS connected to your local node (Toolbox > RPC Calls > author > rotateKeys()).  If you are doing this, make sure that you have your Polkadot explorer attached to your validator (in Settings).
+
+![Explorer RPC call](../img/guides/how-to-validate/polkadot-explorer-rotatekeys-rpc.jpg)
+
+or via CLI:
 
 ```bash
 curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[]}' http://localhost:9933
@@ -139,7 +143,7 @@ The output will have a hex-encoded "result" field. This is an encoding of your f
 
 You need to tell the chain your Session keys by signing and submitting an extrinsic. This is what associates your validator with your Controller account.
 
-Go to [Staking > Account Actions](https://polkadot.js.org/apps/#/staking/actions), click on the settings icon, and select "Change session keys". Enter the output from `author_rotateKeys` in the field and click "Set Session Key".
+Go to [Staking > Account Actions](https://polkadot.js.org/apps/#/staking/actions), and click "Set Session Key" on the bonding account you generated earlier. Enter the output from `author_rotateKeys` in the field and click "Set Session Key".
 
 ![staking-change-session](../img/guides/how-to-validate/set-session-key-1.jpg)
 ![staking-session-result](../img/guides/how-to-validate/set-session-key-2.jpg)
