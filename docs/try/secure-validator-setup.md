@@ -27,11 +27,11 @@ Session keys are generated inside the node via RPC call. See the [Kusama guide](
 
 ### Signing Outside the Client
 
-In the future, the Polkadot will support signing payloads outside the client so that keys can be stored on another device, e.g. a hardware security module (HSM) or secure enclave. For the time being, however, Session key signatures are performed within the client.
+In the future, Polkadot will support signing payloads outside the client so that keys can be stored on another device, e.g. a hardware security module (HSM) or secure enclave. For the time being, however, Session key signatures are performed within the client.
 
-> **NOTE:** HSMs are not a panacea. They do not incorporate any logic and will just sign whatever payload they send. Therefore, an attacker who gains access to your validator node could still commit slashable behavior.
+> **NOTE:** HSMs are not a panacea. They do not incorporate any logic and will just sign and return whatever payload they receive. Therefore, an attacker who gains access to your validator node could still commit slashable behavior.
 
-An example of highly available, secure setup would be a layer of sentry nodes and multiple validators connected to another single signing machine. This machine could implement signing logic to avoid equivocation, even if an attacker gained access to a validator node.
+An example of highly available, secure setup would be a layer of sentry nodes in front of multiple validators connected to a single signing machine. This machine could implement signing logic to avoid equivocation, even if an attacker gained access to a validator node.
 
 ## Monitoring Tools
 
