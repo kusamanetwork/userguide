@@ -22,7 +22,7 @@ Public projects that need more KSM can request them by emailing projects@kusama.
 
 As a KSM holder, you will be able to interact with all the features of Kusama network such as staking (validating and nominating), participating in governance, voting for council members, parachain auctions and all other interactions.
 
-## Kusama Timeline
+## What's the Kusama timeline?
 *The following launch timeline features approximate dates, [sign up for the newsletter](https://kusama.network/) to get updated on the latest.*
 
 ### Phase 0: Pre-launch Claims
