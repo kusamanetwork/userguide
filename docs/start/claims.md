@@ -2,9 +2,9 @@
 
 Kusama will launch around 23 August, 2019.
 
-This means you will no longer be able to use the following instructions to claim KSMs. [This Ethereum DApp](https://claim.kusama.network) will be disabled after block `8405350` of Ethereum (approx 9:30 am Zurich time).
+This means you will no longer be able to use the following instructions to claim KSMs. [The Ethereum Claims DApp](https://claim.kusama.network) will be disabled after block `8405350` of Ethereum (approx 9:30 am Zurich time).
 
-You will only be able to claim directly on the Kusama network, via your original Ethereum address that you used to procure Dots. Updated instructions for this coming soon. 
+You will only be able to claim directly on the Kusama network, via your original Ethereum address that holds DOT indicator tokens. Updated instructions for this coming soon. 
 
 # How to get KSM (After Kusama Genesis)
 
@@ -166,10 +166,7 @@ There are two methods to claim KSM.
 
 Those who participated in the Polkadot sales and have been allocated DOT indicator tokens can claim a proportional amount of KSMs on the Kusama Network.
 
-To do this you must sign a message containing the address of your Kusama account. There are two ways to do this:
-
-1. Using the Polkadot UI [Claims app](https://polkadot.js.org/apps/#/claims).
-2. Using the updated [Claims website](https://claim.kusama.network).
+To do this you must sign a message containing the address of your Kusama account. You can do this by using the Polkadot UI [Claims app](https://polkadot.js.org/apps/#/claims).
 
 Refer to [this detailed guide](./dot-holders.md) for a step-by-step walk-through of the post-genesis claims process.
 
