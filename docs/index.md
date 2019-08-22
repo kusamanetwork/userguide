@@ -23,4 +23,6 @@ Public projects that need more KSM can request them by emailing projects@kusama.
 As a KSM holder, you will be able to interact with all the features of Kusama network such as staking (validating and nominating), participating in governance, voting for council members, parachain auctions and all other interactions.
 
 ## Launch date
-Kusama will likely be launched by the community this summer 2019. Stay tuned!
+Kusama will launch around 26 August, 2019.
+
+You will no longer be possible to claims KSMs via [this Ethereum DApp](https://claim.kusama.network), i.e. after block `8425830` of Ethereum (approx 9:30 am Zurich time on Monday).
