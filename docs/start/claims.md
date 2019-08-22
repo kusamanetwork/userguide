@@ -1,4 +1,12 @@
-# How to get KSM
+**Important:**
+
+Kusama will launch around 26 August, 2019.
+
+This means you will no longer be able to use the following instructions to claim KSMs. [This Ethereum DApp](https://claim.kusama.network) will be disabled after block `8425150` of Ethereum (approx 9:30 am Zurich time on Monday).
+
+You will only be able to claim directly on the Kusama network, via your original Ethereum address that you used to procure Dots. Updated instructions for this coming soon. 
+
+# How to get KSM (Before Kusama Genesis)
 
 The Kusama network is Polkadot's experimental, community-focused R&D network. If you hold the DOT indicator token, you are entitled to claim an equivalent amount of KSM on the Kusama network. This is so that the Kusama network is aligned with the existing DOT holders and community.
 
