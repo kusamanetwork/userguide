@@ -14,7 +14,7 @@ Security caveat: Kusama is experimental! There are no guarantees.
 
 Everyone!
 
-Those who participated in the Polkadot sales can claim a proportional amount of KSM through [this claims process](https://claim.kusama.network/).
+Those who participated in the Polkadot sales can claim a proportional amount of KSM through [this claims process](https://kusama.network/newsletter).
 
 For those who didn’t participate in the Polkadot sale, KSM are publicly available after genesis through a faucet. Find out more here.
 
