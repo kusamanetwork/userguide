@@ -1,8 +1,8 @@
 **Important:**
 
-Kusama will launch around 26 August, 2019.
+Kusama will launch around 23 August, 2019.
 
-This means you will no longer be able to use the following instructions to claim KSMs. [This Ethereum DApp](https://claim.kusama.network) will be disabled after block `8425150` of Ethereum (approx 9:30 am Zurich time on Monday).
+This means you will no longer be able to use the following instructions to claim KSMs. [This Ethereum DApp](https://claim.kusama.network) will be disabled after block `8405350` of Ethereum (approx 9:30 am Zurich time).
 
 You will only be able to claim directly on the Kusama network, via your original Ethereum address that you used to procure Dots. Updated instructions for this coming soon. 
 
