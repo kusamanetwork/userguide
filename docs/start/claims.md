@@ -1,6 +1,7 @@
-**Important:**
+# Claims Timeline
+There are different ways to claim KSMs before and after Kusama genesis.
 
-Kusama will launch around 23 August, 2019.
+Kusama will soft launch around `23 August, 2019`.
 
 This means you will no longer be able to use the following instructions to claim KSMs. [The Ethereum Claims DApp](https://claim.kusama.network) will be disabled after block `8405350` of Ethereum (approx 9:30 am Zurich time).
 
