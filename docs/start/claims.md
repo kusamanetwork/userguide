@@ -5,7 +5,7 @@ Kusama will soft launch around `23 August, 2019`.
 
 This means you will no longer be able to use the following instructions to claim KSMs. [The Ethereum Claims DApp](https://claim.kusama.network) will be disabled after block `8405350` of Ethereum (approx 9:30 am Zurich time).
 
-You will only be able to claim directly on the Kusama network, via your original Ethereum address that holds DOT indicator tokens. Updated instructions for this coming soon. 
+You will only be able to claim directly on the Kusama network, via your original Ethereum address that holds DOT indicator tokens. Updated instructions can be found [here](https://guide.kusama.network/en/latest/start/dot-holders/).
 
 # How to get KSM (After Kusama Genesis)
 
