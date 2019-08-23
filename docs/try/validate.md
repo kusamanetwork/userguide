@@ -67,7 +67,7 @@ cargo install --force --git https://github.com/paritytech/substrate subkey
 After installing all related dependencies, you can start your Kusama node. Start to synchronize the chain by executing the following command:
 
 ```bash
-polkadot --chain kusama
+polkadot
 ```
 
 Depending on the size of the chain when you do this, this step may take anywhere from a few minutes to a few hours.
