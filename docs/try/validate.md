@@ -12,6 +12,8 @@ For this tutorial, we will use Ubuntu 18.04. No matter which operating system yo
 
 ## Install Rust
 
+**Note:** Instead of installing Rust and building the Polkadot binary locally, you can [use Docker](#using-docker) if you already have it installed. 
+
 If you have never installed Rust, you should do this first. This command will fetch the latest version of Rust and install it.
 
 ```bash
@@ -185,3 +187,11 @@ When Kusama launches, it will be a Proof-of-Authority network, with nodes run by
 * [Linode](https://www.linode.com/)
 * [Contabo](https://contabo.com/)
 * [Scaleway](https://www.scaleway.com/)
+
+## Using Docker
+
+If you have Docker installed, you can use it to start your validator node without needing to build the binary. You can do this with a simple one line command:
+
+```sh
+$ docker run parity/polkadot:v0.5.0 --validator --name "name on telemetry"
+```
