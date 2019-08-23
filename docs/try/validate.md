@@ -74,32 +74,9 @@ Depending on the size of the chain when you do this, this step may take anywhere
 
 If you are interested in determining how much longer you have to go, your server logs (printed to STDOUT from the `polkadot` process) will tell you the latest block your node has processed and verified. You can then compare that to the current highest block via [Telemetry](https://telemetry.polkadot.io/#/Alexander) or the [PolkadotJS Block Explorer](https://polkadot.js.org/apps/#/explorer).
 
-## Create Accounts
-
-In order to be a validator, you will need two separate accounts for managing your funds, namely a "Stash" and a "Controller". If you want to know more about them, please see [here](https://wiki.polkadot.network/en/latest/polkadot/learn/staking/#accounts).
-
-![create account](../img/guides/how-to-validate/polkadot-dashboard-create-account.jpg)
-First, go to [PolkadotJS => Account](https://polkadot.js.org/apps/#/accounts) and click on the `add account` button.
-
-To help you identify your accounts easily later on, we recommend you include "stash" and "controller" in the names of your accounts (e.g., "JANE STASH", "JANE CONTROLLER"). A mnemonic seed phrase is given to you for each of these accounts. You should save it in an offline, safe place. You will also save your account using a JSON key file that will be generated automatically when clicking on "Save". The password that is required to create an account will be used to sign any transaction made for each account. It will also be used to encrypt the JSON key file and will be required if you wish to restore your account using this file.
-
-Both the Stash and Controller accounts can use the `Schnorrkel (sr25519)` as the "keypair crypto type" in the "Advanced creation options".
-
-On the following screen, choose "Create and backup account" to store your JSON key file on your computer. Together with your password, you can use this file to re-create your account.
-
-Once both accounts have been created, the overview should show you something like this:
-
-![backup seed](../img/guides/how-to-validate/polkadot-overview.jpg)
-
-## Get Tokens
-
-To continue the following steps, you are required to get some KSM tokens for the Stash and Controller accounts in order to submit transactions and use these KSM as stake.
-
-The Stash and Controller accounts should each have at least 150 milliKSM to cover the existential deposit and transaction fees. You can use the "send" functionality from the [Accounts tab](https://polkadot.js.org/apps/#/accounts) of the Explorer to move the appropriate number of KSM to each account. It is recommended to keep the majority of your KSM in the Stash account, and only a small amount of KSM in the Controller account for necessary actions.
-
-You can take a look at the [claiming KSM user guide](https://kusamanetwork.github.io/KSM-dapp/) if you participated in the DOT token sale in 2017. You may also use the [Kusama Faucet](https://faucet.kusama.network) to obtain more KSM later.
-
 ## Bond KSM
+
+**Note:** For the soft launch period you must make your Controller and Stash accounts the same accounts. 
 
 It is now time to set up our validator. We will do the following:
 
