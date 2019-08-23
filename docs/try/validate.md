@@ -122,10 +122,10 @@ After a few seconds, you should see an "ExtrinsicSuccess" message. You should no
 Once your node is fully synced, stop it using Control-C. At your terminal prompt, you will now start your node in validator mode.
 
 ```bash
-polkadot --chain kusama --validator --name "name on telemetry"
+polkadot --validator --name "name on telemetry"
 ```
 
-> NOTE: At time of writing, the `kusama` chain spec doesn't exist. This won't work until Kusama actually launches.
+> NOTE: Kusama has launched! It is now the default option when you start running `polkadot`.
 
 You can give your validator any name that you like, but note that others will be able to see it, and it will be included in the list of all servers using the same telemetry server. Since numerous people are using telemetry, it is recommended that you choose something likely to be unique.
 
@@ -167,7 +167,9 @@ If you go to the Staking tab, you should see a list of active validators current
 
 ![staking queue](../img/guides/how-to-validate/polkadot-dashboard-staking-queue.jpg)
 
-Your node will be shown in the *next up* queue. The validator set is refreshed every era. In the next era, if there is a slot available and your node is selected to join the validator set, your node will become an active validator. Until then, it will remain the _next up_ queue. If your validator is not selected to become part of the validator set, it will remain in the _next up_ queue until it is. There is no need to re-start if you are not selected for the validator set in a particular era. However, it may be necessary to increase the number of KSMs staked or seek out nominators for your validator in order to join the validator set.
+Your node will be shown in the *next up* queue. During [soft launch](#soft-launch) period there will be no era changes, your node will remain in the queue until the transition to the Proof-of-Stake validator selection. 
+
+**After soft launch:** The validator set is refreshed every era. In the next era, if there is a slot available and your node is selected to join the validator set, your node will become an active validator. Until then, it will remain the _next up_ queue. If your validator is not selected to become part of the validator set, it will remain in the _next up_ queue until it is. There is no need to re-start if you are not selected for the validator set in a particular era. However, it may be necessary to increase the number of KSMs staked or seek out nominators for your validator in order to join the validator set.
 
 ## Soft Launch
 
