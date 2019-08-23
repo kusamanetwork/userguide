@@ -14,16 +14,16 @@ Security caveat: Kusama is experimental! There are no guarantees.
 
 Everyone!
 
-Those who participated in the Polkadot sales can claim a proportional amount of KSM through [this claims process](https://kusama.network/newsletter).
+Those who participated in the Polkadot sales can claim a proportional amount of KSM through [this claims process](https://claim.kusama.network/).
 
-For those who didn’t participate in the Polkadot sale, KSM are publicly available after genesis through a faucet. Find out more here.
+For those who didn’t participate in the Polkadot sale, KSM are publicly available after genesis through a faucet. [Find out more here.](https://guide.kusama.network/en/latest/start/faucet/)
 
 Public projects that need more KSM can request them by emailing projects@kusama.network.
 
 As a KSM holder, you will be able to interact with all the features of Kusama network such as staking (validating and nominating), participating in governance, voting for council members, parachain auctions and all other interactions.
 
 ## What's the Kusama timeline?
-*The following launch timeline features approximate dates, [sign up for the newsletter](https://kusama.network/) to get updated on the latest.*
+*The following launch timeline features approximate dates, [sign up for the newsletter](https://kusama.network/newsletter) to get updated on the latest.*
 
 ### Phase 0: Pre-launch Claims
 `Ending: 23 August, 2019 9:30 am Zurich time`
