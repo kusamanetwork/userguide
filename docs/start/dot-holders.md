@@ -22,13 +22,13 @@ The Polkadot JS [Claims app](https://polkadot.js.org/apps/#/claims) helps you si
 
 Once you've downloaded MyCrypto and have it running locally (we recommend an air-gapped computer for maximum security), you can start by navigating to the Claims app on the Polkadot JS UI. Select the account you would like to claim the KSMs into and click the blue "Continue" button to proceed. Your screen should look something like this:
 
-![Claim Step 1](../../../img/claim/claim_1.png)
+![Claim Step 1](../../../img/claim/claim-1.png)
 
 The hex encoded string that follows the sentence: "Pay KSMs to the Kusama account:" is the hex-encoded public key of your Kusama account, minus the `0x` prefix. To verify that the public key is correct you can use the `subkey` tool to inspect your address.
 
 The next step is to go to the MyCrypto application and click on "Sign & Verify Message" tab. This will prompt you to select a method for unlocking your wallet. After unlocking your wallet, you will copy and paste the outputted sentence into the input box. 
 
-![Claim Step 2](../../../img/claim/claim_2.png)
+![Claim Step 2](../../../img/claim/claim-2.png)
 
 When you click "Sign Message" you will get a JSON output like the below:
 
@@ -36,9 +36,11 @@ When you click "Sign Message" you will get a JSON output like the below:
 
 Copy and paste the JSON output of the signed message from MyCrypto into the input box on the Polkadot JS UI and click "Confirm Claim."
 
-![Claim Step 4](../../../img/claim/claim_4.png)]
+![Claim Step 3](../../../img/claim/claim-3.png)
 
 At this point you will see a success message if everything went right and your KSMs will now be in the account that you claimed to. Congratulations you can now participate in aspects of the Kusama network such as [governance](../try/governance) and [staking](../try/staking). During the soft launch period balance transfers will not be enabled.
+
+![Claim Step 4](../../../img/claim/claim-4.png)]
 
 ### Verifying your Claim
 
