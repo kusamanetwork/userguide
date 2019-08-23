@@ -3,15 +3,15 @@ There are different ways to claim KSMs before and after Kusama genesis.
 
 Kusama will soft launch around `23 August, 2019`.
 
-At this time, [this claims Ethereum DApp](https://claim.kusama.network) will be disabled after block `8405350` (approx 9:30 am Zurich time). This means you can no longer use the following instructions to claim KSM. 
+This means you will no longer be able to use the following instructions to claim KSMs. [The Ethereum Claims DApp](https://claim.kusama.network) will be disabled after block `8405350` of Ethereum (approx 9:30 am Zurich time).
 
-After the 23rd, you will only be able to claim directly on the Kusama network via the claims module. Updated instructions for this coming soon. 
+You will only be able to claim directly on the Kusama network, via your original Ethereum address that holds DOT indicator tokens. Updated instructions for this coming soon. 
 
-# How to get KSM (Before Kusama Genesis)
+# How to get KSM (After Kusama Genesis)
 
 The Kusama network is Polkadot's experimental, community-focused R&D network. If you hold the DOT indicator token, you are entitled to claim an equivalent amount of KSM on the Kusama network. This is so that the Kusama network is aligned with the existing DOT holders and community.
 
-The two ways to claim the KSM depend on whether you are claiming before or after the Kusama genesis. Since Kusama has not launched at the time of writing this guide, it will only cover the first case: claiming by sending a transaction on Ethereum with the key that holds DOT indicator tokens. After Kusama genesis, it will be updated to cover the second case: claiming by signing a message with the key that holds DOT indicator tokens.
+You can claim KSMs by signing a message with the Ethereum that holds your DOT indicator tokens.
 
 ## Step 1. Create a Kusama account
 
@@ -163,16 +163,18 @@ If you used one of the generation methods that gave you a generic Substrate addr
 
 There are two methods to claim KSM.
 
-**1. Dot Holders:**
-Those who participated in the Polkadot sales and have been allocated DOT indicator tokens can claim a proportional amount of KSM prior to the launch of the network.
+**1. DOT Holders:**
 
-You can do this through [the claims website](https://claim.kusama.network/).
+Those who participated in the Polkadot sales and have been allocated DOT indicator tokens can claim a proportional amount of KSMs on the Kusama Network.
 
-Refer to [this detailed guide](./dot-holders.md) for a step-by-step walk-through of the claims process.
+To do this you must sign a message containing the address of your Kusama account. You can do this by using the Polkadot UI [Claims app](https://polkadot.js.org/apps/#/claims).
 
-Having trouble? Get support in the KSM [Claims chat](https://riot.im/app/#/room/#KSMAClaims:polkadot.builders).
+Refer to [this detailed guide](./dot-holders.md) for a step-by-step walk-through of the post-genesis claims process.
+
+Having trouble? Get support in the KSM [Claims Support](https://riot.im/app/#/room/#KSMAClaims:polkadot.builders) channel.
 
 **2. Faucet:**
-For those who didn’t participate in the Polkadot sale, KSM are publicly available after genesis through a faucet. Find out more [here](./faucet.md).
 
-Public projects that need more KSM can request them by applying [here](https://docs.google.com/forms/d/1-JxlJqt8DA0E3K0QX0Gc20rF02-aqDn6r_rzkB4LaMk/edit).
+For those who didn’t participate in the Polkadot sale, KSMs are publicly available after genesis through a faucet. Find out more [here](./faucet.md).
+
+Public projects that need more KSMs can request them by applying [here](https://docs.google.com/forms/d/1-JxlJqt8DA0E3K0QX0Gc20rF02-aqDn6r_rzkB4LaMk/edit).
