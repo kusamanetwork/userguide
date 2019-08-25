@@ -40,14 +40,15 @@ brew install cmake pkg-config openssl git llvm
 
 ## Building and Installing Your `Kusama` Node
 
-You will need to build your `kusama` from the `polkadot` source code.
-
-> **WARNING:** The instructions below will currently build from the `master` branch of the repository. The official Kusama build will be tagged, and this guide updated, before genesis. You are welcome to try building now, but you will not get the official version of the validator software. This means you may not be able to connect to the `Kusama` network or experience other (more serious and harder to debug) issues!
+You will need to build your `kusama` from the `polkadot v0.5 branch` source code.
 
 ```bash
 git clone https://github.com/paritytech/polkadot.git
+# To update your node. Run from this step.
 cd polkadot
 cargo clean
+git checkout v0.5
+git pull origin v0.5
 ./scripts/init.sh
 cargo install --path ./ --force
 ```
@@ -78,7 +79,7 @@ If you are interested in determining how much longer you have to go, your server
 
 ## Bond KSM
 
-**Note:** For the soft launch period you must make your Controller and Stash accounts the same accounts. 
+**Note:** For the soft launch period, you must make your Controller and Stash account the same accounts unless you have two accounts that have KSM.
 
 It is now time to set up our validator. We will do the following:
 
@@ -91,7 +92,7 @@ First, go to the [Staking](https://polkadot.js.org/apps/#/staking/actions) secti
 
 - **Stash account** - Select your Stash account. In this example, we will bond 100 milliKSMs - make sure that your Stash account contains _at least_ this much. You can, of course, stake more than this.
 - **Controller account** - Select the Controller account created earlier. This account will also need a small amount of KSM in order to start and stop validating.
-- **Value bonded** - How much KSM from the Stash account you want to bond/stake. Note that you do not need to bond all of the KSM in that account. Also note that you can always bond _more_ KSM later. However, _withdrawing_ any bonded amount requires the bonding duration period to be over.
+- **Value bonded** - How much KSM from the Stash account you want to bond/stake. Note that you do not need to bond all of the KSM in that account. Also note that you can always bond _more_ KSM later. However, _withdrawing_ any bonded amount requires the bonding duration period to be over (For Kusama, 28 days).
 - **Payment destination** - The account where the rewards from validating are sent. More info [here](https://wiki.polkadot.network/en/latest/polkadot/learn/staking/#reward-distribution).
 
 Once everything is filled in properly, click `Bond` and sign the transaction (with your Stash account).
@@ -133,7 +134,7 @@ Submit this extrinsic and you are now ready to start validating.
 
 ## Validate
 
-To verify that your node is live and synchronized, head to [Telemetry](https://telemetry.polkadot.io/#/Kusama) and find your node. Note that this will show all nodes on the Kusama network, which is why it is important to select a unique name!
+To verify that your node is live and synchronized, head to [Telemetry](https://telemetry.polkadot.io/#list/Kusama%20CC1) and find your node. Note that this will show all nodes on the Kusama network, which is why it is important to select a unique name!
 
 If everything looks good, go ahead and click on "Validate" in Polkadot UI.
 
@@ -158,6 +159,15 @@ When Kusama launches, it will be a Proof-of-Authority network, with nodes run by
 
 **Congratulations!** If you have followed all of these steps, and been selected to be a part of the validator set, you are now running a Kusama validator! If you need help, reach out on the [Kusama forum](https://forum.kusama.network/) or in the [Kusama Validator chat](https://riot.im/app/#/room/#KusamaValidatorLounge:polkadot.builders).
 
+
+## FAQ
+
+**Q: Unable to synchronize the chain with 0 peers**
+
+![zero-peer](../img/guides/how-to-validate/polkadot-zero-peer.jpg)
+
+**A:** Make sure to enable `30333` libp2p port. Eventually, it will take a little bit of time to discover other peers over the network.
+
 ## VPS List
 
 * [OVH](https://www.ovh.com.au/)
@@ -174,3 +184,4 @@ If you have Docker installed, you can use it to start your validator node withou
 ```sh
 $ docker run parity/polkadot:v0.5.0 --validator --name "name on telemetry"
 ```
+
