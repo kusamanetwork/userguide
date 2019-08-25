@@ -166,7 +166,7 @@ When Kusama launches, it will be a Proof-of-Authority network, with nodes run by
 
 ![zero-peer](../img/guides/how-to-validate/polkadot-zero-peer.png)
 
-**A:** Make sure to enable `30333` libp2p port. Eventually, it will take a little bit of times to discover other peers over the network.
+**A:** Make sure to enable `30333` libp2p port. Eventually, it will take a little bit of time to discover other peers over the network.
 
 ## VPS List
 
