@@ -88,7 +88,7 @@ It is now time to set up our validator. We will do the following:
 
 First, go to the [Staking](https://polkadot.js.org/apps/#/staking/actions) section. Click on "Account Actions", and then the "New stake" button.
 
-![dashboard bonding](../img/guides/how-to-validate/polkadot-dashboard-bonding.png)
+![dashboard bonding](../img/guides/how-to-validate/polkadot-dashboard-bonding.jpg)
 
 - **Stash account** - Select your Stash account. In this example, we will bond 100 milliKSMs - make sure that your Stash account contains _at least_ this much. You can, of course, stake more than this.
 - **Controller account** - Select the Controller account created earlier. This account will also need a small amount of KSM in order to start and stop validating.
@@ -128,7 +128,7 @@ You need to tell the chain your Session keys by signing and submitting an extrin
 Go to [Staking > Account Actions](https://polkadot.js.org/apps/#/staking/actions), and click "Set Session Key" on the bonding account you generated earlier. Enter the output from `author_rotateKeys` in the field and click "Set Session Key".
 
 ![staking-change-session](../img/guides/how-to-validate/set-session-key-1.jpg)
-![staking-session-result](../img/guides/how-to-validate/set-session-key-2.png)
+![staking-session-result](../img/guides/how-to-validate/set-session-key-2.jpg)
 
 Submit this extrinsic and you are now ready to start validating.
 
@@ -138,8 +138,8 @@ To verify that your node is live and synchronized, head to [Telemetry](https://t
 
 If everything looks good, go ahead and click on "Validate" in Polkadot UI.
 
-![dashboard validate](../img/guides/how-to-validate/polkadot-dashboard-validate.png)
-![dashboard validate](../img/guides/how-to-validate/polkadot-dashboard-validate-modal.png)
+![dashboard validate](../img/guides/how-to-validate/polkadot-dashboard-validate.jpg)
+![dashboard validate](../img/guides/how-to-validate/polkadot-dashboard-validate-modal.jpg)
 
 - **Payment preferences** - Rewards you will keep, the rest will be shared among you and your nominators.
 
@@ -147,7 +147,7 @@ Click "Validate".
 
 If you go to the Staking tab, you should see a list of active validators currently running on the network, as well as any nodes that have signaled their intention to be validators but have not yet been selected as being part of the current validator set. At the top of the page, it shows how many validator slots are available and how many nodes are intended to be a validator.
 
-![staking queue](../img/guides/how-to-validate/polkadot-dashboard-staking-queue.png)
+![staking queue](../img/guides/how-to-validate/polkadot-dashboard-staking-queue.jpg)
 
 Your node will be shown in the *next up* queue. During [soft launch](#soft-launch) period there will be no era changes, your node will remain in the queue until the transition to the Proof-of-Stake validator selection. 
 
@@ -164,7 +164,7 @@ When Kusama launches, it will be a Proof-of-Authority network, with nodes run by
 
 **Q: Unable to synchronize the chain with 0 peers**
 
-![zero-peer](../img/guides/how-to-validate/polkadot-zero-peer.png)
+![zero-peer](../img/guides/how-to-validate/polkadot-zero-peer.jpg)
 
 **A:** Make sure to enable `30333` libp2p port. Eventually, it will take a little bit of time to discover other peers over the network.
 
