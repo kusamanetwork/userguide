@@ -21,6 +21,8 @@ nav:
  - Community: community.md
  - Code of Conduct: code-of-conduct.md
  - FAQ: faq.md
+ - Other Languages:
+    - 中文: lang/chinese/docs/index.md
 
 # Configuration for the Material theme
 theme:
