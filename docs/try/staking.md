@@ -22,8 +22,15 @@ To become a validator, you need a computer with recently up-to-date specificatio
 ### What is nominating?
 A nominator publishes a list of validator candidates that they trust, and puts down an amount of KSM at stake to support them with. If some of these candidates are elected as validators, they share with them the payments, or the sanctions, on a per-staked-KSM basis. Unlike validators, an unlimited number of parties can participate as nominators. As long as a nominator is diligent in their choice and only supports validator candidates with good security practices, their role carries low risk and provides a continuous source of revenue.
 
-### What is the maximum annual interest possible when nominating?
-The returns for nominating will vary due to several factors including, how many KSM are staked for a given validator, how much your proportion is in that stake, and how many validators are in the set at a given time. NPoS uses @TODO
+### What is the maximum annual interest and rewards possible when nominating or validating?
+Returns will vary due to several factors including, how many KSM are staked for a given validator, how much your proportion is in that stake, and how many validators are in the set at a given time.
+
+Annual inflation of the DOT supply will not exceed 10%.
+
+Rewards from validating is expected to be ~ 20% annually, assuming no slashing and remaining in the validator set the entire time.  Note that only some of the rewards come from supply inflation; other rewards come from transaction fees, tips, and the like.
+
+Maximum rewards are obtained when the percentage of all DOTs staked is at 50%.
+
 
 ### What do I need to nominate?
 All you need are some KSM and decide which validator to nominate.
