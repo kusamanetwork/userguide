@@ -4,12 +4,14 @@ Kusama uses NPoS (Nominated Proof-of-Stake), comprising the roles of validators 
 
 Both validators and nominators will earn rewards— and may be penalized—proportional to the amount that they stake, with validators having the ability to set some payment preferences.
 
-## Stake and validate
-Requirements: an account, KSM, and a well-connected, fast computer
+## Validating
 
-Create a “stash” account; this account should ideally be set up offline for maximum security.
+Running a validator is a process which requires dedicated hardware and some technical prowess.  Nominating (basically, voting with your stake on which validators will be part of the active validator set) is much less technically demanding.
 
-## Staking and nominating FAQs
+If you are interested in validating, please be sure to read the [Secure Validator Setup Page](./secure-validator-setup.md) and the [Validator Setup Guide](./validate.md).
+
+## Staking and Nominating FAQs
+
 ### What is staking?
 Staking allows KSM holders to participate in the security and availability of Kusama by leveraging their tokens to validate. Validators who stake KSM, have an operational validator node, and behave honestly will get rewarded with KSM. Actors who misbehave or who are unavailable/offline will have a portion of their stake slashed as a penalty.
 
@@ -30,7 +32,6 @@ Annual inflation of the DOT supply will not exceed 10%.
 Rewards from validating is expected to be ~ 20% annually, assuming no slashing and remaining in the validator set the entire time.  Note that only some of the rewards come from supply inflation; other rewards come from transaction fees, tips, and the like.
 
 Maximum rewards are obtained when the percentage of all DOTs staked is at 50%.
-
 
 ### What do I need to nominate?
 All you need are some KSM and decide which validator to nominate.
