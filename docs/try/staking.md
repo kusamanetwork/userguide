@@ -21,11 +21,19 @@ The exact number will vary depending on the amount of KSM staked. If there is ab
 ### What do I need to stake?
 To become a validator, you need a computer with recently up-to-date specifications, a stable and fast internet connection, and KSM to stake. If you do not have KSM to stake, it is also possible to convince nominators to nominate you. Once you have acquired enough stake to make it into the validator set, you will start validating.
 
+To become a nominator, you only need to have some KSM to stake.
+
 ### What is nominating?
 A nominator publishes a list of validator candidates that they trust, and puts down an amount of KSM at stake to support them with. If some of these candidates are elected as validators, they share with them the payments, or the sanctions, on a per-staked-KSM basis. Unlike validators, an unlimited number of parties can participate as nominators. As long as a nominator is diligent in their choice and only supports validator candidates with good security practices, their role carries low risk and provides a continuous source of revenue.
 
+### Can I nominate multiple validators?
+
+Yes.  Validators are selected via the Phragmen Method.  You can think of this is a version of "approval voting" - you can approve or zero, one, or multiple validators (although of course, if you do not nominate any validators, you are not nominating and thus will not receive any rewards).
+
+For a more in-depth explanation of Phragmen, please see the [Polkadot Wiki Phragmen](https://wiki.polkadot.network/en/latest/polkadot/learn/phragmen/) page.
+
 ### What is the maximum annual interest and rewards possible when nominating or validating?
-Returns will vary due to several factors including, how many KSM are staked for a given validator, how much your proportion is in that stake, and how many validators are in the set at a given time.
+Returns will vary based on several factors including, how many KSM are staked for a given validator, how much your proportion is in that stake, and how many validators are in the set at a given time.
 
 Annual inflation of the DOT supply will not exceed 10%.
 
