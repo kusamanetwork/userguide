@@ -28,7 +28,7 @@ A nominator publishes a list of validator candidates that they trust, and puts d
 
 ### Can I nominate multiple validators?
 
-Yes.  Validators are selected via the Phragmen Method.  You can think of this is a version of "approval voting" - you can approve or zero, one, or multiple validators (although of course, if you do not nominate any validators, you are not nominating and thus will not receive any rewards).
+Yes.  Validators are selected via the Phragmen Method.  You can think of this is a version of "approval voting" - you can approve zero, one, or multiple validators (although of course, if you do not nominate any validators, you are not nominating and thus will not receive any rewards).
 
 For a more in-depth explanation of Phragmen, please see the [Polkadot Wiki Phragmen](https://wiki.polkadot.network/en/latest/polkadot/learn/phragmen/) page.
 
