@@ -47,9 +47,8 @@ git clone https://github.com/paritytech/polkadot.git
 cd polkadot
 cargo clean
 git checkout v0.5
-git pull origin v0.5
 ./scripts/init.sh
-cargo install --path ./ --force
+cargo build --release
 ```
 
 注意: 如果你倾向使用 SSH 多过 HTTPS，你可以使用以下指令
@@ -70,7 +69,7 @@ cargo install --force --git https://github.com/paritytech/substrate subkey
 当安装好所有相关依赖后，可以通过执行以下指令启动你的 Kusama 节点，开始同步链数据:
 
 ```bash
-polkadot
+./target/release/polkadot
 ```
 
 同步数据可能需要几分钟到几个小时。
@@ -106,7 +105,7 @@ polkadot
 当你的节点完全同步好后，利用 Control-C 把它停下来。在终端机，把你的节点启动验证人模式。
 
 ```bash
-polkadot --validator --name "TELEMETRY_显示_名字"
+./target/release/polkadot --validator --name "TELEMETRY_显示_名字"
 ```
 > 注意: Kusama 经已上线! 当你启动 `polkadot` 时，它现在是你开始运行时的默认选项。
 
