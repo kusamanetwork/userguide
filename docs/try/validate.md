@@ -48,9 +48,8 @@ git clone https://github.com/paritytech/polkadot.git
 cd polkadot
 cargo clean
 git checkout v0.5
-git pull origin v0.5
 ./scripts/init.sh
-cargo install --path ./ --force
+cargo build --release
 ```
 
 Note: If you prefer to use SSH rather than HTTPS, you can replace the first line of the above with `git clone git@github.com:paritytech/polkadot.git`.
@@ -68,7 +67,7 @@ cargo install --force --git https://github.com/paritytech/substrate subkey
 After installing all related dependencies, you can start your Kusama node. Start to synchronize the chain by executing the following command:
 
 ```bash
-polkadot
+./target/release/polkadot
 ```
 
 Depending on the size of the chain when you do this, this step may take anywhere from a few minutes to a few hours.
@@ -104,7 +103,7 @@ After a few seconds, you should see an "ExtrinsicSuccess" message. You should no
 Once your node is fully synced, stop it using Control-C. At your terminal prompt, you will now start your node in validator mode.
 
 ```bash
-polkadot --validator --name "name on telemetry"
+./target/release/polkadot --validator --name "name on telemetry"
 ```
 
 > NOTE: Kusama has launched! It is now the default option when you start running `polkadot`.
