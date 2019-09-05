@@ -78,7 +78,7 @@ If you are interested in determining how much longer you have to go, your server
 
 ## Bond KSM
 
-**Note:** For the soft launch period, you must make your Controller and Stash account the same accounts unless you have two accounts that have KSM.
+**Note:** For the soft launch period, since transfers are disabled, you will need to make your Controller and Stash account be the same account. If you have two accounts with KSM, then it's still recommended to have the Controller and Stash separate accounts. You will be able to re-configure your controller later.
 
 It is now time to set up our validator. We will do the following:
 
