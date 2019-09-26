@@ -1,6 +1,6 @@
 # How to validate on Kusama
 
-**This guide works with the Kusama network.**
+**This guide works with the Kusama network CC2.**
 
 Before setting up the validator, you will most likely want to take a look at the [Secure Validator Setup Page](./secure-validator-setup.md) to make sure you know what factors you should consider when designing your validator architecture.
 
@@ -40,18 +40,21 @@ brew install cmake pkg-config openssl git llvm
 
 ## Building and Installing Your `Kusama` Node
 
-You will need to build your `kusama` from the `polkadot v0.5 branch` source code.
+You will need to build your `kusama` from the `polkadot v0.6 branch` source code.
 
 ```bash
 git clone https://github.com/paritytech/polkadot.git
 # To update your node. Run from this step.
 cd polkadot
 cargo clean
-git checkout v0.5
-./scripts/init.sh
+git fetch
+git pull --tags -f
+git checkout v0.6.0
+# You should see `HEAD is now at 5020fa48 update kusama.json`
+./scripts/init.sh 
 cargo build --release
 ```
-
+HEAD is now at 5020fa48 update kusama.json
 Note: If you prefer to use SSH rather than HTTPS, you can replace the first line of the above with `git clone git@github.com:paritytech/polkadot.git`.
 
 This step will take a while (generally 15 - 30 minutes, depending on your hardware).
@@ -64,7 +67,31 @@ cargo install --force --git https://github.com/paritytech/substrate subkey
 
 ## Synchronize Chain Data
 
-After installing all related dependencies, you can start your Kusama node. Start to synchronize the chain by executing the following command:
+> **Note:** (New to the network)
+If you do not have a validator that was running on Kusama v0.5 branch, you can start to synchronize the chain by executing the following command:
+
+```bash
+./target/release/polkadot
+```
+
+> **Note:** (For previous Kusama v0.5 validator)
+Before synchronizing the chain data, you can copy your previous keystore to the new chain id if you want to use your previous session keys. Otherwise, you are required to set your new session keys again.
+
+Start your Kusama node to create default datadir first.  
+
+```bash
+./target/release/polkadot
+```
+
+Then stop and copy your previous keystore to new chain id.
+
+**Keystore default location:** $HOME/.local/share/polkadot/chains/ksma/keystore
+
+```bash
+cp -r $HOME/.local/share/polkadot/chains/ksma/keystore $HOME/.local/share/polkadot/chains/ksmcc2/keystore
+```
+
+Start your node.
 
 ```bash
 ./target/release/polkadot
@@ -79,6 +106,8 @@ If you are interested in determining how much longer you have to go, your server
 ## Bond KSM
 
 **Note:** For the soft launch period, since transfers are disabled, you will need to make your Controller and Stash account be the same account. If you have two accounts with KSM, then it's still recommended to have the Controller and Stash separate accounts. You will be able to re-configure your controller later.
+
+**Please make sure NOT to bond all your KSM balance since the latest codebase in Kusama CC2 does NOT allow to use the bonded balance to pay transaction fees.**
 
 It is now time to set up our validator. We will do the following:
 
@@ -166,6 +195,13 @@ When Kusama launches, it will be a Proof-of-Authority network, with nodes run by
 ![zero-peer](../img/guides/how-to-validate/polkadot-zero-peer.jpg)
 
 **A:** Make sure to enable `30333` libp2p port. Eventually, it will take a little bit of time to discover other peers over the network.
+
+**Q: How to clear all your chain data**
+
+**A:** 
+```bash
+./target/release/polkadot purge-chain
+```
 
 ## VPS List
 
