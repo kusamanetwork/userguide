@@ -53,7 +53,6 @@ git checkout v0.6
 ./scripts/init.sh 
 cargo build --release
 ```
-HEAD is now at 5020fa48 update kusama.json
 Note: If you prefer to use SSH rather than HTTPS, you can replace the first line of the above with `git clone git@github.com:paritytech/polkadot.git`.
 
 This step will take a while (generally 15 - 30 minutes, depending on your hardware).
