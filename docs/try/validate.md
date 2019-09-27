@@ -48,11 +48,11 @@ git clone https://github.com/paritytech/polkadot.git
 cd polkadot
 cargo clean
 git fetch
-git pull --tags -f
 git checkout v0.6
 ./scripts/init.sh 
 cargo build --release
 ```
+
 Note: If you prefer to use SSH rather than HTTPS, you can replace the first line of the above with `git clone git@github.com:paritytech/polkadot.git`.
 
 This step will take a while (generally 15 - 30 minutes, depending on your hardware).
@@ -88,6 +88,8 @@ Then stop and copy your previous keystore to new chain id.
 ```bash
 cp -r $HOME/.local/share/polkadot/chains/ksma/keystore $HOME/.local/share/polkadot/chains/ksmcc2/keystore
 ```
+
+If your keystore is empty, it means that the keys were not created on your node in the CC1 chain. This is okay, but it means you will want to set new session keys for your validators. The best way to do this would be to call the `author_rotateKeys` RPC call and make sure the call is directed to your validator node. Before submitting the `setKeys` transaction, verify that the keys are in the new cc2 keystore.
 
 Start your node.
 
