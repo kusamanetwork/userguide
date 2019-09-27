@@ -107,7 +107,7 @@ If you are interested in determining how much longer you have to go, your server
 
 **Note:** For the soft launch period, since transfers are disabled, you will need to make your Controller and Stash account be the same account. If you have two accounts with KSM, then it's still recommended to have the Controller and Stash separate accounts. You will be able to re-configure your controller later.
 
-**Please make sure NOT to bond all your KSM balance since the latest codebase in Kusama CC2 does NOT allow to use the bonded balance to pay transaction fees.**
+**Note:** Make sure not to bond all your KSM balance since the latest codebase in Kusama CC2 does not allow to use the bonded balance to pay transaction fees.
 
 It is now time to set up our validator. We will do the following:
 
