@@ -49,8 +49,8 @@ cd polkadot
 cargo clean
 git fetch
 git pull --tags -f
-git checkout v0.6.0
-# You should see `HEAD is now at 5020fa48 update kusama.json`
+git checkout v0.6
+# You should see "HEAD is now at 5020fa48 update kusama.json"
 ./scripts/init.sh 
 cargo build --release
 ```
@@ -68,13 +68,13 @@ cargo install --force --git https://github.com/paritytech/substrate subkey
 ## Synchronize Chain Data
 
 > **Note:** (New to the network)
-If you do not have a validator that was running on Kusama v0.5 branch, you can start to synchronize the chain by executing the following command:
+If you do not have a validator that was running on Kusama CC1, you can start to synchronize the chain by executing the following command:
 
 ```bash
 ./target/release/polkadot
 ```
 
-> **Note:** (For previous Kusama v0.5 validator)
+> **Note:** (For previous Kusama CC1 validator)
 Before synchronizing the chain data, you can copy your previous keystore to the new chain id if you want to use your previous session keys. Otherwise, you are required to set your new session keys again.
 
 Start your Kusama node to create default datadir first.  
