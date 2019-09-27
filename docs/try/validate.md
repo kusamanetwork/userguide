@@ -50,7 +50,6 @@ cargo clean
 git fetch
 git pull --tags -f
 git checkout v0.6
-# You should see "HEAD is now at 5020fa48 update kusama.json"
 ./scripts/init.sh 
 cargo build --release
 ```
