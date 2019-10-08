@@ -2,13 +2,13 @@
 ![Expect Chaos](./img/Kusama-expect-chaos.png)
 
 ## What is Kusama?
-Kusama is a canary network for developers to run experiments in a Polkadot-like environment. Think of Kusama as an early proving ground for things like upgradeable runtimes, on-chain governance, and parachains. 
+Kusama is a canary network for developers to run experiments in a Polkadot-like environment. Think of Kusama as an early proving ground for things like upgradeable runtimes, on-chain governance, and parachains.
 
 Have fun on Kusama! Explore the politics, hone your validator setup, campaign for the council, or vie for a parachain spot. And most of all... expect chaos.
 
-Kusama is owned by the folks who hold Kusama tokens (KSM). There’s no central kill switch. The community rules the network through on-chain governance. 
+Kusama is owned by the folks who hold Kusama tokens (KSM). There’s no central kill switch. The community rules the network through on-chain governance.
 
-Security caveat: Kusama is experimental! There are no guarantees. 
+Security caveat: Kusama is experimental! There are no guarantees.
 
 ## Who can participate in Kusama?
 
@@ -46,8 +46,8 @@ Additionally, Dot holders who have not claimed their KSM yet, can do so via the 
 **Note**: You will NOT be able to perform most other on-chain activities like `transfer balance`, `earn block rewards`, `participate in governance`, etc. at this time.
 
 ### Phase 2: Public Network (PoS)
-`Approximate date: 1-4 weeks after Soft Launch`
+`Approximate date: mid- to late October`
 
-The Web3 Foundation will issue a final runtime upgrade to take Kusama from PoA into a decentralised PoS network. 
+The Web3 Foundation will issue a final runtime upgrade to take Kusama from PoA into a decentralised PoS network.
 
 After this, all features will be enabled. Most importantly, validating, governance and balance transfers will be functionally live on Kusama. There will also be a public faucet to distribute KSM at this point.
