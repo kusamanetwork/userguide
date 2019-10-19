@@ -26,7 +26,7 @@ Otherwise, if you have already installed Rust, run the following command to make
 rustup update
 ```
 
- Finally, run this command to install the necessary dependencies for compiling and running the Kusama node software.
+Finally, run this command to install the necessary dependencies for compiling and running the Kusama node software.
 
 ```
 sudo apt install make clang pkg-config libssl-dev build-essential
@@ -65,23 +65,25 @@ cargo install --force --git https://github.com/paritytech/substrate subkey
 
 ## Synchronize Chain Data
 
+> **Note:** Validators must resync their nodes in archive mode to avoid being slashed. You must first remove the database with `polkadot purge-chain` and then ensure that you run Polkadot with the `--pruning=archive` option.
+
 > **Note:** (New to the network)
 If you do not have a validator that was running on Kusama CC1, you can start to synchronize the chain by executing the following command:
 
 ```bash
-./target/release/polkadot
+./target/release/polkadot --pruning=archive
 ```
 
 > **Note:** (For previous Kusama CC1 validator)
-Before synchronizing the chain data, you can copy your previous keystore to the new chain id if you want to use your previous session keys. Otherwise, you are required to set your new session keys again.
+Before synchronizing the chain data, you can copy your previous keystore to the new chain ID if you want to use your previous session keys. Otherwise, you are required to set new session keys.
 
 Start your Kusama node to create default datadir first.  
 
 ```bash
-./target/release/polkadot
+./target/release/polkadot --pruning=archive
 ```
 
-Then stop and copy your previous keystore to new chain id.
+Then stop and copy your previous keystore to new chain ID.
 
 **Keystore default location:** $HOME/.local/share/polkadot/chains/ksma/keystore
 
@@ -89,12 +91,12 @@ Then stop and copy your previous keystore to new chain id.
 cp -r $HOME/.local/share/polkadot/chains/ksma/keystore $HOME/.local/share/polkadot/chains/ksmcc2/keystore
 ```
 
-If your keystore is empty, it means that the keys were not created on your node in the CC1 chain. This is okay, but it means you will want to set new session keys for your validators. The best way to do this would be to call the `author_rotateKeys` RPC call and make sure the call is directed to your validator node. Before submitting the `setKeys` transaction, verify that the keys are in the new cc2 keystore.
+If your keystore is empty, it means that the keys were not created on your node in the CC1 chain. This is okay, but it means you will want to set new session keys for your validators. The best way to do this would be to call the `author_rotateKeys` RPC call and make sure the call is directed to your validator node. Before submitting the `setKeys` transaction, verify that the keys are in the new CC2 keystore.
 
 Start your node.
 
 ```bash
-./target/release/polkadot
+./target/release/polkadot --pruning=archive
 ```
 
 Depending on the size of the chain when you do this, this step may take anywhere from a few minutes to a few hours.
@@ -105,11 +107,11 @@ If you are interested in determining how much longer you have to go, your server
 
 ## Bond KSM
 
-**Note:** For the soft launch period, since transfers are disabled, you will need to make your Controller and Stash account be the same account. If you have two accounts with KSM, then it's still recommended to have the Controller and Stash separate accounts. You will be able to re-configure your controller later.
+**Note:** For the soft launch period, since transfers are disabled, you will need to make your Controller and Stash account be the same account. If you have two accounts with KSM, then it's still recommended to have the Controller and Stash separate accounts. You will be able to re-configure your Controller later.
 
-**Note:** Make sure not to bond all your KSM balance since the latest codebase in Kusama CC2 does not allow to use the bonded balance to pay transaction fees.
+**Note:** Make sure not to bond all your KSM if you plan to transfer any to other accounts once transfers are enabled.
 
-It is now time to set up our validator. We will do the following:
+It is now time to set up your validator. We will do the following:
 
 - Bond the KSM of the Stash account. These KSM will be put at stake for the security of the network and can be slashed.
 - Select the Controller. This is the account that will decide when to start or stop validating.
@@ -120,7 +122,7 @@ First, go to the [Staking](https://polkadot.js.org/apps/#/staking/actions) secti
 
 - **Stash account** - Select your Stash account. In this example, we will bond 100 milliKSMs - make sure that your Stash account contains _at least_ this much. You can, of course, stake more than this.
 - **Controller account** - Select the Controller account created earlier. This account will also need a small amount of KSM in order to start and stop validating.
-- **Value bonded** - How much KSM from the Stash account you want to bond/stake. Note that you do not need to bond all of the KSM in that account. Also note that you can always bond _more_ KSM later. However, _withdrawing_ any bonded amount requires the bonding duration period to be over (For Kusama, 28 days).
+- **Value bonded** - How much KSM from the Stash account you want to bond/stake. Note that you do not need to bond all of the KSM in that account. Also note that you can always bond _more_ KSM later. However, _withdrawing_ any bonded amount requires that you wait for an unbonding period (for Kusama, 28 days).
 - **Payment destination** - The account where the rewards from validating are sent. More info [here](https://wiki.polkadot.network/en/latest/polkadot/learn/staking/#reward-distribution).
 
 Once everything is filled in properly, click `Bond` and sign the transaction (with your Stash account).
@@ -132,7 +134,7 @@ After a few seconds, you should see an "ExtrinsicSuccess" message. You should no
 Once your node is fully synced, stop it using Control-C. At your terminal prompt, you will now start your node in validator mode.
 
 ```bash
-./target/release/polkadot --validator --name "name on telemetry"
+./target/release/polkadot --validator --name "name on telemetry" --pruning=archive
 ```
 
 > NOTE: Kusama has launched! It is now the default option when you start running `polkadot`.
@@ -162,7 +164,7 @@ Submit this extrinsic and you are now ready to start validating.
 
 ## Validate
 
-To verify that your node is live and synchronized, head to [Telemetry](https://telemetry.polkadot.io/#list/Kusama%20CC1) and find your node. Note that this will show all nodes on the Kusama network, which is why it is important to select a unique name!
+To verify that your node is live and synchronized, head to [Telemetry](https://telemetry.polkadot.io/#list/Kusama%20CC2) and find your node. Note that this will show all nodes on the Kusama network, which is why it is important to select a unique name!
 
 If everything looks good, go ahead and click on "Validate" in Polkadot UI.
 
@@ -185,8 +187,7 @@ Your node will be shown in the *next up* queue. During [soft launch](#soft-launc
 
 When Kusama launches, it will be a Proof-of-Authority network, with nodes run by the Web3 Foundation. After having a sufficient _next up_ queue (50-100 validators), the network will upgrade to NPoS and allow validators into the validator set based on their stake.
 
-**Congratulations!** If you have followed all of these steps, and been selected to be a part of the validator set, you are now running a Kusama validator! If you need help, reach out on the [Kusama forum](https://forum.kusama.network/) or in the [Kusama Validator chat](https://riot.im/app/#/room/#KusamaValidatorLounge:polkadot.builders).
-
+**Congratulations!** If you have followed all of these steps and been selected to be a part of the validator set, you are now running a Kusama validator! If you need help, reach out on the [Kusama forum](https://forum.kusama.network/) or in the [Kusama Validator chat](https://riot.im/app/#/room/#KusamaValidatorLounge:polkadot.builders).
 
 ## FAQ
 
