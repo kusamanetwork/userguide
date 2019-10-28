@@ -5,7 +5,7 @@ Kusama network started as a Proof-of-Authority network but was transitioned to P
 ## Rollout plan
 
 The rollout of full functionality of Kusama is staggered to allow for safe transition. The first PoS phase will
-begin with 20 validators, 15 of which will be ran by Web3 Foundation and another 5 of which will be ran by highly staked
+begin with 20 validators, 10 of which will be ran by Web3 Foundation and another 10 of which will be ran by highly staked
 community members. After the initial transition is successful, additional validator spots will be opened 10 at a time
 to allow for more community members to enter the validator set.
 

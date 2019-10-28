@@ -8,6 +8,7 @@ nav:
  - Get Started:
     - Claim KSM: start/claims.md
     - Dot Holders: start/dot-holders.md
+    - PoS Transition: PoS.md
     - Faucet: start/faucet.md
  - What to Try:
     - Governance: try/governance.md
