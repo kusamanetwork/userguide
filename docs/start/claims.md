@@ -176,5 +176,3 @@ Having trouble? Get support in the KSM [Claims Support](https://riot.im/app/#/ro
 **2. Faucet:**
 
 For those who didn’t participate in the Polkadot sale, KSMs are publicly available after genesis through a faucet. Find out more [here](./faucet.md).
-
-Public projects that need more KSMs can request them by applying [here](https://docs.google.com/forms/d/1-JxlJqt8DA0E3K0QX0Gc20rF02-aqDn6r_rzkB4LaMk/edit).
