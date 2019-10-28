@@ -1,6 +1,6 @@
 # Kusama transition to PoS
 
-Kusama network started as a Proof-of-Authority network and will be transitioned to Proof-of-Stake on 28 October, 2019 at approximately 23:00 Zurich time (first BABE epoch starts four hours before but the validator set requires one epoch to rotate).
+Kusama network started as a Proof-of-Authority network and will be transitioned to Proof-of-Stake on 28 October, 2019 at approximately 18:30 Zurich time with the first validator set rotation happening at approximately 22:30.
 
 ## Rollout plan
 
