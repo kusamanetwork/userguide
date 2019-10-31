@@ -11,6 +11,7 @@ nav:
     - PoS Transition: PoS.md
     - Faucet: start/faucet.md
  - What to Try:
+    - Nicks: try/nicks.md
     - Governance: try/governance.md
     - Nominating: try/nominating.md
     - Staking: try/staking.md
