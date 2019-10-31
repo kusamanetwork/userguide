@@ -6,7 +6,7 @@ reverse lookups. They are not unique and no check is made if the nick already ex
 ## Setting a Nick
 
 To register your account with a nick requires a small deposit. The name should be a utf-8 encoded string and can not
-be shorter or longer by the module enforced bounds.
+be shorter or longer by the module enforced bounds of 3 to 16 characters.
 
 To convert a human readable name to the proper hex string, you can use an online converter like [this one](https://onlinehextools.com/convert-utf8-to-hex).
 
