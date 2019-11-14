@@ -31,7 +31,9 @@ Proposals currently last 28,800 blocks which equates to approximately 48 hours. 
 
 ### Voting on active referenda
 
-Voting on proposals in the Referendum chamber lasts 28 days and, if approved, then a further 30 days are waited before the change comes into force.
+Voting on proposals in the Referendum chamber lasts 7 days and, if approved, then a further 8 days are waited before the change comes into force.
+
+> NOTE: On Polkadot mainnet, these are planned to be 28 and 30 days, respectively.
 
 Prerequisites:
 - Have a KSM account.
