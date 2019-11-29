@@ -23,6 +23,8 @@ Session keys to put an actual key in your keystore.
 all validators have been set to 100% commission. You should update that setting by issuing a new 
 `validate` call if you want to split your rewards with nominators.
 
+## Getting Started
+
 **This guide works with the Kusama network CC3.**
 
 Before setting up the validator, you will most likely want to take a look at the [Secure Validator Setup Page](./secure-validator-setup.md) to make sure you know what factors you should consider when designing your validator architecture.
