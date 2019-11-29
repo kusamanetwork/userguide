@@ -23,6 +23,12 @@ Session keys to put an actual key in your keystore.
 all validators have been set to 100% commission. You should update that setting by issuing a new 
 `validate` call if you want to split your rewards with nominators.
 
+**Other Interesting (and Pertinent) Changes:**
+
+- Sessions are now 1 hour (down from 4).
+- Slashing for being offline will only commence once 10% of the validators are offline.
+- Governance is now active.
+
 ## Getting Started
 
 **This guide works with the Kusama network CC3.**
@@ -93,29 +99,30 @@ cargo install --force --git https://github.com/paritytech/substrate subkey
 
 ## Synchronize Chain Data
 
-> **Note:** Validators must resync their nodes in archive mode to avoid being slashed. You must first remove the database with `polkadot purge-chain` and then ensure that you run Polkadot with the `--pruning=archive` option.
+> **Notes:**
+>
+> - Validators must resync their nodes in archive mode to avoid being slashed. You must first remove the database with `polkadot purge-chain` and then ensure that you run Polkadot with the `--pruning=archive` option.
+> - Sync will be much faster with the `--wasm-execution Compiled` flag.
+> - For previous CC2 validators, you can use your old keystore by moving it to the CC3 directory.
 
-> **Note:** Sync will be much faster with the `--wasm-execution Compiled` flag.
-
-> **Note:** (New to the network)
-If you do not have a validator that was running on Kusama CC1 or CC2, you can start to synchronize the chain by executing the following command:
-
-```bash
-./target/release/polkadot --pruning=archive --wasm-execution Compiled
-```
-
-> **Note:** (For previous Kusama CC1 and CC2 validator)
-Before synchronizing the chain data, you can copy your previous keystore to the new chain ID if you want to use your previous session keys. Otherwise, you are required to set new Session keys. However, we **strongly recommend** setting new Session keys once you are running on CC3. CC3 now has an additional, fifth Session key for the optional authority discovery feature.
-
-Start your Kusama node to create default datadir first.  
+Start to synchronize the chain by executing the following command:
 
 ```bash
 ./target/release/polkadot --pruning=archive --wasm-execution Compiled
 ```
 
-Then stop and copy your previous keystore to new chain ID.
+Depending on the size of the chain when you sync, this step may take anywhere from a few minutes to a few hours.
 
-**Keystore default location:** 
+If you are interested in determining how much longer you have to go, your server logs (printed to STDOUT from the `polkadot` process) will tell you the latest block your node has processed and verified. You can then compare that to the current highest block via [Telemetry](https://telemetry.polkadot.io/#list/Kusama%20CC2) or the [PolkadotJS Block Explorer](https://polkadot.js.org/apps/#/explorer).
+
+## Managing Session Key Migration
+
+If you want to use your previous session keys, you can copy your previous keystore to the new chain ID. Otherwise, you are required to set new Session keys. However, we **strongly recommend** setting new Session keys once you are running on CC3. CC3 has an additional, fifth Session key for the optional authority discovery feature.
+
+Stop your node (mid-sync is OK) and copy your previous keystore to the new chain ID.
+
+**Keystore default location:**
+
 - CC1: $HOME/.local/share/polkadot/chains/ksma/keystore
 - CC2: $HOME/.local/share/polkadot/chains/ksmcc2/keystore
 
@@ -123,17 +130,7 @@ Then stop and copy your previous keystore to new chain ID.
 cp -r $HOME/.local/share/polkadot/chains/ksmcc2/keystore $HOME/.local/share/polkadot/chains/ksmcc3/keystore
 ```
 
-If your keystore is empty, it means that the keys were not created on your node in the CC1 chain. This is okay, but it means you will want to set new session keys for your validators. The best way to do this would be to call the `author_rotateKeys` RPC call and make sure the call is directed to your validator node. Before submitting the `setKeys` transaction, verify that the keys are in the new CC2 keystore.
-
-Start your node.
-
-```bash
-./target/release/polkadot --pruning=archive --wasm-execution Compiled
-```
-
-Depending on the size of the chain when you do this, this step may take anywhere from a few minutes to a few hours.
-
-If you are interested in determining how much longer you have to go, your server logs (printed to STDOUT from the `polkadot` process) will tell you the latest block your node has processed and verified. You can then compare that to the current highest block via [Telemetry](https://telemetry.polkadot.io/#list/Kusama%20CC2) or the [PolkadotJS Block Explorer](https://polkadot.js.org/apps/#/explorer).
+If your keystore is empty, it means that the keys were not created on your node in the CC1 or CC2 chains. This is okay, but it means you will want to set new session keys for your validators. Once you restart your node, call the `author_rotateKeys` RPC and make sure the call is directed to your validator node. Before submitting the `setKeys` transaction, verify that the keys are in the new CC3 keystore.
 
 > **Note:** If you do not already have KSM, this is as far as you will be able to go until the end of the soft launch period. You can still run a node, but you will need to have a minimal amount of KSM to continue, as balance transfers are disabled during the soft launch. Please keep in mind that even for those with KSM, they will only be indicating their _intent_ to validate; they will also not be able to run a validator until the NPoS phase starts.
 
