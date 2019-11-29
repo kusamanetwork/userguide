@@ -1,6 +1,29 @@
 # How to validate on Kusama
 
-**This guide works with the Kusama network CC2.**
+## CC3 Upgrade
+
+If you are already validating on CC2, follow these instructions:
+
+1. Pull the master branch from the [Polkadot repo](https://github.com/paritytech/polkadot).
+1. Check out `v0.7.0`.
+1. Run `./scripts/init.sh && cargo clean && cargo build --release`
+1. Start your node(s).
+
+All extrinsics, including `validate` and `set_key` will be injected to CC3 as part of the 
+migration. We strongly recommend rotating your Session keys and issuing a new `set_key` call.
+
+**Breaking Changes:**
+
+- There are now five Session keys. The new one is for an 
+["Authority Discovery"](https://github.com/paritytech/polkadot/pull/624) module. During the 
+migration, this Session key will be set to all zeros, so you will not have the private key to it. 
+Authority discovery is behind a feature gate. If you want to use it, you will need to rotate your 
+Session keys to put an actual key in your keystore.
+- Validator commission changed from absolute KSM to a percent of the rewards. During the migration, 
+all validators have been set to 100% commission. You should update that setting by issuing a new 
+`validate` call if you want to split your rewards with nominators.
+
+**This guide works with the Kusama network CC3.**
 
 Before setting up the validator, you will most likely want to take a look at the [Secure Validator Setup Page](./secure-validator-setup.md) to make sure you know what factors you should consider when designing your validator architecture.
 
@@ -40,7 +63,7 @@ brew install cmake pkg-config openssl git llvm
 
 ## Building and Installing Your `Kusama` Node
 
-You will need to build your `kusama` from the `polkadot v0.6 branch` source code.
+You will need to build your `kusama` from the `polkadot v0.7.* tag` source code.
 
 ```bash
 git clone https://github.com/paritytech/polkadot.git
@@ -48,12 +71,15 @@ git clone https://github.com/paritytech/polkadot.git
 cd polkadot
 cargo clean
 git fetch
-git checkout v0.6
+# Change to latest v0.7.* tag
+git checkout v0.7.0
 ./scripts/init.sh 
 cargo build --release
 ```
 
-Note: If you prefer to use SSH rather than HTTPS, you can replace the first line of the above with `git clone git@github.com:paritytech/polkadot.git`.
+> Note: Unlike CC2, which had a `v0.6` branch and `v0.6.*` tags, CC3 will only have `v0.7.*` tags off the master branch. Changes to master are experimental until tagged.
+
+> Note: If you prefer to use SSH rather than HTTPS, you can replace the first line of the above with `git clone git@github.com:paritytech/polkadot.git`.
 
 This step will take a while (generally 15 - 30 minutes, depending on your hardware).
 
@@ -67,15 +93,17 @@ cargo install --force --git https://github.com/paritytech/substrate subkey
 
 > **Note:** Validators must resync their nodes in archive mode to avoid being slashed. You must first remove the database with `polkadot purge-chain` and then ensure that you run Polkadot with the `--pruning=archive` option.
 
+> **Note:** Sync will be much faster with the `--wasm-execution Compiled` flag.
+
 > **Note:** (New to the network)
-If you do not have a validator that was running on Kusama CC1, you can start to synchronize the chain by executing the following command:
+If you do not have a validator that was running on Kusama CC1 or CC2, you can start to synchronize the chain by executing the following command:
 
 ```bash
 ./target/release/polkadot --pruning=archive
 ```
 
-> **Note:** (For previous Kusama CC1 validator)
-Before synchronizing the chain data, you can copy your previous keystore to the new chain ID if you want to use your previous session keys. Otherwise, you are required to set new session keys.
+> **Note:** (For previous Kusama CC1 and CC2 validator)
+Before synchronizing the chain data, you can copy your previous keystore to the new chain ID if you want to use your previous session keys. Otherwise, you are required to set new Session keys. However, we **strongly recommend** setting new Session keys once you are running on CC3. CC3 now has an additional, fifth Session key for the optional authority discovery feature.
 
 Start your Kusama node to create default datadir first.  
 
@@ -85,10 +113,12 @@ Start your Kusama node to create default datadir first.
 
 Then stop and copy your previous keystore to new chain ID.
 
-**Keystore default location:** $HOME/.local/share/polkadot/chains/ksma/keystore
+**Keystore default location:** 
+- CC1: $HOME/.local/share/polkadot/chains/ksma/keystore
+- CC2: $HOME/.local/share/polkadot/chains/ksmcc2/keystore
 
 ```bash
-cp -r $HOME/.local/share/polkadot/chains/ksma/keystore $HOME/.local/share/polkadot/chains/ksmcc2/keystore
+cp -r $HOME/.local/share/polkadot/chains/ksmcc2/keystore $HOME/.local/share/polkadot/chains/ksmcc3/keystore
 ```
 
 If your keystore is empty, it means that the keys were not created on your node in the CC1 chain. This is okay, but it means you will want to set new session keys for your validators. The best way to do this would be to call the `author_rotateKeys` RPC call and make sure the call is directed to your validator node. Before submitting the `setKeys` transaction, verify that the keys are in the new CC2 keystore.
@@ -96,7 +126,7 @@ If your keystore is empty, it means that the keys were not created on your node 
 Start your node.
 
 ```bash
-./target/release/polkadot --pruning=archive
+./target/release/polkadot --pruning=archive --wasm-execution Compiled
 ```
 
 Depending on the size of the chain when you do this, this step may take anywhere from a few minutes to a few hours.
@@ -134,7 +164,7 @@ After a few seconds, you should see an "ExtrinsicSuccess" message. You should no
 Once your node is fully synced, stop it using Control-C. At your terminal prompt, you will now start your node in validator mode.
 
 ```bash
-./target/release/polkadot --validator --name "name on telemetry" --pruning=archive
+./target/release/polkadot --validator --name "name on telemetry" --pruning=archive --wasm-execution Compiled
 ```
 
 > NOTE: Kusama has launched! It is now the default option when you start running `polkadot`.
@@ -151,7 +181,7 @@ or via CLI:
 curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[]}' http://localhost:9933
 ```
 
-The output will have a hex-encoded "result" field. This is an encoding of your four Session keys.
+The output will have a hex-encoded "result" field. This is an encoding of your five Session keys.
 
 You need to tell the chain your Session keys by signing and submitting an extrinsic. This is what associates your validator with your Controller account.
 
@@ -164,14 +194,14 @@ Submit this extrinsic and you are now ready to start validating.
 
 ## Validate
 
-To verify that your node is live and synchronized, head to [Telemetry](https://telemetry.polkadot.io/#list/Kusama%20CC2) and find your node. Note that this will show all nodes on the Kusama network, which is why it is important to select a unique name!
+To verify that your node is live and synchronized, head to [Telemetry](https://telemetry.polkadot.io/#list/Kusama%20CC3) and find your node. Note that this will show all nodes on the Kusama network, which is why it is important to select a unique name!
 
 If everything looks good, go ahead and click on "Validate" in Polkadot UI.
 
 ![dashboard validate](../img/guides/how-to-validate/polkadot-dashboard-validate.jpg)
 ![dashboard validate](../img/guides/how-to-validate/polkadot-dashboard-validate-modal.jpg)
 
-- **Payment preferences** - Rewards you will keep, the rest will be shared among you and your nominators.
+- **Payment preferences** - Set a percentage of the rewards you will keep, the rest will be shared among you and your nominators. **Note:** Screenshot is not up to date as this was a recent change from absolute to percentage-based commission.
 
 Click "Validate".
 
