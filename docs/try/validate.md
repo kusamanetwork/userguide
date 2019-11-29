@@ -101,7 +101,7 @@ cargo install --force --git https://github.com/paritytech/substrate subkey
 If you do not have a validator that was running on Kusama CC1 or CC2, you can start to synchronize the chain by executing the following command:
 
 ```bash
-./target/release/polkadot --pruning=archive
+./target/release/polkadot --pruning=archive --wasm-execution Compiled
 ```
 
 > **Note:** (For previous Kusama CC1 and CC2 validator)
@@ -110,7 +110,7 @@ Before synchronizing the chain data, you can copy your previous keystore to the 
 Start your Kusama node to create default datadir first.  
 
 ```bash
-./target/release/polkadot --pruning=archive
+./target/release/polkadot --pruning=archive --wasm-execution Compiled
 ```
 
 Then stop and copy your previous keystore to new chain ID.
