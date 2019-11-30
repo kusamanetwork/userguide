@@ -6,8 +6,10 @@ If you are already validating on CC2, follow these instructions:
 
 1. Pull the master branch from the [Polkadot repo](https://github.com/paritytech/polkadot).
 1. Check out `v0.7.0`.
-1. Run `./scripts/init.sh && cargo clean && cargo build --release`
+1. Run `./scripts/init.sh && cargo clean && cargo build --release`.
 1. Start your node(s).
+	1. If you are not setting new Session keys, 
+	[move your keystore](#managing-session-key-migration).
 
 All extrinsics, including `validate` and `set_key` will be injected to CC3 as part of the 
 migration. We strongly recommend rotating your Session keys and issuing a new `set_key` call.
