@@ -129,7 +129,7 @@ Stop your node (mid-sync is OK) and copy your previous keystore to the new chain
 - CC2: $HOME/.local/share/polkadot/chains/ksmcc2/keystore
 
 ```bash
-cp -r $HOME/.local/share/polkadot/chains/ksmcc2/keystore $HOME/.local/share/polkadot/chains/ksmcc3/keystore
+cp -r $HOME/.local/share/polkadot/chains/ksmcc2/keystore/* $HOME/.local/share/polkadot/chains/ksmcc3/keystore
 ```
 
 If your keystore is empty, it means that the keys were not created on your node in the CC1 or CC2 chains. This is okay, but it means you will want to set new session keys for your validators. Once you restart your node, call the `author_rotateKeys` RPC and make sure the call is directed to your validator node. Before submitting the `setKeys` transaction, verify that the keys are in the new CC3 keystore.
