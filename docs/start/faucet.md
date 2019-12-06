@@ -96,7 +96,3 @@ The faucet's wallet will be periodically refilled from the address above.
 ### Support:
 
 If you are having difficulties using the faucet, please join the [Kusama Watercooler chat](https://riot.w3f.tech/#/room/#kusamawatercooler:polkadot.builders) and somebody will try to help you.  
-
-If you are not a DOT holder, you can get KSM at the public faucet after Kusama transfers are enabled. 
-
-Detailed instructions for how to use the faucet will be released shortly. 
