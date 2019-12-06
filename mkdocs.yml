@@ -8,18 +8,24 @@ nav:
  - Get Started:
     - Claim KSM: start/claims.md
     - Dot Holders: start/dot-holders.md
+    - PoS Transition: PoS.md
     - Faucet: start/faucet.md
  - What to Try:
+    - Nicks: try/nicks.md
     - Governance: try/governance.md
+    - Nominating: try/nominating.md
     - Staking: try/staking.md
     - Validate: try/validate.md
     - Parachain: try/parachain.md
+    - Secure Validator Setup: try/secure-validator-setup.md 
  - What to Break:
     - Bug Bounty: break/bug-bounty.md
     - Adversarial Cheatsheet: break/adversary.md
  - Community: community.md
  - Code of Conduct: code-of-conduct.md
  - FAQ: faq.md
+ - Other Languages:
+    - 中文: lang/chinese/docs/index.md
 
 # Configuration for the Material theme
 theme:

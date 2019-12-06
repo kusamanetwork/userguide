@@ -1,12 +1,21 @@
-# How to get KSM
+# Claims Timeline
+There are different ways to claim KSMs before and after Kusama genesis.
+
+Kusama will soft launch around `23 August, 2019`.
+
+This means you will no longer be able to use the following instructions to claim KSMs. [The Ethereum Claims DApp](https://claim.kusama.network) will be disabled after block `8405350` of Ethereum (approx 9:30 am Zurich time).
+
+You will only be able to claim directly on the Kusama network, via your original Ethereum address that holds DOT indicator tokens. Updated instructions can be found [here](https://guide.kusama.network/en/latest/start/dot-holders/).
+
+# How to get KSM (After Kusama Genesis)
 
 The Kusama network is Polkadot's experimental, community-focused R&D network. If you hold the DOT indicator token, you are entitled to claim an equivalent amount of KSM on the Kusama network. This is so that the Kusama network is aligned with the existing DOT holders and community.
 
-The two ways to claim the KSM depend on whether you are claiming before or after the Kusama genesis. Since Kusama has not launched at the time of writing this guide, it will only cover the first case: claiming by sending a transaction on Ethereum with the key that holds DOT indicator tokens. After Kusama genesis, it will be updated to cover the second case: claiming by signing a message with the key that holds DOT indicator tokens.
+You can claim KSMs by signing a message with the Ethereum that holds your DOT indicator tokens.
 
 ## Step 1. Create a Kusama account
 
-You will need to generate a Kusama account to claim KSM. There are a few ways you can create one. 
+You will need to generate a Kusama account to claim KSM. There are a few ways you can create one.
 
 For most users, we recommend using the [Polkadot UI](https://polkadot.js.org/apps/#/explorer) since it will allow you to store your encrypted keystore locally.
 
@@ -14,7 +23,7 @@ For most users, we recommend using the [Polkadot UI](https://polkadot.js.org/app
 
 Another option you may consider using is the `subkey` command line utility, which will allow you to take extra steps to protect the security of your key. Additionally, two other options include the Enzyme browser extension wallet and the Polkawallet mobile wallet, although these require an extra step to generate Kusama addresses.
 
-### Using polkadot{.js} extension (Chrome or Firefox)
+### Using polkadot{.js} extension (Chrome/Brave or Firefox)
 
 1. Install the polkadot{.js} extension from the [Chrome store](https://chrome.google.com/webstore/detail/polkadot%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd?hl=en) or [Firefox store](https://addons.mozilla.org/en-US/firefox/addon/polkadot-js-extension/).
 1. Create a new account by clicking on `I want to create a new account with a new seed`.
@@ -31,6 +40,17 @@ You can install `subkey` with this one-line command:
 
 ```
 cargo install --force --git https://github.com/paritytech/substrate subkey
+```
+
+Note that you will already have had to install the proper Rust version and dependencies.  If you have not done so, or experience problems installing using that command, run the following commands first, and then re-try the previous command:
+
+```
+curl https://sh.rustup.rs -sSf | sh
+
+rustup update nightly
+rustup target add wasm32-unknown-unknown --toolchain nightly
+rustup update stable
+cargo install --git https://github.com/alexcrichton/wasm-gc
 ```
 
 Alternatively, you can build `subkey` from the source code.
@@ -53,7 +73,7 @@ Secret phrase `lobster flock few equip connect boost excuse glass machine find w
   Address (SS58): JL1eTcbzuZP99FjeySkDrMygNREPdbhRyV7iD5AsV4fDRcg
 ```
 
-The `Address (SS58)` field is what you should use to claim your KSM tokens. Never share your `Secret phrase` or `Secret seed`, as these can both control your funds. 
+The `Address (SS58)` field is what you should use to claim your KSM tokens. Never share your `Secret phrase` or `Secret seed`, as these can both control your funds.
 
 NOTE: Previous versions of `subkey` only generated Substrate addresses. If you do not want to generate a new seed, you can convert the Substrate address to a Kusama address by following [this section](#kusama-from-substrate-address).
 
@@ -82,9 +102,9 @@ See the [`subkey` documentation](https://substrate.dev/docs/en/ecosystem/subkey)
 7. Click on the DOT identicon to copy the address to the clipboard.
 <img src="../../img/polkadotui-copy-account-address.png" width=50% />
 
-### Using Enzyme browser wallet (Chrome only)
+### Using Enzyme browser wallet (Chrome or Brave only)
 
-1. Install the Enzyme browser wallet from the [Chrome store](https://chrome.google.com/webstore/detail/enzyme/amligljifngdnodkebecdijmhnhojohh). Click `Add to Chrome` and confirm by clicking `Add extension` in the popup window.
+1. Install the Enzyme browser wallet from the [Chrome store](https://chrome.google.com/webstore/detail/enzyme/amligljifngdnodkebecdijmhnhojohh)(for Brave as well). Click `Add to Chrome` and confirm by clicking `Add extension` in the popup window.
 
 2. Accept the Terms of Use.
 
@@ -129,8 +149,8 @@ See the [`subkey` documentation](https://substrate.dev/docs/en/ecosystem/subkey)
 
 If you used one of the generation methods that gave you a generic Substrate address (begins with a `5`), then you will need to take an extra step to turn this into the properly encoded Kusama address.
 
-1. Copy your Substrate generic address to the clipboard. 
-2. Go to the [Polkadot UI](https://polkadot.js.org/apps). 
+1. Copy your Substrate generic address to the clipboard.
+2. Go to the [Polkadot UI](https://polkadot.js.org/apps).
 3. Go to the `Settings` tab and find the configuration for `address network prefix`.
 4. Select `Substrate (development)` and click `Save and reload`.
 5. Go to the `Address book` and click the `Add contact` button.
@@ -143,16 +163,16 @@ If you used one of the generation methods that gave you a generic Substrate addr
 
 There are two methods to claim KSM.
 
-**1. Dot Holders:**
-Those who participated in the Polkadot sales and have been allocated DOT indicator tokens can claim a proportional amount of KSM prior to the launch of the network.
+**1. DOT Holders:**
 
-You can do this through [the claims website](https://claim.kusama.network/).
+Those who participated in the Polkadot sales and have been allocated DOT indicator tokens can claim a proportional amount of KSMs on the Kusama Network.
 
-Refer to [this detailed guide](./dot-holders.md) for a step-by-step walk-through of the claims process.
+To do this you must sign a message containing the address of your Kusama account. You can do this by using the Polkadot UI [Claims app](https://polkadot.js.org/apps/#/claims).
 
-Having trouble? Get support in the KSM [Claims chat](https://riot.im/app/#/room/#KSMAClaims:polkadot.builders).
+Refer to [this detailed guide](./dot-holders.md) for a step-by-step walk-through of the post-genesis claims process.
+
+Having trouble? Get support in the KSM [Claims Support](https://riot.im/app/#/room/#KSMAClaims:polkadot.builders) channel.
 
 **2. Faucet:**
-For those who didn’t participate in the Polkadot sale, KSM are publicly available after genesis through a faucet. Find out more [here](./faucet.md).
 
-Public projects that need more KSM can request them by applying [here](https://docs.google.com/forms/d/1-JxlJqt8DA0E3K0QX0Gc20rF02-aqDn6r_rzkB4LaMk/edit).
+For those who didn’t participate in the Polkadot sale, KSMs are publicly available after genesis through a faucet. Find out more [here](./faucet.md).
