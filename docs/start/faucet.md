@@ -1,6 +1,6 @@
 # Obtaining Kusama Tokens (KSM) From The Faucet
 
-In order to prevent Sybil attacks, the faucet will only drip to users that have a GitHub account that was created prior to June, 21, 2019. If you do not have a GitHub account that was created prior to this date, please use the [KSM Request Form](https://docs.google.com/forms/d/e/1FAIpQLSfGAqjXY3xLokwl7A-R4JZAnrBnSI3BVXKMKDLCKVtHaxgs-w/formResponse) to request tokens.  
+In order to prevent Sybil attacks, the faucet will only drip to users that have a GitHub account that was created prior to June, 21, 2019. If you do not have a GitHub account that was created prior to this date, please use the [KSM Request Form](https://docs.google.com/forms/d/e/1FAIpQLSfGAqjXY3xLokwl7A-R4JZAnrBnSI3BVXKMKDLCKVtHaxgs-w/formResponse) to request tokens.
 
 ### Requirements:
 
@@ -46,26 +46,29 @@ Alternatively, you can build `subkey` from the source code.
 
 #### Usage
 
-The command `subkey --network kusama vanity "ksma"` will generate a new key-pair where the address contains the string  `ksma`.
+The command `subkey --network kusama vanity ksma --number 1` will generate a single key-pair where the address contains the string  `ksma`.
 
 Depending on the hardware configuration of your computer and on luck, this computation may take anywhere from a few seconds to approximately 10 minutes.
 
 ```
-$ subkey --network kusama vanity "ksma"
-  Generating key containing pattern 'ksma'
-  100000 keys searched; best is 190/237 complete
-  200000 keys searched; best is 201/237 complete
-  300000 keys searched; best is 207/237 complete
-  ...
-  1000000 keys searched; best is 225/237 complete
-  2000000 keys searched; best is 225/237 complete
-  best: 237 == top: 237
-  Secret Key URI `0x6262bcafcf6e6abbea102a2dbafecb81c28e9737e2cbce3d3ead7bde47806ac4` is account:
-  Public key (hex): 0xe6a979d75da9241c491f12b7e7c2cf015ba9202a4be4649a15b72a3a60e0e730
-  Address (SS58): Hnksmako1TfL4rsVMnT798syHFdF8rtFQT3tNF4jqLdswZD
+$ subkey --network kusama vanity ksma --number 1
+Generating key containing pattern 'ksma'
+100000 keys searched; best is 190/237 complete
+200000 keys searched; best is 190/237 complete
+300000 keys searched; best is 190/237 complete
+400000 keys searched; best is 190/237 complete
+500000 keys searched; best is 233/237 complete
+600000 keys searched; best is 233/237 complete
+700000 keys searched; best is 233/237 complete
+best: 238 == top: 237
+Secret Key URI `0x8baef85b7b366ec293fbf761e24572e4e6dd7ba385cbe04bd475a70cc69a5665` is account:
+  Secret seed:      0x8baef85b7b366ec293fbf761e24572e4e6dd7ba385cbe04bd475a70cc69a5665
+  Public key (hex): 0x60857d605f87e6b58974e7c8e5ad814617428c6017b9ceb4c938d65db34ece3f
+  Account ID:       0x60857d605f87e6b58974e7c8e5ad814617428c6017b9ceb4c938d65db34ece3f
+  SS58 Address:     Eksmahpd3pYpSBWyg8DXD4e27wZcWF14AZA1evYYvvNXpgs
 ```
 
-The `Address (SS58)` field is the Kusama address that you will need to request KSM to. Notice that the string `ksma` starts at the third character. Never share your `Secret Key`, as this controls your funds.
+The `Address (SS58)` field is the Kusama address that you will need to request KSM to. Notice that the string `ksma` starts at the second character. Never share your `Secret Key`, as this controls your funds.
 
 See the [`subkey` documentation](https://substrate.dev/docs/en/ecosystem/subkey) or enter `subkey --help` for more usage examples.
 
@@ -73,7 +76,7 @@ See the [`subkey` documentation](https://substrate.dev/docs/en/ecosystem/subkey)
 
 Once you have generated your Kusama address containing the string `ksma`, you are ready to request KSM from the faucet.
 
-1. Log in to Github. Go to the [faucet repo](https://github.com/kusamanetwork/faucet/issues) of the Kusama Network organization.  
+1. Log in to Github. Go to the [faucet repo](https://github.com/kusamanetwork/faucet/issues) of the Kusama Network organization.
 2. Click on the Issues tab, then click "New Issue".
 3. Enter any text for the "Title" textbox - it will be ignored.
 4. In the "Leave a comment" textbox, enter the address you generated in Step 1 (which must include the string "ksma"). Do not enter any text other than this address.
@@ -95,4 +98,4 @@ The faucet's wallet will be periodically refilled from the address above.
 
 ### Support:
 
-If you are having difficulties using the faucet, please join the [Kusama Watercooler chat](https://riot.w3f.tech/#/room/#kusamawatercooler:polkadot.builders) and somebody will try to help you.  
+If you are having difficulties using the faucet, please join the [Kusama Watercooler chat](https://riot.w3f.tech/#/room/#kusamawatercooler:polkadot.builders) and somebody will try to help you.
