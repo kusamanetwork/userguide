@@ -18,7 +18,7 @@ With KSMs, you can validate, nominate validators, bond parachains, pay for inter
 ## How can I get KSMs?
 The genesis distribution of KSM will be exactly as for DOT: if you purchased DOTs in the sale then you own an equal share of the Kusama network. The Web3 Foundation will use some of its holdings to fund a frictional faucet for those that do not currently hold DOTs. [Here’s how to claim KSM](./start/claims.md).
 
-Alternatively, a public faucet and a KSM grants process will also be made available after genesis. 
+Alternatively, [a public faucet](https://github.com/kusamanetwork/faucet) and a KSM grants process are also available. 
 
 ## Will Kusama eventually turn into Polkadot mainnet?
 No, Kusama is a completely different network than Polkadot, but has many of the same features of Polkadot (like parachains) and uses an early version of the code that will be used for Polkadot. 
@@ -29,4 +29,4 @@ Long-term, we envision the Kusama network evolving into an experimental testbed 
 KSM are utilitarian, we do not condone trading or selling of KSM, only using them to experiment on the network.
 
 ## Is Kusama live yet?  
-Kusama will likely be launched by the community this summer 2019. [Subscribe to the newsletter](https://kusama.network/newsletter) to stay informed of updates! 
+Yes it is! Kusama is a decentralized, proof-of-stake network. [Subscribe to the newsletter](https://kusama.network/newsletter) to stay informed of updates! 
