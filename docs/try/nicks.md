@@ -17,7 +17,7 @@ To convert a human readable name to the proper hex string, you can use an online
 Next navigate to the [Polkadot Apps Dashboard](https://polkadot.js.org/apps) and go to the "Extrinsics" tab.
 
 Select the account you would like to set the nick for and make sure you have enough KSM to cover the transaction fee
-and small deposit (less than 0.1 KSM).
+and deposit (10 KSM).
 
 Select nicks -> setName(name) and in the `name` field enter the hex string from the converter.
 
@@ -36,4 +36,4 @@ Select the nicks -> clearName() option and click "Submit Transaction".
 
 ## Killing Nicks
 
-Nicks can only be killed from `Root` or `Council` origins.
+Nicks can only be killed from `Council` origins, requiring `2` council members to approve.
