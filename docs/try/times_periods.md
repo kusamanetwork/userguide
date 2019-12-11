@@ -7,37 +7,47 @@
 - Session: 1 hour (6 sessions per Era)
 - Era: 6 hours (3600 slots x 6 seconds)
 
-A maximum of one block per slot can be in a chain.
+| Kusama  | Time      | Slots*  |
+|---------|-----------|--------|
+| Block   | 6 seconds | 1      |
+| Epoch   | 1 hour    | 600    |
+| Session | 1 hour    | 600    |
+| Era     | 6 hours   | 3,600   |
 
-### Democracy 
+**A maximum of one block per slot can be in a chain.*
 
-- Voting period: 1 week
-    - How long the public can vote on a referendum
-- Launch period: 1 week
-    - How long the public can select which proposal to hold a referendum on. i.e., Every week, the highest-weighted proposal will be selected to have a referendum.
-- Enactment period: 8 days
-    - Time it takes for a succssful referendum to be implemented on the network
-- Cool-off period: 7 days
-- Emergency voting period: 3 hours
-    - The voting period after the technical committee expidites voting
+### Governance 
 
-### Council
+| Democracy               | Time    | Slots   | Description                                                                                                                                                  |
+|-------------------------|---------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Voting period           | 7 days  | 604,800 | How long the public can vote on a referendum.                                                                                                                |
+| Launch period           | 7 days  | 604,800 | How long the public can select which proposal to hold a referendum on. i.e., Every week, the highest-weighted proposal will be selected to have a referendum |
+| Enactment period        | 8 days  | 691,200 | Time it takes for a successful referendum to be implemented on the network. |
 
-- Term duration: 6 hours
-- Voting period (for council seats): 6 hours
+| Council       | Time    | Slots | Description                                                          |
+|---------------|---------|-------|----------------------------------------------------------------------|
+| Term duration | 6 hours | 3,600 | The length of a council member's term until the next election round. |
+| Voting period | 6 hours | 3,600 | The council's voting period for motions.                             |
+
+| Technical committee     | Time    | Slots   | Description                                                                                    |
+|-------------------------|---------|---------|------------------------------------------------------------------------------------------------|
+| Cool-off period         | 7 days  | 604,800 | The time a veto from the technical committee lasts before the proposal can be submitted again. |
+| Emergency voting period | 3 hours | 1,800   | The voting period after the technical committee expedites voting.                              |
+
 
 ### Staking, Validating, and Nominating
 
-- Term duration: 6 hours
-    - The time for which a validator is in the set after being elected. Note, this duration can be shortened in the case that a validator misbehaves.
-- Term effect
-    - The winners of the election begin validating in the second session of the era. They will continue validating through the first session of the next era.
-- Nomination period: 6 hours
-    - Every 6 hours, a new validator set is elected according to Phragmen's method.
-- Bonding duration: 7 days
-    - How long until your funds will be transferrable after unbonding
-- Slash defer duration: 7 days
+| Kusama               | Time    | Slots   | Description                                                                                                                                      |
+|----------------------|---------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| Term duration        | 6 hours | 3,600   | The time for which a validator is in the set after being elected. Note,  this duration can be shortened in the case that a validator misbehaves. |
+| Nomination period    | 6 hours | 3,600   | Every 6 hours, a new validator set is elected according to Phragmen's method.                                                                    |
+| Bonding duration     | 7 days  | 604,800 | How long until your funds will be transferrable after unbonding.                                                                                |
+| Slash defer duration | 7 days  | 604,800 | Prevents overslashing and validators "escaping" and getting their nominators slashed with no repercussions to themselves                        |
 
 ### Treasury
+| Treasury               | Time   | Slots   | Description                                                  |
+|------------------------|--------|---------|--------------------------------------------------------------|
+| Periods between spends | 6 days | 518,400 | When the treasury can spend again after spending previously. |
 
-- Period between spends: 6 days
+
+`*` *Need proper descriptions*
