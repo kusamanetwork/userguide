@@ -26,8 +26,8 @@
 
 | Council       | Time    | Slots | Description                                                          |
 |---------------|---------|-------|----------------------------------------------------------------------|
-| Term duration | 6 hours | 3,600 | The length of a council member's term until the next election round. |
-| Voting period | 6 hours | 3,600 | The council's voting period for motions.                             |
+| Term duration | 1 day   | 14,400 | The length of a council member's term until the next election round. |
+| Voting period | 1 day   | 14,400 | The council's voting period for motions.                             |
 
 | Technical committee     | Time    | Slots   | Description                                                                                    |
 |-------------------------|---------|---------|------------------------------------------------------------------------------------------------|
@@ -49,5 +49,3 @@
 |------------------------|--------|---------|--------------------------------------------------------------|
 | Periods between spends | 6 days | 518,400 | When the treasury can spend again after spending previously. |
 
-
-`*` *Need proper descriptions*
