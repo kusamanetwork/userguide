@@ -5,7 +5,7 @@
 If you are already validating on CC2, follow these instructions:
 
 1. Pull the master branch from the [Polkadot repo](https://github.com/paritytech/polkadot).
-1. Check out `v0.7.16`.
+1. Check out `v0.7.17`.
 1. Run `./scripts/init.sh && cargo clean && cargo build --release`.
 1. Start your node(s).
 	1. If you are not setting new Session keys, 
@@ -82,7 +82,7 @@ cd polkadot
 cargo clean
 git fetch
 # Change to latest v0.7.* tag
-git checkout v0.7.16
+git checkout v0.7.17
 ./scripts/init.sh 
 cargo build --release
 ```
