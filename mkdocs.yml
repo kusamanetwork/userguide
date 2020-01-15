@@ -15,6 +15,7 @@ nav:
     - Nicks: try/nicks.md
     - Governance: try/governance.md
     - Nominating: try/nominating.md
+    - Unbonding: try/unbond.md
     - Staking: try/staking.md
     - Validate: try/validate.md
     - Parachain: try/parachain.md
