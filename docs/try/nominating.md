@@ -12,7 +12,7 @@ Pick "Account Actions", then click the blue "New Stake" button.
 
 You will see a modal window that looks like the below:
 
-![Bonding](/img/NPoS/nominate2.png)
+![Bonding](../../img/NPoS/nominate2.png)
 
 Select a "value bonded" that is **less** than the total amount of KSM you have, so you have some left over to pay transaction fees. Be mindful of the reaping threshold - the amount that must remain in an account lest it be burned. That amount is 0.01 in Kusama, so it's recommended to keep at least 0.1 KSM in your account to be on the safe side.
 
@@ -24,7 +24,7 @@ You are now bonded. Being bonded means your tokens are locked and could be [slas
 
 Click on "Nominate" on an account you've bonded and you will be presented with another popup asking you to select some validators.
 
-![Nominating validators](/img/NPoS/nominate.png)
+![Nominating validators](../../img/NPoS/nominate.png)
 
 Select them, confirm the transaction, and you're done - you are now nominating. You should notice your balance increasing shortly.
 

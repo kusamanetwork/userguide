@@ -10,7 +10,7 @@ On this tab click on the "Account Actions" tab at the top of the screen.
 
 Here, click "Stop Nominating" on an account you're nominating with and would like to free the funds for.
 
-![Stop Nominating Button](/img/NPoS/unbond1.png)
+![Stop Nominating Button](../../img/NPoS/unbond1.png)
 
 After you confirm this transaction, your tokens will remain _bonded_. This means they stay ready to be distributed among nominees again. To actually withdraw them, you need to unbond.
 
@@ -18,15 +18,15 @@ After you confirm this transaction, your tokens will remain _bonded_. This means
 
 To unbond the amount, click the little gear icon next to the account you want to unbond money for, and select "Unbond funds".
 
-![Unbonding](/img/NPoS/unbond2.png)
+![Unbonding](../../img/NPoS/unbond2.png)
 
 Select the amount you wish to unbond and click Unbond, then confirm the transaction.
 
-![Unbonding all](/img/NPoS/unbond3.png)
+![Unbonding all](../../img/NPoS/unbond3.png)
 
 If successful, your balance will show as "unbonding" with an indicator of how many more blocks remain until the amount is fully unlocked.
 
-![Unbonding duration](/img/NPoS/unbond4.png)
+![Unbonding duration](../../img/NPoS/unbond4.png)
 
 This duration will vary depending on the network you're on and will typically be four times as fast on Kusama as it is on Polkadot.
 
