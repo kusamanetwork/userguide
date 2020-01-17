@@ -13,7 +13,7 @@ In order to prevent Sybil attacks, the faucet will only drip to users that have 
 
 The faucet will only drip to addresses that contain the string `ksma`(case-insensitive, that is, `KSMA` or `kSmA` would work). It will also never drip to the same address twice. Thus, a new address has to be created each time a user requests KSM tokens.
 
-Obtaining a valid address will require generating numerous addresses until you find one which meets the requirements. You can think of this as a small proof-of-work. You can use the command-line tool [Subkey](#Using-Subkey), the web interface ([PolkadotJS Dashboard](#Using-PolkadotJS-Dashboard)), or any other program capable of generating arbitrary addresses.  You can even code up your own if you like.
+Obtaining a valid address will require generating numerous addresses until you find one which meets the requirements. You can think of this as a small proof-of-work. You can use the command-line tool [subkey](#Using-Subkey), the web interface ([PolkadotJS Dashboard](#Using-PolkadotJS-Dashboard)), or any other program capable of generating arbitrary addresses which meet the requirements of the faucet.  You can even code up your own if you like.
 
 
 #### Using PolkadotJS Dashboard
@@ -24,11 +24,27 @@ Obtaining a valid address will require generating numerous addresses until you f
 2. Under the [Accounts page](https://polkadot.js.org/apps/#/accounts), select `Vanity Address` tab.
 ![](https://i.imgur.com/EZw5iOx.png)
 
-3. Input `ksma` in the "search for" textbox and leave the "keypair crypto type" by default unless you want to use another type.  After this, click `Start generation`. It will most likely take at least 10 mins to generate the address pattern you want.
+3. Input `ksma` in the "search for" textbox and leave the "keypair crypto type" by default unless you want to use another type.  After this, click `Start generation`. You may leave YES in the case sensitive field but switching to NO will greatly speed up the process.  It may take 10 minutes or more to generate the address pattern you want, depending on the power of your hardware.
 ![](https://i.imgur.com/ckbunwK.png)
 
+4. After you see that a valid `ksma` address has been created, press the blue `+` button to generate an account.  Note that the case does not matter, any of the following are ok: kSmA, KSMA, ksMA, etc.
 
-#### Using Subkey
+![Save Generated Account](../img/save_generated_account.png)
+
+5. Give your account a name and password, then click "Save" to save the account.
+
+![Create Account](../img/create_account.png)
+
+6. Save the backup file to your local computer.
+
+![Save Backup](../img/save_backup.png)
+
+7. Click on the Accounts tab, or press "My Accounts" at the top of the page, and look for your newly generated account.  You can then copy the address to your clipboard by clicking on the dot icon next to the account.
+
+![Select Address](../img/select_address.png)
+
+
+#### Using subkey
 
 #### Installation
 
@@ -84,11 +100,31 @@ Once you have generated your Kusama address containing the string `ksma`, you ar
 6. You will see a comment posted to your issue indicating success or failure.  Success means that 0.1 KSM has been sent to the posted address; failure means that there was some problem and no KSM was sent to your address. In the event of failure, the message should indicate what the problem is (e.g., the faucet is dry, the address is invalid).
 7.  The issue will close automatically after you receive a response, whether or not it was a success.
 
+### After
+
+Remember that you must drip to a different address each time - you will not be able to get a drip from the faucet to this address again.  You also may have a more secure way of storing addresses such as cold wallet, or simply keep all of your KSM at one address.
+
+Therefore, you may wish to move your KSM to a different address after this.  You should be able to move your KSM immediately after receiving them.
+
+Note that you will not be able to transfer the entire 0.1KSM to another account, as there are transfer fees when moving KSM on-chain.  Transferring 0.080 KSM should work.
+
 ### Notes:
 
 - A single GitHub account can get 0.1 KSM every 24 hours.
 - Remember to post _only the address_ - no other text, and definitely not your seed or mnemonic phrase!
 - The total number of KSM available to _all users_ of the faucet is 10 KSM per day.
+
+### What To Do With My KSM
+
+Owning KSM gives you a stake in the Kusama network. Among the things you can do with your KSM tokens are:
+
+* Transfer them to another account
+* Nominate validators and passively earn more KSM
+* Support (second) democratic proposals to help make them into active referenda
+* Vote for or against active referenda
+* Vote and support one or more of your favorite council members
+* Set your on-chain identity
+* and way more!
 
 ### Donations:
 
