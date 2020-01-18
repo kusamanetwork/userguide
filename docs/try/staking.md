@@ -4,6 +4,8 @@ Kusama uses NPoS (Nominated Proof-of-Stake), comprising the roles of validators 
 
 Both validators and nominators will earn rewards— and may be penalized—proportional to the amount that they stake, with validators having the ability to set some payment preferences.
 
+For detailed instructions on how to nominate a validator, often referred to as staking, please see the [Nominating page](https://guide.kusama.network/en/latest/try/nominating/) of this guide.
+
 ## Validating
 
 Running a validator is a process which requires dedicated hardware and some technical prowess.  Nominating (basically, voting with your stake on which validators will be part of the active validator set) is much less technically demanding.
@@ -25,6 +27,8 @@ To become a nominator, you only need to have some KSM to stake.
 
 ### What is nominating?
 A nominator publishes a list of validator candidates that they trust, and puts down an amount of KSM at stake to support them with. If some of these candidates are elected as validators, they share with them the payments, or the sanctions, on a per-staked-KSM basis. Unlike validators, an unlimited number of parties can participate as nominators. As long as a nominator is diligent in their choice and only supports validator candidates with good security practices, their role carries low risk and provides a continuous source of revenue.
+
+For detailed instructions on how to nominate Kusama validators, please see the [Nominating page](https://guide.kusama.network/en/latest/try/nominating/) of this guide.
 
 ### Can I nominate multiple validators?
 
