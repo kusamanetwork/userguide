@@ -21,7 +21,7 @@ For most users, we recommend using the [Polkadot UI](https://polkadot.js.org/app
 
 > NOTICE: Unfortunately, at this time Kusama does not have hardware wallet support. Hopefully this will change soon!
 
-Another option you may consider using is the `subkey` command line utility, which will allow you to take extra steps to protect the security of your key. Additionally, two other options include the Enzyme browser extension wallet and the Polkawallet mobile wallet, although these require an extra step to generate Kusama addresses.
+Another option you may consider using is the `subkey` command line utility, which will allow you to take extra steps to protect the security of your key. Additionally, another option is the Polkawallet mobile wallet, although it requires an extra step to generate Kusama addresses.
 
 ### Using polkadot{.js} extension (Chrome/Brave or Firefox)
 
@@ -101,30 +101,6 @@ See the [`subkey` documentation](https://substrate.dev/docs/en/ecosystem/subkey)
 
 7. Click on the DOT identicon to copy the address to the clipboard.
 <img src="../../img/polkadotui-copy-account-address.png" width=50% />
-
-### Using Enzyme browser wallet (Chrome or Brave only)
-
-1. Install the Enzyme browser wallet from the [Chrome store](https://chrome.google.com/webstore/detail/enzyme/amligljifngdnodkebecdijmhnhojohh)(for Brave as well). Click `Add to Chrome` and confirm by clicking `Add extension` in the popup window.
-
-2. Accept the Terms of Use.
-
-<img src="../../img/enzyme-open-the-extension.png" width=50% />
-
-3. Make a strong password and make sure to write it down in another place, then click `Create`.
-
-<img src="../../img/enzyme-choose-a-password.png" width=50% />
-
-4. Copy the seed phrase and store it somewhere safe. Don't share the seed phrase with anyone; you can use it to access your account if you forget your password or otherwise lose your keystore.
-
-<img src="../../img/enzyme-generate-seed-phrase.png" width=50% />
-
-5. Click `Dashboard`.
-
-6. Click the DOT identicon to copy your address to clipboard.
-
-<img src="../../img/enzyme-copy-your-address.png" width=50% />
-
-7. [Get the Kusama address from the Substrate address.](#kusama-from-substrate-address)
 
 ### Using Polkawallet
 
